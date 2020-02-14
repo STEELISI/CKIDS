@@ -1,0 +1,2668 @@
+{
+    "aggregations": {
+        "access_right": {
+            "buckets": [
+                {
+                    "doc_count": 148,
+                    "key": "open"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "closed"
+                }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+        },
+        "communities": {
+            "buckets": [
+                {
+                    "doc_count": 15,
+                    "key": "waset"
+                },
+                {
+                    "doc_count": 5,
+                    "key": "shield-h2020"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "5g-ppp"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "drive"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "ecfunded"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "chep-2019"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "cybercriminologyjournal"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "economics"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "icmet-oman"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "mils"
+                }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 20
+        },
+        "file_type": {
+            "buckets": [
+                {
+                    "doc_count": 134,
+                    "key": "pdf"
+                },
+                {
+                    "doc_count": 7,
+                    "key": "zip"
+                },
+                {
+                    "doc_count": 2,
+                    "key": "jpg"
+                },
+                {
+                    "doc_count": 1,
+                    "key": ""
+                },
+                {
+                    "doc_count": 1,
+                    "key": "doc"
+                },
+                {
+                    "doc_count": 1,
+                    "key": "docx"
+                },
+                {
+                    "doc_count": 1,
+                    "key": "gz"
+                },
+                {
+                    "doc_count": 1,
+                    "key": "md"
+                },
+                {
+                    "doc_count": 1,
+                    "key": "pptx"
+                },
+                {
+                    "doc_count": 1,
+                    "key": "xlsx"
+                }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+        },
+        "keywords": {
+            "buckets": [
+                {
+                    "doc_count": 18,
+                    "key": "cybersecurity"
+                },
+                {
+                    "doc_count": 10,
+                    "key": "Cybersecurity"
+                },
+                {
+                    "doc_count": 4,
+                    "key": "Blockchain"
+                },
+                {
+                    "doc_count": 4,
+                    "key": "Ransomware"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "Complexity"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "Extortion"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "Risk"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "internet census"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "law"
+                },
+                {
+                    "doc_count": 3,
+                    "key": "project sonar"
+                }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 391
+        },
+        "type": {
+            "buckets": [
+                {
+                    "doc_count": 135,
+                    "key": "publication",
+                    "subtype": {
+                        "buckets": [
+                            {
+                                "doc_count": 88,
+                                "key": "article"
+                            },
+                            {
+                                "doc_count": 32,
+                                "key": "conferencepaper"
+                            },
+                            {
+                                "doc_count": 4,
+                                "key": "deliverable"
+                            },
+                            {
+                                "doc_count": 4,
+                                "key": "report"
+                            },
+                            {
+                                "doc_count": 3,
+                                "key": "book"
+                            },
+                            {
+                                "doc_count": 2,
+                                "key": "other"
+                            },
+                            {
+                                "doc_count": 2,
+                                "key": "thesis"
+                            }
+                        ],
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0
+                    }
+                },
+                {
+                    "doc_count": 5,
+                    "key": "dataset",
+                    "subtype": {
+                        "buckets": [],
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0
+                    }
+                },
+                {
+                    "doc_count": 5,
+                    "key": "presentation",
+                    "subtype": {
+                        "buckets": [],
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0
+                    }
+                },
+                {
+                    "doc_count": 4,
+                    "key": "software",
+                    "subtype": {
+                        "buckets": [],
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0
+                    }
+                },
+                {
+                    "doc_count": 1,
+                    "key": "poster",
+                    "subtype": {
+                        "buckets": [],
+                        "doc_count_error_upper_bound": 0,
+                        "sum_other_doc_count": 0
+                    }
+                }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+        }
+    },
+    "hits": {
+        "hits": [
+            {
+                "conceptdoi": "10.5281/zenodo.1131809",
+                "conceptrecid": "1131809",
+                "created": "2017-12-25T13:50:29.508869+00:00",
+                "doi": "10.5281/zenodo.1131810",
+                "files": [
+                    {
+                        "bucket": "63c65864-c9d3-4d2e-aad2-21ce2bf4eff2",
+                        "checksum": "md5:027dd65f83e252db2c21eaa668ebb322",
+                        "key": "10007724.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/63c65864-c9d3-4d2e-aad2-21ce2bf4eff2/10007724.pdf"
+                        },
+                        "size": 200052,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1131810,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1131810.svg",
+                    "bucket": "https://zenodo.org/api/files/63c65864-c9d3-4d2e-aad2-21ce2bf4eff2",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1131809.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1131809",
+                    "doi": "https://doi.org/10.5281/zenodo.1131810",
+                    "html": "https://zenodo.org/record/1131810",
+                    "latest": "https://zenodo.org/api/records/1131810",
+                    "latest_html": "https://zenodo.org/record/1131810",
+                    "self": "https://zenodo.org/api/records/1131810"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "waset"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "name": "Pema Choejey"
+                        },
+                        {
+                            "name": "David Murray"
+                        },
+                        {
+                            "name": "Chun Che Fung"
+                        }
+                    ],
+                    "description": "<p>Bhutan is becoming increasingly dependent on Information and Communications Technologies (ICTs), especially the Internet for performing the daily activities of governments, businesses, and individuals. Consequently, information systems and networks are becoming more exposed and vulnerable to cybersecurity threats. This paper highlights the findings of the survey study carried out to understand the perceptions of cybersecurity implementation among government organizations in Bhutan. About 280 ICT personnel were surveyed about the effectiveness of cybersecurity implementation in their organizations. A questionnaire based on a 5 point Likert scale was used to assess the perceptions of respondents. The questions were asked on cybersecurity practices such as cybersecurity policies, awareness and training, and risk management. The survey results show that less than 50% of respondents believe that the cybersecurity implementation is effective: cybersecurity policy (40%), risk management (23%), training and awareness (28%), system development life cycle (34%); incident management (26%), and communications and operational management (40%). The findings suggest that many of the cybersecurity practices are inadequately implemented and therefore, there exist a gap in achieving a required cybersecurity posture. This study recommends government organizations to establish a comprehensive cybersecurity program with emphasis on cybersecurity policy, risk management, and awareness and training. In addition, the research study has practical implications to both government and private organizations for implementing and managing cybersecurity.</p>",
+                    "doi": "10.5281/zenodo.1131810",
+                    "keywords": [
+                        "Awareness and training",
+                        "cybersecurity",
+                        "cybersecurity policy",
+                        "risk management",
+                        "security risks."
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2017-06-01",
+                    "references": [
+                        "MoIC, \"Information and Communications Technology (ICT) Policy for Bhutan: A White Paper \", M. o. I. a. Communications, Ed., ed. Thimphu: Royal Government of Bhutan, 2003.",
+                        "RGoB, \"Bhutan Information Communications and Media Act,\" ed. Thimphu: Royal Government of Bhutan, 2006.",
+                        "MoIC, \"Bhutan e-Government Master Plan,\" Ministry of Information and Communications, Ed., ed: Royal Government of Bhutan, 2013.",
+                        "GNHC, \"Eleventh Five Year Plan Volume I: Main Document,\" G. N. H. Commission, Ed., ed. Thimphu: GNHC, 2013.",
+                        "N. Gyeltshen, \"BoB transfers Nu 16M based on fake e-mail,\" in BBS Online, ed. Thimphu: Bhutan Broadcasting Service, 2016.",
+                        "P. Choejey, C. C. Fung, K. W. Wong, D. Murray, and D. Sonam, \"Cybersecurity challenges for Bhutan,\" in Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI-CON), 2015 12th International Conference on, 2015, pp. 1-5.",
+                        "MoIC, \"Information Management and Security Policy,\" M. o. I. a. Communications, Ed., ed: Royal Government of Bhutan, 2009.",
+                        "MoC, \"Bhutan e-Readiness Assessment,\" T. D. o. I. Technology, Ed., ed: Ministry of Communications, 2003.",
+                        "ITU, \"Cybersurity: Readiness Assessment for Establishing National CIRT,\" International Telecommunication Union2012.\n[10]\tB. Nono, \"Proposing a Government PKI in Bhutan: A Solution to e-Government Security Requirements \" 2011.\n[11]\tT. Roberts, \"Building Cyber-Security Capacity in the Kingdom of Bhutan,\" G. C. S. C. Centre, Ed., ed: University of Oxford undated.\n[12]\tISO/IEC 27001, \"Information technology \u2013 Security techniques \u2013 Information security management systems \u2013 Requirements,\" 2005.\n[13]\tNIST, \"SP 800-53: Recommended Security Controls for Federal Information Systems,\" October, vol. 31, p. 9, 2003.\n[14]\tP. Choejey, C. C. Fung, K. W. Wong, D. Murray, and S. Dawa, \"Cybersecurity Challenges for Bhutan,\" presented at the 12th International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology, Hua Hin, Thailand, 2015.\n[15]\tP. Choejey, C. C. Fung, K. W. Wong, D. Murray, and H. Xie, \"Cybersecurity Practices for E-Government: An Assessment in Bhutan,\" 2015.\n[16]\tR. Likert, \"A technique for the measurement of attitudes,\" Archives of psychology, 1932.\n[17]\tJ. G. Dawes, \"Do data characteristics change according to the number of scale points used? An experiment using 5 point, 7 point and 10 point scales,\" International journal of market research, vol. 51, 2008.\n[18]\tR. Johns, \"Likert items and scales,\" Survey Question Bank: Methods Fact Sheet, vol. 1, 2010."
+                    ],
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.1131809",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1131810"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1131809"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "Perceptions of Cybersecurity in Government Organizations: Case Study of Bhutan",
+                    "version": "10007724"
+                },
+                "owners": [
+                    32148
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 30.0,
+                    "unique_downloads": 26.0,
+                    "unique_views": 60.0,
+                    "version_downloads": 30.0,
+                    "version_unique_downloads": 26.0,
+                    "version_unique_views": 60.0,
+                    "version_views": 62.0,
+                    "version_volume": 6001560.0,
+                    "views": 62.0,
+                    "volume": 6001560.0
+                },
+                "updated": "2020-01-20T17:21:46.252272+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3662292",
+                "conceptrecid": "3662292",
+                "created": "2020-02-11T17:51:51.499669+00:00",
+                "doi": "10.5281/zenodo.3662293",
+                "files": [
+                    {
+                        "bucket": "dc3093da-344d-475a-b148-32b4812215c6",
+                        "checksum": "md5:f021619dcbac296f9353fbbb4678e8cc",
+                        "key": "Malicious.zip",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/dc3093da-344d-475a-b148-32b4812215c6/Malicious.zip"
+                        },
+                        "size": 5453689154,
+                        "type": "zip"
+                    }
+                ],
+                "id": 3662293,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3662293.svg",
+                    "bucket": "https://zenodo.org/api/files/dc3093da-344d-475a-b148-32b4812215c6",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3662292.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3662292",
+                    "doi": "https://doi.org/10.5281/zenodo.3662293",
+                    "html": "https://zenodo.org/record/3662293",
+                    "latest": "https://zenodo.org/api/records/3662293",
+                    "latest_html": "https://zenodo.org/record/3662293",
+                    "self": "https://zenodo.org/api/records/3662293"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Fang Yong"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zeng Yuetian"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Li Beibei"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Liu Liang"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zhang Lei"
+                        }
+                    ],
+                    "description": "<p>This repository contains all malicious samples used in article &quot;DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model&quot;. It is safe to download these samples <strong>without </strong>running them. Please note that when downloading these samples, <strong>close all </strong>anti-virus software, including Windows Defender.</p>",
+                    "doi": "10.5281/zenodo.3662293",
+                    "keywords": [
+                        "Malicious samples"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2020-02-11",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3662292",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3662293"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3662292"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Dataset",
+                        "type": "dataset"
+                    },
+                    "title": "Malware dataset from VirusShare used in article \"DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model\""
+                },
+                "owners": [
+                    90753
+                ],
+                "revision": 2,
+                "stats": {
+                    "downloads": 0.0,
+                    "unique_downloads": 0.0,
+                    "unique_views": 7.0,
+                    "version_downloads": 0.0,
+                    "version_unique_downloads": 0.0,
+                    "version_unique_views": 7.0,
+                    "version_views": 11.0,
+                    "version_volume": 0.0,
+                    "views": 11.0,
+                    "volume": 0.0
+                },
+                "updated": "2020-02-12T07:20:56.983060+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3663324",
+                "conceptrecid": "3663324",
+                "created": "2020-02-12T08:27:27.398005+00:00",
+                "doi": "10.5281/zenodo.3663325",
+                "files": [
+                    {
+                        "bucket": "9ff2816e-c0e3-4203-9c66-742418f4d335",
+                        "checksum": "md5:a56a3b790feed5ac15205b0685ae7dd6",
+                        "key": "DeepDetectNetvsRLAttackNet.zip",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip"
+                        },
+                        "size": 110451260,
+                        "type": "zip"
+                    }
+                ],
+                "id": 3663325,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3663325.svg",
+                    "bucket": "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3663324.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3663324",
+                    "doi": "https://doi.org/10.5281/zenodo.3663325",
+                    "html": "https://zenodo.org/record/3663325",
+                    "latest": "https://zenodo.org/api/records/3663325",
+                    "latest_html": "https://zenodo.org/record/3663325",
+                    "self": "https://zenodo.org/api/records/3663325"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Fang Yong"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zeng Yuetian"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Li Beibei"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Liu Liang"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zhang Lei"
+                        }
+                    ],
+                    "description": "<p>This repository contains all code for article &quot;DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model&quot;.</p>",
+                    "doi": "10.5281/zenodo.3663325",
+                    "keywords": [
+                        "Code"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2020-02-12",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3663324",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3663325"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3663324"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Software",
+                        "type": "software"
+                    },
+                    "title": "Source code for article \"DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model\""
+                },
+                "owners": [
+                    90753
+                ],
+                "revision": 2,
+                "stats": {
+                    "downloads": 0.0,
+                    "unique_downloads": 0.0,
+                    "unique_views": 2.0,
+                    "version_downloads": 0.0,
+                    "version_unique_downloads": 0.0,
+                    "version_unique_views": 2.0,
+                    "version_views": 5.0,
+                    "version_volume": 0.0,
+                    "views": 5.0,
+                    "volume": 0.0
+                },
+                "updated": "2020-02-12T19:21:07.604263+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3662313",
+                "conceptrecid": "3662313",
+                "created": "2020-02-11T16:45:08.091551+00:00",
+                "doi": "10.5281/zenodo.3662314",
+                "files": [
+                    {
+                        "bucket": "dae3cfc4-b3fa-46c3-b947-8da40424d1a2",
+                        "checksum": "md5:19ae8f94344143807c2e2b96a02321a2",
+                        "key": "Benign.zip",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/dae3cfc4-b3fa-46c3-b947-8da40424d1a2/Benign.zip"
+                        },
+                        "size": 1561388618,
+                        "type": "zip"
+                    }
+                ],
+                "id": 3662314,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3662314.svg",
+                    "bucket": "https://zenodo.org/api/files/dae3cfc4-b3fa-46c3-b947-8da40424d1a2",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3662313.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3662313",
+                    "doi": "https://doi.org/10.5281/zenodo.3662314",
+                    "html": "https://zenodo.org/record/3662314",
+                    "latest": "https://zenodo.org/api/records/3662314",
+                    "latest_html": "https://zenodo.org/record/3662314",
+                    "self": "https://zenodo.org/api/records/3662314"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Fang Yong"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zeng Yuetian"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Li Beibei"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Liu Liang"
+                        },
+                        {
+                            "affiliation": "College of Cybersecurity, Sichuan University, Chengdu 610065, China",
+                            "name": "Zhang Lei"
+                        }
+                    ],
+                    "description": "<p>This repository contains all benign samples used in article &quot;DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model&quot;. It is safe to download these samples.</p>",
+                    "doi": "10.5281/zenodo.3662314",
+                    "keywords": [
+                        "Benign samples"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2020-02-11",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3662313",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3662314"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3662313"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Dataset",
+                        "type": "dataset"
+                    },
+                    "title": "Benign samples used in article \"DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model\""
+                },
+                "owners": [
+                    90753
+                ],
+                "revision": 2,
+                "stats": {
+                    "downloads": 0.0,
+                    "unique_downloads": 0.0,
+                    "unique_views": 7.0,
+                    "version_downloads": 0.0,
+                    "version_unique_downloads": 0.0,
+                    "version_unique_views": 7.0,
+                    "version_views": 8.0,
+                    "version_volume": 0.0,
+                    "views": 8.0,
+                    "volume": 0.0
+                },
+                "updated": "2020-02-12T07:20:57.326283+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.1464565",
+                "conceptrecid": "1464565",
+                "created": "2018-10-17T08:19:07.289545+00:00",
+                "doi": "10.5281/zenodo.1464566",
+                "files": [
+                    {
+                        "bucket": "f4a18fdf-576e-43b4-a739-0f03d2152610",
+                        "checksum": "md5:e7d31387f93b44c1366863408660b3d5",
+                        "key": "Zulfugarzade_REU_2018_abstr.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f4a18fdf-576e-43b4-a739-0f03d2152610/Zulfugarzade_REU_2018_abstr.pdf"
+                        },
+                        "size": 444488,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1464566,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1464566.svg",
+                    "bucket": "https://zenodo.org/api/files/f4a18fdf-576e-43b4-a739-0f03d2152610",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1464565.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1464565",
+                    "doi": "https://doi.org/10.5281/zenodo.1464566",
+                    "html": "https://zenodo.org/record/1464566",
+                    "latest": "https://zenodo.org/api/records/1464566",
+                    "latest_html": "https://zenodo.org/record/1464566",
+                    "self": "https://zenodo.org/api/records/1464566"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Plekhanov Russian University of Economics",
+                            "name": "Zulfugarzade, Teymur, E.",
+                            "orcid": "0000-0002-0778-1511"
+                        }
+                    ],
+                    "description": "<p>\u0412 \u0440\u0430\u0431\u043e\u0442\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u044b \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0435 \u043a\u043e\u043d\u0446\u0435\u043f\u0442\u0443\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044b, \u0432\u044b\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0435 \u0432 \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438 \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0430\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u0432\u0438\u0442\u044b\u0445 \u0433\u043e\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0430\u0445, \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u043d\u0430 \u0438\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044e \u0438 \u0433\u0430\u0440\u043c\u043e\u043d\u0438\u0437\u0430\u0446\u0438\u044e \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u0438\u0431\u0435\u0440\u043d\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0432 \u0446\u0435\u043b\u044f\u0445 \u0444\u043e\u0440\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438 \u0434\u043e\u0432\u0435\u0440\u0438\u044f \u043d\u0430 \u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0438 \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e\u043c \u0443\u0440\u043e\u0432\u043d\u044f\u0445 \u0432 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445 \u0443\u0441\u043b\u043e\u0432\u0438\u044f\u0445 \u0433\u043b\u043e\u0431\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438, \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438 \u0432 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u043c \u0434\u043e\u0441\u0442\u0443\u043f\u0435, \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0430\u043d\u0438\u044f \u043a\u0438\u0431\u0435\u0440\u0443\u0433\u0440\u043e\u0437 \u0432 \u0441\u0435\u0442\u0438 \u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442, \u043f\u0440\u0435\u043f\u044f\u0442\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0445 \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044e \u0443\u0441\u043b\u043e\u0432\u0438\u0439 \u043d\u0430\u0434\u043b\u0435\u0436\u0430\u0449\u0435\u0439 \u0437\u0430\u0449\u0438\u0442\u044b \u043f\u0440\u0430\u0432 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430, \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u0438 \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043e \u043b\u0438\u0447\u043d\u043e\u0439 \u0436\u0438\u0437\u043d\u0438 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u0439 \u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0445 \u0441\u0435\u0442\u0435\u0439 \u0438 \u0446\u0438\u0444\u0440\u043e\u0432\u044b\u0445 \u043f\u043b\u043e\u0449\u0430\u0434\u043e\u043a; \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044e \u0431\u0435\u0441\u043f\u0440\u0435\u043f\u044f\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u0439 \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u0438. \u041f\u0440\u043e\u0430\u043d\u0430\u043b\u0438\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u044b \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0435 \u043c\u0435\u0442\u043e\u0434\u044b \u0437\u0430\u043a\u043e\u043d\u043e\u0434\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u0438 \u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u0440\u0435\u0433\u0443\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432 \u0437\u0430\u0449\u0438\u0442\u044b \u0431\u043e\u043b\u044c\u0448\u0438\u0445 \u0434\u0430\u043d\u043d\u044b\u0445, \u0430 \u0442\u0430\u043a\u0436\u0435 \u043c\u0435\u0442\u043e\u0434\u044b \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u043f\u0440\u0435\u0441\u0442\u0443\u043f\u043d\u043e\u0441\u0442\u0438 \u0438 \u0442\u0435\u0440\u0440\u043e\u0440\u0438\u0437\u043c\u0443 \u0432 \u043a\u0438\u0431\u0435\u0440\u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0435.&nbsp;The paper presents the main conceptual approaches developed in the Russian Federation and other industrialized countries aimed at the integration and harmonization of regulatory legal support of cybernetic security in order to create an economy of trust at the national and international levels in the current conditions of globalization, economic development in free access, increasing cyber threats on the Internet, preventing the creation of conditions for the proper protection of human rights, including personal data and information about the personal lives of users of social networks and digital platforms; the development of unimpeded electronic Commerce. The analysis is carried out of the main methods of legislative regulation of big data protection, as well as methods of combating crime and terrorism in cyberspace.</p>",
+                    "doi": "10.5281/zenodo.1464566",
+                    "keywords": [
+                        "law",
+                        "International Law",
+                        "globalization",
+                        "Humanitarian Law",
+                        "Big Data",
+                        "cybersecurity"
+                    ],
+                    "language": "rus",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "meeting": {
+                        "dates": "17-18 October 2018",
+                        "place": "Moscow, Russia",
+                        "title": "Plekhanov Forum: Actual Dialogue",
+                        "url": "https://www.rea.ru/ru/conference/interconf2018/Pages/default.aspx"
+                    },
+                    "publication_date": "2018-10-17",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.1464565",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1464566"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1464565"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "conferencepaper",
+                        "title": "Conference paper",
+                        "type": "publication"
+                    },
+                    "title": "\u041e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0439 \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438 \u0434\u043e\u0432\u0435\u0440\u0438\u044f (Modern International Legal System Ensuring of the Trust Economy Cybersecurity Features Development)"
+                },
+                "owners": [
+                    4929
+                ],
+                "revision": 10,
+                "stats": {
+                    "downloads": 14.0,
+                    "unique_downloads": 10.0,
+                    "unique_views": 14.0,
+                    "version_downloads": 14.0,
+                    "version_unique_downloads": 10.0,
+                    "version_unique_views": 14.0,
+                    "version_views": 18.0,
+                    "version_volume": 6222832.0,
+                    "views": 18.0,
+                    "volume": 6222832.0
+                },
+                "updated": "2020-01-20T15:10:01.388780+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3239175",
+                "conceptrecid": "3239175",
+                "created": "2019-06-05T11:44:43.199984+00:00",
+                "doi": "10.5281/zenodo.3239176",
+                "files": [
+                    {
+                        "bucket": "4e2998ed-f526-479e-9d64-d904857e9a75",
+                        "checksum": "md5:50422cd0bb068c54cf287a12000340e7",
+                        "key": "ipme_cybersecurity_2019_a3.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/4e2998ed-f526-479e-9d64-d904857e9a75/ipme_cybersecurity_2019_a3.pdf"
+                        },
+                        "size": 520750,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3239176,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3239176.svg",
+                    "bucket": "https://zenodo.org/api/files/4e2998ed-f526-479e-9d64-d904857e9a75",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3239175.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3239175",
+                    "doi": "https://doi.org/10.5281/zenodo.3239176",
+                    "html": "https://zenodo.org/record/3239176",
+                    "latest": "https://zenodo.org/api/records/3239176",
+                    "latest_html": "https://zenodo.org/record/3239176",
+                    "self": "https://zenodo.org/api/records/3239176"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "pimee"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "affiliation": "\u0406\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u043c\u043e\u0434\u0435\u043b\u044e\u0432\u0430\u043d\u043d\u044f \u0432 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u0446\u0456 \u0456\u043c. \u0413.\u0404. \u041f\u0443\u0445\u043e\u0432\u0430 \u041d\u0410\u041d \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+                            "name": "\u0413\u0456\u043b\u044c\u0433\u0443\u0440\u0442,  \u0421\u0435\u0440\u0433\u0456\u0439 \u042f\u043a\u043e\u0432\u0438\u0447"
+                        }
+                    ],
+                    "description": "<p>\u0423 \u0434\u0430\u043d\u0456\u0439 \u0440\u043e\u0431\u043e\u0442\u0456 \u0434\u043e\u0441\u043b\u0456\u0434\u0436\u0435\u043d\u0456 \u043f\u0438\u0442\u0430\u043d\u043d\u044f \u0435\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0432\u0438\u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0437\u0430\u0434\u0430\u0447 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u0439\u043d\u043e\u0457 \u0431\u0435\u0437\u043f\u0435\u043a\u0438 \u0441\u0438\u0441\u0442\u0435\u043c \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0437\u0430\u0446\u0456\u0457 \u0448\u043b\u044f\u0445\u043e\u043c \u0437\u0430\u0441\u0442\u043e\u0441\u0443\u0432\u0430\u043d\u043d\u044f \u0430\u043f\u0430\u0440\u0430\u0442\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0441\u043a\u043e\u0440\u0435\u043d\u043d\u044f \u0441\u0442\u043e\u0441\u043e\u0432\u043d\u043e \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u043d\u043e\u0457 \u0433\u0430\u043b\u0443\u0437\u0456.</p>",
+                    "doi": "10.5281/zenodo.3239176",
+                    "keywords": [
+                        "cybersecurity",
+                        "\u043a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430",
+                        "ELECTRIC POWER ENGINEERING",
+                        "\u0415\u041b\u0415\u041a\u0422\u0420\u041e\u0415\u041d\u0415\u0420\u0413\u0415\u0422\u0418\u0427\u041d\u0410 \u0413\u0410\u041b\u0423\u0417\u042c",
+                        "information security",
+                        "\u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u0439\u043d\u0430 \u0431\u0435\u0437\u043f\u0435\u043a\u0430",
+                        "IEC 61850",
+                        "Cybersecurity of power systems",
+                        "\u041a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u043a\u0438"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "meeting": {
+                        "acronym": "CSE2019.PIMEE",
+                        "dates": "28 May - 01 June, 2019",
+                        "place": "Odesa, Ukraine",
+                        "session": "\u0417\u0431\u0456\u0440\u043a\u0430 \u043f\u0440\u0430\u0446\u044c \u043a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0446\u0456\u0457. \u2013\u041a\u0438\u0457\u0432:. \u0406\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u043f\u0440\u043e\u0431\u043b\u0435\u043c \u043c\u043e\u0434\u0435\u043b\u044e\u0432\u0430\u043d\u043d\u044f \u0432 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u0446\u0456 \u0456\u043c.. \u0413.\u0404. \u041f\u0443\u0445\u043e\u0432\u0430  \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0457 \u0430\u043a\u0430\u0434\u0435\u043c\u0456\u0457 \u043d\u0430\u0443\u043a \u0423\u043a\u0440\u0430\u0457\u043d\u0438, 2019.- 43\u0441.",
+                        "session_part": "\u0441\u0442\u043e\u0440. 11-14",
+                        "title": "\u041a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u043a\u0438"
+                    },
+                    "publication_date": "2019-06-01",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3239175",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3239176"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3239175"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "conferencepaper",
+                        "title": "Conference paper",
+                        "type": "publication"
+                    },
+                    "title": "\u0410\u041f\u0410\u0420\u0410\u0422\u041d\u0415 \u0420\u0406\u0428\u0415\u041d\u041d\u042f \u0417\u0410\u0414\u0410\u0427 \u041a\u0406\u0411\u0415\u0420\u0411\u0415\u0417\u041f\u0415\u041a\u0418 \u0412 \u0415\u041b\u0415\u041a\u0422\u0420\u041e\u0415\u041d\u0415\u0420\u0413\u0415\u0422\u0418\u0427\u041d\u0406\u0419 \u0413\u0410\u041b\u0423\u0417\u0406"
+                },
+                "owners": [
+                    68946
+                ],
+                "revision": 8,
+                "stats": {
+                    "downloads": 26.0,
+                    "unique_downloads": 21.0,
+                    "unique_views": 22.0,
+                    "version_downloads": 26.0,
+                    "version_unique_downloads": 21.0,
+                    "version_unique_views": 22.0,
+                    "version_views": 29.0,
+                    "version_volume": 13539500.0,
+                    "views": 29.0,
+                    "volume": 13539500.0
+                },
+                "updated": "2020-01-20T15:32:57.148526+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3334952",
+                "conceptrecid": "3334952",
+                "created": "2019-07-15T04:40:58.922728+00:00",
+                "doi": "10.5281/zenodo.3334953",
+                "files": [
+                    {
+                        "bucket": "d8ea2877-a63c-4187-81f9-a961c3b56b36",
+                        "checksum": "md5:47b9da75eaa41865947a88e9071f19c9",
+                        "key": "AEL_2019_04-05_Internet.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/d8ea2877-a63c-4187-81f9-a961c3b56b36/AEL_2019_04-05_Internet.pdf"
+                        },
+                        "size": 14159908,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3334953,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3334953.svg",
+                    "bucket": "https://zenodo.org/api/files/d8ea2877-a63c-4187-81f9-a961c3b56b36",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3334952.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3334952",
+                    "doi": "https://doi.org/10.5281/zenodo.3334953",
+                    "html": "https://zenodo.org/record/3334953",
+                    "latest": "https://zenodo.org/api/records/3334953",
+                    "latest_html": "https://zenodo.org/record/3334953",
+                    "self": "https://zenodo.org/api/records/3334953"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "afc"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "affiliation": "AVL Deutschland",
+                            "name": "Wambera, Thomas"
+                        },
+                        {
+                            "affiliation": "TU Graz",
+                            "name": "Macher, Georg"
+                        },
+                        {
+                            "affiliation": "AVL List",
+                            "name": "Frohner, Bernhard"
+                        }
+                    ],
+                    "description": "<p>Time driven development, cost optimization, more performance and higher system complexity come along with tremendous demands on steering development processes and their legal documentation. AVL has a lot of experience in the domain of development, simulation and testing powertrains and developed a mangement-tool as a solution that is described within the article.</p>",
+                    "doi": "10.5281/zenodo.3334953",
+                    "grants": [
+                        {
+                            "acronym": "AFarCloud",
+                            "code": "783221",
+                            "funder": {
+                                "acronyms": [],
+                                "doi": "10.13039/501100000780",
+                                "links": {
+                                    "self": "https://zenodo.org/api/funders/10.13039/501100000780"
+                                },
+                                "name": "European Commission"
+                            },
+                            "links": {
+                                "self": "https://zenodo.org/api/grants/10.13039/501100000780::783221"
+                            },
+                            "program": "H2020",
+                            "title": "Aggregate Farming in the Cloud"
+                        }
+                    ],
+                    "keywords": [
+                        "ISO 26262",
+                        "safety",
+                        "fusa",
+                        "cybersecurity"
+                    ],
+                    "language": "hmj",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2019-04-01",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3334952",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3334953"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3334952"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "Funktionale Sicherheit effizient beherrschen (transl. Efficiently control Functional Safety)"
+                },
+                "owners": [
+                    72159
+                ],
+                "revision": 6,
+                "stats": {
+                    "downloads": 17.0,
+                    "unique_downloads": 15.0,
+                    "unique_views": 13.0,
+                    "version_downloads": 17.0,
+                    "version_unique_downloads": 15.0,
+                    "version_unique_views": 13.0,
+                    "version_views": 15.0,
+                    "version_volume": 240718436.0,
+                    "views": 15.0,
+                    "volume": 240718436.0
+                },
+                "updated": "2020-01-20T15:23:15.056748+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.1136325",
+                "conceptrecid": "1136325",
+                "created": "2018-01-07T19:53:09.207689+00:00",
+                "doi": "10.5281/zenodo.1136326",
+                "files": [
+                    {
+                        "bucket": "94a6679f-9718-4190-9eeb-78e829bf05ca",
+                        "checksum": "md5:f2c1bb92fdbede0e4735e33404c36894",
+                        "key": "2017-rapid7-national-exposure-index.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/94a6679f-9718-4190-9eeb-78e829bf05ca/2017-rapid7-national-exposure-index.pdf"
+                        },
+                        "size": 4126319,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1136326,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1136326.svg",
+                    "bucket": "https://zenodo.org/api/files/94a6679f-9718-4190-9eeb-78e829bf05ca",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1136325.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1136325",
+                    "doi": "https://doi.org/10.5281/zenodo.1136326",
+                    "html": "https://zenodo.org/record/1136326",
+                    "latest": "https://zenodo.org/api/records/1136326",
+                    "latest_html": "https://zenodo.org/record/1136326",
+                    "self": "https://zenodo.org/api/records/1136326"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Beardsley, Tod"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Rudis, Bob",
+                            "orcid": "0000-0001-5670-2640"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Hart, Jon"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Sellers, Tom"
+                        }
+                    ],
+                    "description": "<p>In 2016, Rapid7 Labs launched the National Exposure Index in order to get a measurable, quantitative answer to a fairly fundamental question: What is the nature of internet exposure-services that either do not offer modern cryptographic protection, or are otherwise unsuitable to offer on the increasingly hostile internet-and where, physically, are these exposed services located?</p>\n\n<p><br>\nThis year, we continue this investigation into the risk of passive eavesdropping and active attack on the internet and offer insight into the year-over-year changes involving these exposed services. We&#39;ve adjusted our ranking algorithm to more accurately reflect overall exposure on a country-by-country basis, enhanced our scanning and geolocation methodologies, and provided evidence that some areas of exposure are, in fact, improving.</p>\n\n<p><br>\nKey Findings</p>\n\n<p>&nbsp;</p>\n\n<ul>\n\t<li>The most exposed regions are Zimbabwe, Hong Kong SAR1, Samoa, Republic of the Congo, Tajikistan, Romania, Ireland, Lithuania, Australia, and Estonia. No discussion of national exposure would be complete without reference to the three major cyber superpowers: The United States, China, and the Russian Federation. While both the Russian Federation and China are among the top 50 most exposed nations, the U.S. has relatively low exposure in relation to its enormous IPv4 address space.<br>\n\t&nbsp;</li>\n\t<li>The number of IP-addressable, public internet servers offering exposed services in Belgium-the country that took the top spot in the 2016 index-dropped by 250,000 over the year. Belgium no longer ranks in the top 50 most exposed regions at all, due largely to this culling of exposed services.<br>\n\t&nbsp;</li>\n\t<li>Over 1 million endpoints were confirmed exposing Microsoft le-sharing services (SMB, TCP port 445), with 800,000 of them being con rmed2 Windows systems, spanning virtually the entire product and release version lineage of the company. This made for a target-rich environment for WannaCry, a &quot;ransomworm&quot; that spreads in part through an SMB exploit made public in May of 2017. This vulnerability was also actively sought out in May 2017, with SMB port scan results increasing by 17% (4.7 million to 5.5 million nodes). Blocking port 445 would mitigate potential threats like this.<br>\n\t&nbsp;</li>\n\t<li>Port scanning for telnet (port 23) in 2017 returned just under 10 million responsive nodes, compared to 2016&#39;s scan results of over 14.8 million. This 33% drop in apparent telnet services can almost certainly be pinned to two developments: 1) ISP actions, such as closing port 23 in response to the Mirai botnet, and 2) Mirai, BrickerBot, and other botnets knocking nodes offline.</li>\n</ul>",
+                    "doi": "10.5281/zenodo.1136326",
+                    "keywords": [
+                        "project sonar",
+                        "internet census",
+                        "cybersecurity"
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-NC-4.0"
+                    },
+                    "publication_date": "2017-06-04",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.55005",
+                            "relation": "cites",
+                            "scheme": "doi"
+                        },
+                        {
+                            "identifier": "10.5281/zenodo.1136325",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1136326"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1136325"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "report",
+                        "title": "Report",
+                        "type": "publication"
+                    },
+                    "title": "National Exposure Index (2017)",
+                    "version": "1.0.0"
+                },
+                "owners": [
+                    5630
+                ],
+                "revision": 8,
+                "stats": {
+                    "downloads": 51.0,
+                    "unique_downloads": 37.0,
+                    "unique_views": 73.0,
+                    "version_downloads": 51.0,
+                    "version_unique_downloads": 37.0,
+                    "version_unique_views": 73.0,
+                    "version_views": 81.0,
+                    "version_volume": 210442269.0,
+                    "views": 81.0,
+                    "volume": 210442269.0
+                },
+                "updated": "2020-01-20T16:40:15.128003+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3339600",
+                "conceptrecid": "3339600",
+                "created": "2019-07-17T15:47:19.983128+00:00",
+                "doi": "10.5281/zenodo.3339601",
+                "files": [
+                    {
+                        "bucket": "529668a0-7f2f-4209-9882-a642590d2a09",
+                        "checksum": "md5:5cd195f7c614f7618b3d4fe08d0d0a44",
+                        "key": "Bakalinsky- Ukrainian Legislation and Normative Documents in Cybersecurity.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/529668a0-7f2f-4209-9882-a642590d2a09/Bakalinsky-%20Ukrainian%20Legislation%20and%20Normative%20Documents%20in%20Cybersecurity.pdf"
+                        },
+                        "size": 2317925,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3339601,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3339601.svg",
+                    "bucket": "https://zenodo.org/api/files/529668a0-7f2f-4209-9882-a642590d2a09",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3339600.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3339600",
+                    "doi": "https://doi.org/10.5281/zenodo.3339601",
+                    "html": "https://zenodo.org/record/3339601",
+                    "latest": "https://zenodo.org/api/records/3339601",
+                    "latest_html": "https://zenodo.org/record/3339601",
+                    "self": "https://zenodo.org/api/records/3339601"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "pimee"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "affiliation": "\u0414\u0435\u043f\u0430\u0440\u0442\u0430\u043c\u0435\u043d\u0442\u0443 \u0444\u043e\u0440\u043c\u0443\u0432\u0430\u043d\u043d\u044f \u0442\u0430 \u0440\u0435\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u0457 \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u043e\u0457 \u043f\u043e\u043b\u0456\u0442\u0438\u043a\u0438 \u0443 \u0441\u0444\u0435\u0440\u0456 \u043a\u0456\u0431\u0435\u0440\u0437\u0430\u0445\u0438\u0441\u0442\u0443 \u0410\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0446\u0456\u0457 \u0414\u0435\u0440\u0436\u0441\u043f\u0435\u0446\u0437\u0432'\u044f\u0437\u043a\u0443  \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+                            "name": "\u0411\u0430\u043a\u0430\u043b\u0438\u043d\u0441\u044c\u043a\u0438\u0439, \u041e\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041e\u043b\u0435\u0433\u043e\u0432\u0438\u0447",
+                            "orcid": "0000-0001-9712-2036"
+                        }
+                    ],
+                    "description": "<p>\u0423 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0456\u0457 \u043f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043e \u0441\u0443\u0447\u0430\u0441\u043d\u0438\u0439 \u0441\u0442\u0430\u043d \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u0440\u0435\u0433\u0443\u043b\u044e\u0432\u0430\u043d\u043d\u044f \u043a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0438 \u0432 \u0423\u043a\u0440\u0430\u0457\u043d\u0438, \u043d\u0430\u043f\u0440\u044f\u043c\u0456\u0432 \u0439\u043e\u0433\u043e \u0443\u0434\u043e\u0441\u043a\u043e\u043d\u0430\u043b\u0435\u043d\u043d\u044f \u0442\u0430 \u0432\u0434\u043e\u0441\u043a\u043e\u043d\u0430\u043b\u0435\u043d\u043d\u044f \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u0457 \u0441\u0438\u0441\u0442\u0435\u043c\u0438 \u043a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0438</p>",
+                    "doi": "10.5281/zenodo.3339601",
+                    "keywords": [
+                        "cybersecurity",
+                        "\u043a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430",
+                        "Legislation",
+                        "\u0417\u0430\u043a\u043e\u043d\u043e\u0434\u0430\u0432\u0441\u0442\u0432\u043e",
+                        "Cybersecurity of power systems",
+                        "\u041a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u043a\u0438"
+                    ],
+                    "language": "ukr",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "meeting": {
+                        "acronym": "CSE2019.PIMEE",
+                        "dates": "28 May - 01 June, 2019",
+                        "place": "Odesa, Ukraine",
+                        "title": "\u041a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0430 \u0435\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u043a\u0438"
+                    },
+                    "publication_date": "2019-05-28",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3339600",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3339601"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3339600"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Presentation",
+                        "type": "presentation"
+                    },
+                    "title": "\u0421\u0443\u0447\u0430\u0441\u043d\u0438\u0439 \u0441\u0442\u0430\u043d  \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u0440\u0435\u0433\u0443\u043b\u044e\u0432\u0430\u043d\u043d\u044f \u043a\u0456\u0431\u0435\u0440\u0431\u0435\u0437\u043f\u0435\u043a\u0438 \u0432 \u0423\u043a\u0440\u0430\u0457\u043d\u0456"
+                },
+                "owners": [
+                    68946
+                ],
+                "revision": 7,
+                "stats": {
+                    "downloads": 13.0,
+                    "unique_downloads": 12.0,
+                    "unique_views": 10.0,
+                    "version_downloads": 13.0,
+                    "version_unique_downloads": 12.0,
+                    "version_unique_views": 10.0,
+                    "version_views": 12.0,
+                    "version_volume": 30133025.0,
+                    "views": 12.0,
+                    "volume": 30133025.0
+                },
+                "updated": "2020-01-20T12:54:21.838516+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.1115321",
+                "conceptrecid": "1115321",
+                "created": "2018-01-16T12:25:33.757845+00:00",
+                "doi": "10.5281/zenodo.1115322",
+                "files": [
+                    {
+                        "bucket": "eec0b5c7-3525-4e53-936c-a99160ab8f2a",
+                        "checksum": "md5:d38c42cafb9a8daf7daba40180ec5504",
+                        "key": "10004034.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/eec0b5c7-3525-4e53-936c-a99160ab8f2a/10004034.pdf"
+                        },
+                        "size": 406660,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1115322,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1115322.svg",
+                    "bucket": "https://zenodo.org/api/files/eec0b5c7-3525-4e53-936c-a99160ab8f2a",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1115321.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1115321",
+                    "doi": "https://doi.org/10.5281/zenodo.1115322",
+                    "html": "https://zenodo.org/record/1115322",
+                    "latest": "https://zenodo.org/api/records/1115322",
+                    "latest_html": "https://zenodo.org/record/1115322",
+                    "self": "https://zenodo.org/api/records/1115322"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "waset"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "name": "Haydar Teymourlouei"
+                        }
+                    ],
+                    "description": "<p>Cybersecurity is one of the greatest challenges society faces in an age revolving around technological development. With cyber-attacks on the continuous rise, the nation needs to understand and learn ways that can prevent such attacks. A major contribution that can change the education system is to implement laboratories and competitions into academia. This method can improve and educate students with more hands-on exercises in a highly motivating setting. Considering the fact that students are the next generation of the nation&rsquo;s workforce, it is important for students to understand concepts not only through books, but also through actual hands-on experiences in order for them to be prepared for the workforce. An effective cybersecurity education system is critical for creating a strong cyber secure workforce today and for the future. This paper emphasizes the need for awareness and the need for competitions and cybersecurity laboratories to be implemented into the education system.</p>",
+                    "doi": "10.5281/zenodo.1115322",
+                    "keywords": [
+                        "Awareness",
+                        "competition",
+                        "cybersecurity",
+                        "laboratories",
+                        "workforce."
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2016-02-04",
+                    "references": [
+                        "Bucci, S. (2013). A congressional guide: Seven steps to U.S. Security, Prosperity, and Freedom in Cyberspace. Retrieved from http://www.heritage.org/research/reports/2013/04/a-congressional-guide-seven-steps-to-us-security-prosperity-and-freedom-in-cyberspace",
+                        "Florida center for cybersecurity. (2013). University of Florida, Retrieved from http://www.usf.edu/pdfs/final-cybersecurity-report.pdf",
+                        "Why is cyber security important. (2010). State of New Jersey. Retrieved from http://old.citationmachine.net/index2.php?reqstyleid=2&mode= form&reqsrcid=APAUnivDocOnline&srcCode=22&more=yes&nameCnt=1",
+                        "Ate Centers Impact 2014, Patton, Madeline, ED. Tempe, AZ: Maricopa Community Colleges, 2014. Retrieved from http://www.atecenters.org/ wpcontent/uploads/PDF/ATEIMPACT_2014.pdf.",
+                        "Wagner, P. (2006). A portable computer security workshop. University of Wisconsin, Retrieved from http://citeseerx.ist.psu.edu/viewdoc/ download?doi=10.1.1.101.9059&rep=rep1&type=pdf",
+                        "Cheung, R. (2011). Challenge based learning in cybersecurity education. Retrieved from http://josephcohen.com/papers/cbl.pdf.",
+                        "Spidalieri, F. (2014). Professionalizing cybersecurity: A path to universal standards and status. Retrieved from http://www.salve.edu/ sites/default/files/filesfield/documents/Professionalizing-Cybersecurity.pdf.",
+                        "D. W. Evans and C. L. Chatmon, \"Increasing Minority Participation in Information Assurance,\" in ITHET 6th Annual International Conference. Retrieved from http://ieeexplore.ieee.org/stamp/ stamp.jsp?arnumber=1560322",
+                        "Dahlberg, T. (2007). The stars leadership model for broadening participation in computing. Retrieved from http://www.uncg.edu/stars/ doc_stars/STARS Leadership Model.pdf\n[10]\tSommestad, T. (2012). Cyber Security Exercises and Competitions as a Platform for Cyber Security Experiments. Retrieved from http://www.sommestad.com/teodor/Filer/Sommestad,%20Hallberg%20-%202012%20-%20Cyber%20security%20exercises%20and%20competitions%20as%20a%20platform%20for%20cyber%20security%20experiments.pdf"
+                    ],
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.1115321",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1115322"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1115321"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "Cybersecurity Awareness through Laboratories and Cyber Competitions in the Education System: Practices to Promote Student Success",
+                    "version": "10004034"
+                },
+                "owners": [
+                    32148
+                ],
+                "revision": 5,
+                "stats": {
+                    "downloads": 10.0,
+                    "unique_downloads": 9.0,
+                    "unique_views": 18.0,
+                    "version_downloads": 10.0,
+                    "version_unique_downloads": 9.0,
+                    "version_unique_views": 18.0,
+                    "version_views": 19.0,
+                    "version_volume": 4066600.0,
+                    "views": 19.0,
+                    "volume": 4066600.0
+                },
+                "updated": "2020-01-20T14:22:03.815789+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.636486",
+                "conceptrecid": "636486",
+                "created": "2016-06-06T15:29:40+00:00",
+                "doi": "10.5281/zenodo.55005",
+                "files": [
+                    {
+                        "bucket": "4f3fc63e-d2ba-46b2-8b54-2c2eb36d3bd1",
+                        "checksum": "md5:433c9495300240bc8339681069ca4ef8",
+                        "key": "National_Exposure_Index_final.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/4f3fc63e-d2ba-46b2-8b54-2c2eb36d3bd1/National_Exposure_Index_final.pdf"
+                        },
+                        "size": 11704598,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 55005,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.55005.svg",
+                    "bucket": "https://zenodo.org/api/files/4f3fc63e-d2ba-46b2-8b54-2c2eb36d3bd1",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.636486.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.636486",
+                    "doi": "https://doi.org/10.5281/zenodo.55005",
+                    "html": "https://zenodo.org/record/55005",
+                    "latest": "https://zenodo.org/api/records/55005",
+                    "latest_html": "https://zenodo.org/record/55005",
+                    "self": "https://zenodo.org/api/records/55005"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Beardsley, Tod"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Rudis, Bob",
+                            "orcid": "0000-0001-5670-2640"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Hart, Jon"
+                        }
+                    ],
+                    "description": "<p>Given the increased reliance we all have on the internet for everything from ecommerce, to monitoring the power grid, to adjusting our thermostats, we wanted to see if it might be possible to use the reach of Project Sonar to understand overall internet threat exposure at both a general level and at a country/region level. The term &ldquo;exposure&rdquo; can mean many things. In the context of this report, we define &ldquo;exposure&rdquo; as offering services that either expose potentially sensitive data over cleartext channels or are widely recognized to be unwise to make available on the internet, such as database systems. We looked for the presence of 30 of the most prevalent TCP services across the internet, tallied up the results and performed cross-country comparisons to produce a National Exposure Index, a ranked aggregation of the results of Rapid7&rsquo;s internet-wide scans of 16 usually cleartext or highly targeted common services, based on the in-country prevalence of those services</p>\n\n<p><strong>Key findings include: </strong></p>\n\n<ul>\n\t<li>\n\t<p>Millions of systems on the internet offer services that should not be exposed to the public network. Our survey uncovered 15 million nodes appearing to offer telnet, 11.2 million appearing to offer direct access to relational databases, and 4.5 million apparent printer services.1</p>\n\t</li>\n\t<li>\n\t<p>4.7 million systems expose one of the most commonly attacked ports used by Microsoft systems, 445/TCP.</p>\n\t</li>\n\t<li>\n\t<p>SSH (secure shell) adoption over telnet (cleartext shell) is gaining ground over telnet, with over 50% of regions offering</p>\n\n\t<p>more ssh servers than telnet servers.</p>\n\t</li>\n\t<li>\n\t<p>Non-web-based access to email (via cleartext POP or IMAP protocols) is still the norm versus the exception in virtually every country.</p>\n\t</li>\n\t<li>\n\t<p>There is a correlation between the GDP of a nation, overall internet &ldquo;presence&rdquo; in terms of services offered, and the exposure of insecure, cleartext services.</p>\n\t</li>\n\t<li>\n\t<p>The most exposed nations on the internet today include countries with the largest GDPs, such as the United States, China, France, and Russia.&nbsp;</p>\n\t</li>\n</ul>",
+                    "doi": "10.5281/zenodo.55005",
+                    "keywords": [
+                        "project sonar",
+                        "internet census",
+                        "cybersecurity"
+                    ],
+                    "license": {
+                        "id": "CC-BY-NC-4.0"
+                    },
+                    "publication_date": "2016-06-06",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.636486",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "55005"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "636486"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "report",
+                        "title": "Report",
+                        "type": "publication"
+                    },
+                    "title": "National Exposure Index (2016)"
+                },
+                "owners": [
+                    5630
+                ],
+                "revision": 16,
+                "stats": {
+                    "downloads": 6.0,
+                    "unique_downloads": 6.0,
+                    "unique_views": 11.0,
+                    "version_downloads": 6.0,
+                    "version_unique_downloads": 6.0,
+                    "version_unique_views": 11.0,
+                    "version_views": 11.0,
+                    "version_volume": 70227588.0,
+                    "views": 11.0,
+                    "volume": 70227588.0
+                },
+                "updated": "2020-01-20T12:58:27.417892+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3240472",
+                "conceptrecid": "3240472",
+                "created": "2019-06-06T14:47:30.958532+00:00",
+                "doi": "10.5281/zenodo.3240473",
+                "files": [
+                    {
+                        "bucket": "f54f1f20-0487-4db1-8641-8b14d5c21d79",
+                        "checksum": "md5:3a553814647b37ebe486a9c6d9a8e63f",
+                        "key": "CYBECO-WP6_Codebook_Exp1.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f54f1f20-0487-4db1-8641-8b14d5c21d79/CYBECO-WP6_Codebook_Exp1.pdf"
+                        },
+                        "size": 2775606,
+                        "type": "pdf"
+                    },
+                    {
+                        "bucket": "f54f1f20-0487-4db1-8641-8b14d5c21d79",
+                        "checksum": "md5:a8c7c18f2799ef07d150ad9e6bb58b80",
+                        "key": "CYBECO-WP6_Codebook_Exp2.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f54f1f20-0487-4db1-8641-8b14d5c21d79/CYBECO-WP6_Codebook_Exp2.pdf"
+                        },
+                        "size": 1845198,
+                        "type": "pdf"
+                    },
+                    {
+                        "bucket": "f54f1f20-0487-4db1-8641-8b14d5c21d79",
+                        "checksum": "md5:a78c388fcdaf734bcc256cfc80990940",
+                        "key": "CYBECO-WP6_Exp1_data.xlsx",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f54f1f20-0487-4db1-8641-8b14d5c21d79/CYBECO-WP6_Exp1_data.xlsx"
+                        },
+                        "size": 2568858,
+                        "type": "xlsx"
+                    },
+                    {
+                        "bucket": "f54f1f20-0487-4db1-8641-8b14d5c21d79",
+                        "checksum": "md5:de0e8eb999a9edd6404e5355846ecc03",
+                        "key": "CYBECO-WP6_Exp2_data.xlsx",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f54f1f20-0487-4db1-8641-8b14d5c21d79/CYBECO-WP6_Exp2_data.xlsx"
+                        },
+                        "size": 736184,
+                        "type": "xlsx"
+                    }
+                ],
+                "id": 3240473,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3240473.svg",
+                    "bucket": "https://zenodo.org/api/files/f54f1f20-0487-4db1-8641-8b14d5c21d79",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3240472.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3240472",
+                    "doi": "https://doi.org/10.5281/zenodo.3240473",
+                    "html": "https://zenodo.org/record/3240473",
+                    "latest": "https://zenodo.org/api/records/3240473",
+                    "latest_html": "https://zenodo.org/record/3240473",
+                    "self": "https://zenodo.org/api/records/3240473"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "DevStat",
+                            "name": "Yolanda Gomez"
+                        },
+                        {
+                            "affiliation": "Universitat de Valencia",
+                            "name": "Jose Vila"
+                        },
+                        {
+                            "affiliation": "Northumbria University",
+                            "name": "Dawn Branley-Bell"
+                        },
+                        {
+                            "affiliation": "Northumbria University",
+                            "name": "Pam Briggs"
+                        }
+                    ],
+                    "description": "<p>These files contain the datasets collected in the Experiment 1 and Experiment 2 of the EU H2020 project CYBECO (grant no 740920). Their codebooks present the description of all the variables contained in the datasets as well as their&nbsp;rationales and the screenshots of the experimental software. Deliverable 6.3: Report with Findings of Experiments and Policy implications<a href=\"#_ftn1\">[1]</a> of CYBECO project presents the details of the implementation of both experiments, the results obtained and their implications for the validation and potential improvement of CYBECO model and toolbox.</p>\n\n<p>&nbsp;</p>\n\n<p><a href=\"#_ftnref1\">[1]</a> <a href=\"https://www.cybeco.eu/results\">https://www.cybeco.eu/results</a></p>",
+                    "doi": "10.5281/zenodo.3240473",
+                    "grants": [
+                        {
+                            "acronym": "CYBECO",
+                            "code": "740920",
+                            "funder": {
+                                "acronyms": [],
+                                "doi": "10.13039/501100000780",
+                                "links": {
+                                    "self": "https://zenodo.org/api/funders/10.13039/501100000780"
+                                },
+                                "name": "European Commission"
+                            },
+                            "links": {
+                                "self": "https://zenodo.org/api/grants/10.13039/501100000780::740920"
+                            },
+                            "program": "H2020",
+                            "title": "Supporting Cyberinsurance from a  Behavioural Choice Perspective"
+                        }
+                    ],
+                    "keywords": [
+                        "cybersecurity",
+                        "behavioural economics",
+                        "economic experiment",
+                        "cyberinsurance"
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2019-06-06",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3240472",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3240473"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3240472"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Dataset",
+                        "type": "dataset"
+                    },
+                    "title": "H2020 CYBECO WP6 \u2013 Behavioural-Experimental Analysis of Cyber Insurance Tools"
+                },
+                "owners": [
+                    69055
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 25.0,
+                    "unique_downloads": 19.0,
+                    "unique_views": 20.0,
+                    "version_downloads": 25.0,
+                    "version_unique_downloads": 19.0,
+                    "version_unique_views": 20.0,
+                    "version_views": 24.0,
+                    "version_volume": 63036994.0,
+                    "views": 24.0,
+                    "volume": 63036994.0
+                },
+                "updated": "2020-01-24T19:22:57.600338+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.1422811",
+                "conceptrecid": "1422811",
+                "created": "2018-09-20T18:34:45.904227+00:00",
+                "doi": "10.5281/zenodo.1422812",
+                "files": [
+                    {
+                        "bucket": "e7e1abed-c65f-424f-9b25-7d53d41daed0",
+                        "checksum": "md5:b66095b8bfc74f05e9dbc5faa8e9e8a4",
+                        "key": "rapid7-national-exposure-index-2018.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/e7e1abed-c65f-424f-9b25-7d53d41daed0/rapid7-national-exposure-index-2018.pdf"
+                        },
+                        "size": 24847708,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1422812,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1422812.svg",
+                    "bucket": "https://zenodo.org/api/files/e7e1abed-c65f-424f-9b25-7d53d41daed0",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1422811.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1422811",
+                    "doi": "https://doi.org/10.5281/zenodo.1422812",
+                    "html": "https://zenodo.org/record/1422812",
+                    "latest": "https://zenodo.org/api/records/1422812",
+                    "latest_html": "https://zenodo.org/record/1422812",
+                    "self": "https://zenodo.org/api/records/1422812"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Beardsley, Tod"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Rudis, Bob",
+                            "orcid": "0000-0001-5670-2640"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Hart, Jon"
+                        },
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Sellers, Tom"
+                        }
+                    ],
+                    "description": "<p>In 2016, Rapid7 Labs launched the National Exposure Index in order to get a measurable, quantitative answer to a fairly fundamental question: What is the nature of internet exposure&mdash;services that either do not offer modern cryptographic protection, or are otherwise unsuitable to offer on the increasingly hostile internet&mdash;and where, physically, are these exposed services located?</p>\n\n<p>Now in our third year, we continue this ongoing investigation into the risk of passive eavesdropping and active attack on the internet, and offer insight into the continuing changes involving these exposed services. We&rsquo;ve also added a third dimension for exposure, &ldquo;amplification potential,&rdquo; in the wake of the disastrous memcached1 exposure uncovered in 2018.<br>\nFinally, we&rsquo;ve modified our ranking algorithm in this edition. First, we&rsquo;re measuring and scoring amplification abuse potential. Second, we&rsquo;ve added more studies targeting exposed databases, and weighted groups of protocols as &ldquo;more risky&rdquo; than others, such as SMB, memcached, and database ports. In addition, we&rsquo;re treating the especially responsive 2% of IPv4 nodes (0.08% of routable IPv4 addresses) as mere noise absorbers/generators in their networks and have removed those nodes from scoring entirely.</p>\n\n<p><br>\nKey Findings</p>\n\n<ul>\n\t<li>The United States leads all other countries in the 2018 exposure rankings, scoring the highest in nearly every exposure metric we measure. Following the U.S. is China, Canada, South Korea, and the United Kingdom, which together control over 61 million servers listening on at least one of the surveyed ports.<br>\n\t&nbsp;</li>\n\t<li>There are 13 million exposed endpoints associated with direct database access, half of which are associated with MySQL. Along with millions of exposed PostgreSQL, Oracle DB, Microsoft SQL Server, Redis, DB2, and MongoDB endpoints, this exposure presents significant risk of crucial data loss in a coordinated attack.<br>\n\t&nbsp;</li>\n\t<li>While the number of exposed Microsoft SMB Servers dropped considerably after the WannaCry attack of 2017, there remain about a half a million targets today, primarily in the U.S., Taiwan, Japan, Russia, and Germany.<br>\n\t&nbsp;</li>\n\t<li>Amplification-based distributed denial of service (DDoS-A) remains a powerful technique for harming enterprises and providing cover for more sophisticated attacks. While the number of exposed UDP-based memcached servers is less than 4,000, there are about 40,000 unpatched, out-of-date memcached servers, which are at risk of being drafted into the next record-breaking DDoS attack.</li>\n</ul>\n\n<p>These key findings tell us that the most risk to the internet originates in countries that have significant investment in, and reliance on, a safe and stable internet. This indicates to us that national internet service providers in these countries can use these findings to understand the risks of internet exposure, and that they, along with policymakers and other technical leaders, are in an excellent position to make significant progress in securing the global internet.</p>",
+                    "doi": "10.5281/zenodo.1422812",
+                    "keywords": [
+                        "project sonar",
+                        "internet census",
+                        "cybersecurity"
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2018-06-07",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.1422811",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1422812"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1422811"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "report",
+                        "title": "Report",
+                        "type": "publication"
+                    },
+                    "title": "National Exposure Index 2018",
+                    "version": "1.0.0"
+                },
+                "owners": [
+                    5630
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 13.0,
+                    "unique_downloads": 11.0,
+                    "unique_views": 12.0,
+                    "version_downloads": 13.0,
+                    "version_unique_downloads": 11.0,
+                    "version_unique_views": 12.0,
+                    "version_views": 13.0,
+                    "version_volume": 323020204.0,
+                    "views": 13.0,
+                    "volume": 323020204.0
+                },
+                "updated": "2020-01-20T16:16:03.497979+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3462122",
+                "conceptrecid": "3462122",
+                "created": "2019-09-26T12:45:23.577511+00:00",
+                "doi": "10.5281/zenodo.3462123",
+                "files": [
+                    {
+                        "bucket": "dfdd05f7-6523-4f85-90fb-0df029200076",
+                        "checksum": "md5:401119203628f2d8c98692e8d1e2838d",
+                        "key": "REKONSTRUKSI HUKUM CYBERCRIME DALAM KONSEP CYBERSECURITY NATIONAL.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/dfdd05f7-6523-4f85-90fb-0df029200076/REKONSTRUKSI%20HUKUM%20CYBERCRIME%20DALAM%20KONSEP%20CYBERSECURITY%20NATIONAL.pdf"
+                        },
+                        "size": 659452,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3462123,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3462123.svg",
+                    "bucket": "https://zenodo.org/api/files/dfdd05f7-6523-4f85-90fb-0df029200076",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3462122.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3462122",
+                    "doi": "https://doi.org/10.5281/zenodo.3462123",
+                    "html": "https://zenodo.org/record/3462123",
+                    "latest": "https://zenodo.org/api/records/3462123",
+                    "latest_html": "https://zenodo.org/record/3462123",
+                    "self": "https://zenodo.org/api/records/3462123"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Universitas Bhayangkara Surabaya",
+                            "name": "Sujono, Imam",
+                            "orcid": "0000-0002-1750-0816"
+                        }
+                    ],
+                    "description": "<p>Kejahatan teknologi informasi atau dikenal dengan istilah cybercrime merupakan permasalahan yang harus ditangani secara serius. Hal ini dikarenakan dampak dari kejahatan ini sangat luas dan banyak merugikan perekonomian masyarakat. Apabila tidak ditanggulangi secara dini, maka kejahatan tersebut akan berkembang dan menuntut perhatian yang lebih luas dari aparat hukum dan pembuat UU, agar peluang kerugian yang ditimbulkan<br>\noleh cybercrime yang tidak semestinya, dibutuhkan perangkat perahvan dan perundangan yang membatasi sekaligus menghukum pelaku karena cybercrime apapun bentuknya tergolong tindakan kejahatan yang harus dihukum, pertanyaan yang sering diajukan adalah apakah perundangan Indonesia sudah mengatur masalah tersebut ? Berdasarkan pemahaman ini, maka penulisan tesis ini merumuskan dua rumusan masalah, yakni; Pertama, Bagaimanakah pengaturan cybercrime dalam hukum pidana positif Indonesia ?, Kedua,<br>\nBagaimanakah kebijakan kriminalisasi cybercrime dalam konteks hukum pidana yang akan datang (lus Constituendum)? Dari hasil penelitian masalah ada dua ha1 pokok yang dapat<br>\ndisimpulkan. Pertama, cyber crime dalam hukum pidana positif Indonesia, apabila diperhatikan telah memiliki pengaturan. Namun demikian, pengaturan cybercrime dalam hukum pidana positif Indonesia ada beberapa dari cybercrime yang dapat dijerat dengan hukum pidana Indonesia, dan sebagian lagi tidak dikarenakan kejahatan ini relatif baru, oleh karena itu, timbul berbagai permasalahan dalam prakteknya. Kedua, kebijakan kriminalisasi cybercrime dalam konteks hukum pidana yang akan datang (Ius Constituendum), dimana upaya untuk mengantisipasi atas cybercrime ini, dan juga kebijakan kriminalisasi cybercrime ini dengan Undang-Undang Nomor 11 Tahun 2008 Tentang Informasi dan Transaksi Elektronik. Saran Penulis, Pertama, segera disahkan Undang-undang yang berkaitan dengan cyberlaw umumnya dan cybercrime khususnya. Kedua, sebelum adanya aturan khusus tentang cybercrime, hakim, aparat penegak hukum lainya hams berani melakukan &quot;rechtsvinding&quot; (penemuan hukum). Ketiga, Dalam kebijakan kriminalisasi cybercrime tersebut perlu mempertimbangkan konvensi International, (Conventional on Cyber Crime&#39;y yang berkaitan dengan cybercrime, mengingat kejahatan ini merupakan &quot;globalcrime&quot; maka perlu adanya suatu asas yang memungkinkan menarik pelaku yang berada di luar wilayah Indonesia yang merugikan Indonesia, dikarenakan jurisdiksi kejahatan ini tidak jelas.</p>",
+                    "doi": "10.5281/zenodo.3462123",
+                    "keywords": [
+                        "cybercrim",
+                        "hukum cybercrime",
+                        "rekonstruksi cybercrime",
+                        "cybersecurity"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2019-09-26",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3462122",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3462123"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3462122"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "REKONSTRUKSI HUKUM CYBERCRIME DALAM KONSEP CYBERSECURITY NATIONAL (CYBERCRIME LAW RECONSRUCTION IN NATIONAL CYBERSECURITY CONCEPT)"
+                },
+                "owners": [
+                    76111
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 34.0,
+                    "unique_downloads": 33.0,
+                    "unique_views": 28.0,
+                    "version_downloads": 34.0,
+                    "version_unique_downloads": 33.0,
+                    "version_unique_views": 28.0,
+                    "version_views": 28.0,
+                    "version_volume": 22421368.0,
+                    "views": 28.0,
+                    "volume": 22421368.0
+                },
+                "updated": "2020-01-20T17:45:46.420975+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.1131995",
+                "conceptrecid": "1131995",
+                "created": "2017-12-25T13:48:05.986183+00:00",
+                "doi": "10.5281/zenodo.1131996",
+                "files": [
+                    {
+                        "bucket": "b3a2c655-4b87-4044-9620-13378d826ac9",
+                        "checksum": "md5:988841e282df23a89ea45c517a4a09ee",
+                        "key": "10007817.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/b3a2c655-4b87-4044-9620-13378d826ac9/10007817.pdf"
+                        },
+                        "size": 671003,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1131996,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1131996.svg",
+                    "bucket": "https://zenodo.org/api/files/b3a2c655-4b87-4044-9620-13378d826ac9",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1131995.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.1131995",
+                    "doi": "https://doi.org/10.5281/zenodo.1131996",
+                    "html": "https://zenodo.org/record/1131996",
+                    "latest": "https://zenodo.org/api/records/1131996",
+                    "latest_html": "https://zenodo.org/record/1131996",
+                    "self": "https://zenodo.org/api/records/1131996"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "communities": [
+                        {
+                            "id": "waset"
+                        }
+                    ],
+                    "creators": [
+                        {
+                            "name": "Daniel Gonzales"
+                        },
+                        {
+                            "name": "Zev Winkelman"
+                        },
+                        {
+                            "name": "Trung Tran"
+                        },
+                        {
+                            "name": "Ricardo Sanchez"
+                        },
+                        {
+                            "name": "Dulani Woods"
+                        },
+                        {
+                            "name": "John Hollywood"
+                        }
+                    ],
+                    "description": "We have developed a distributed computing capability, Digital Forensics Compute Cluster (DFORC2) to speed up the ingestion and processing of digital evidence that is resident on computer hard drives. DFORC2 parallelizes evidence ingestion and file processing steps. It can be run on a standalone computer cluster or in the Amazon Web Services (AWS) cloud. When running in a virtualized computing environment, its cluster resources can be dynamically scaled up or down using Kubernetes. DFORC2 is an open source project that uses Autopsy, Apache Spark and Kafka, and other open source software packages. It extends the proven open source digital forensics capabilities of Autopsy to compute clusters and cloud architectures, so digital forensics tasks can be accomplished efficiently by a scalable array of cluster compute nodes. In this paper, we describe DFORC2 and compare it with a standalone version of Autopsy when both are used to process evidence from hard drives of different sizes.",
+                    "doi": "10.5281/zenodo.1131996",
+                    "keywords": [
+                        "Cloud computing",
+                        "cybersecurity",
+                        "digital forensics",
+                        "Kafka",
+                        "Kubernetes",
+                        "Spark."
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2017-07-01",
+                    "references": [
+                        "S. J. Vaughan-Nichols, \"Hard drive technology reaches a turning point,\" Computer, vol. 36, no. 12, pp. 21\u201323, 2003.",
+                        "\"Timeline: 50 Years of Hard Drives,\" PCWorld, 13-Sep-2006. (Online). Available: http://www.pcworld.com/article/127105/article.html. (Accessed: 04-Apr-2017).",
+                        "\"Seagate's 10TB Barracuda Pro is the world's largest consumer hard drive,\" PCWorld, 19-Jul-2016. (Online). Available: http://www.pcworld.com/article/3096292/storage/seagates-10tb-barracuda-pro-is-the-worlds-largest-consumer-hard-drive.html. (Accessed: 04-Apr-2017).",
+                        "\"Autopsy.\" (Online). Available: http://www.sleuthkit.org/autopsy/. (Accessed: 28-Jan-2016).",
+                        "\"dc3dd download | SourceForge.net.\" (Online). Available: http://sourceforge.net/projects/dc3dd/. (Accessed: 27-Jan-2016).",
+                        "\"Apache Kafka.\" (Online). Available: http://kafka.apache.org/index.html. (Accessed: 09-Jun-2015).",
+                        "\"Apache SparkTM - Lightning-Fast Cluster Computing.\" (Online). Available: https://spark.apache.org/. (Accessed: 09-Jun-2015).",
+                        "\"PostgreSQL: The world's most advanced open source database.\" (Online). Available: http://www.postgresql.org/. (Accessed: 28-Jan-2016).",
+                        "\"Apache Solr -.\" (Online). Available: http://lucene.apache.org/solr/. (Accessed: 05-Apr-2017).\n[10]\t\"Amazon EFS Performance - Amazon Elastic File System.\" (Online). Available: http://docs.aws.amazon.com/efs/latest/ug/performance.html. (Accessed: 30-Jan-2017).\n[11]\t\"Amazon Elastic Block Store (EBS) \u2013 Block Storage for EC2,\" Amazon Web Services, Inc. (Online). Available: //aws.amazon.com/ebs/. (Accessed: 30-Jan-2017).\n[12]\t\"Kubernetes,\" Kubernetes. (Online). Available: http://kubernetes.io/. (Accessed: 30-Jan-2017).\n[13]\t\"Digital Corpora.\".\n[14]\t\"The CFReDS Project.\" (Online). Available: https://www.cfreds.nist.gov/. (Accessed: 05-Apr-2017).\n[15]\t\"Amazon EC2 FAQs - Amazon Web Services,\" Amazon Web Services, Inc. (Online). Available: //aws.amazon.com/ec2/faqs/. (Accessed: 05-Apr-2017)."
+                    ],
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.1131995",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1131996"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1131995"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "Digital Forensics Compute Cluster: A High Speed Distributed Computing Capability for Digital Forensics",
+                    "version": "10007817"
+                },
+                "owners": [
+                    32148
+                ],
+                "revision": 7,
+                "stats": {
+                    "downloads": 36.0,
+                    "unique_downloads": 32.0,
+                    "unique_views": 81.0,
+                    "version_downloads": 36.0,
+                    "version_unique_downloads": 32.0,
+                    "version_unique_views": 81.0,
+                    "version_views": 82.0,
+                    "version_volume": 24156108.0,
+                    "views": 82.0,
+                    "volume": 24156108.0
+                },
+                "updated": "2020-01-20T17:35:18.267170+00:00"
+            },
+            {
+                "conceptrecid": "1313853",
+                "created": "2018-07-21T09:01:33.296443+00:00",
+                "doi": "10.1080/17419166.2018.1496826",
+                "files": [
+                    {
+                        "bucket": "f1e6cb01-26fb-48b8-b812-2631e1b76df9",
+                        "checksum": "md5:e403933ad6ee96c081a6506946bb0c0b",
+                        "key": "Marco Marsili (2018), The War on Cyberterrorism, Democracy & Security.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/f1e6cb01-26fb-48b8-b812-2631e1b76df9/Marco%20Marsili%20%282018%29%2C%20The%20War%20on%20Cyberterrorism%2C%20Democracy%20%26%20Security.pdf"
+                        },
+                        "size": 679735,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 1313854,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.1080/17419166.2018.1496826.svg",
+                    "bucket": "https://zenodo.org/api/files/f1e6cb01-26fb-48b8-b812-2631e1b76df9",
+                    "doi": "https://doi.org/10.1080/17419166.2018.1496826",
+                    "html": "https://zenodo.org/record/1313854",
+                    "latest": "https://zenodo.org/api/records/1313854",
+                    "latest_html": "https://zenodo.org/record/1313854",
+                    "self": "https://zenodo.org/api/records/1313854"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Instituto Universit\u00e1rio de Lisboa (ISCTE-IUL), Centro de Estudos Internacionais (CEI-IUL); Centro de Investiga\u00e7\u00e3o, Desenvolvimento e Inova\u00e7\u00e3o da Academia Militar (CINAMIL), Lisbon, Portugal",
+                            "name": "Marsili, Marco"
+                        }
+                    ],
+                    "description": "<p>This&nbsp;article&nbsp;addresses the problem of international lawenforcement within the War on Cyberterrorism. Hybrid conflicts&nbsp;have replaced the traditional ones, and&nbsp;new&nbsp;threats&nbsp;have emerged in&nbsp;cyberspace, whichhas become a virtual&nbsp;battlefield. Cyber threats - cybercrimes, cyberterrorism, cyberwarfare - are a major concern for Western governments, especially for the United States and the North Atlantic Treaty Organization.&nbsp;The international community has begun to consider cyberattacksas a form of terrorism, to which the same measures apply. Because the term &quot;terrorism&quot;&nbsp;is ambiguous and legaly undefined, there is no consensus on a definition of the derivative term &quot;cyberterrorism&quot;, which is left to the unilateral interpretations of states.Pretending to consider the cyberspace&nbsp;domain astraditional domains,and claiming to apply IHLfor the sole purpose of&nbsp;lawfully using&nbsp;armed forces in contrast to cyberterrorism is a stretch.This paper addresses the question of whether or not current laws of war and international humanitarian law apply to cyber domain, and gives some recommendations on how to tackle this issue.</p>",
+                    "doi": "10.1080/17419166.2018.1496826",
+                    "imprint": {
+                        "place": "London, UK",
+                        "publisher": "Routledge/Taylor & Francis Group"
+                    },
+                    "journal": {
+                        "issue": "2",
+                        "pages": "172-199",
+                        "title": "Democracy and Security",
+                        "volume": "15"
+                    },
+                    "keywords": [
+                        "Cyberterrorism",
+                        "cybersecurity",
+                        "cyberdefense;",
+                        "cyberspace",
+                        "cybercrime",
+                        "terrorism"
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "notes": "Marco Marsili (2019), The War on Cyberterrorism, Democracy and Security, 15:2, 172-199, doi.org/10.1080/17419166.2018.1496826.\nPublished online: 17 Jul 2018. 50 limited free access digital copies through https://www.tandfonline.com/eprint/kqqCMFnEtWJxAD8ZJEhY/full",
+                    "publication_date": "2018-07-17",
+                    "related_identifiers": [
+                        {
+                            "identifier": "1741-9166",
+                            "relation": "isSupplementTo",
+                            "scheme": "issn"
+                        },
+                        {
+                            "identifier": "1555-5860",
+                            "relation": "isSupplementTo",
+                            "scheme": "issn"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1313854"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "1313853"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "The War on Cyberterrorism",
+                    "version": "Preprint"
+                },
+                "owners": [
+                    18837
+                ],
+                "revision": 10,
+                "stats": {
+                    "downloads": 46.0,
+                    "unique_downloads": 41.0,
+                    "unique_views": 39.0,
+                    "version_downloads": 46.0,
+                    "version_unique_downloads": 41.0,
+                    "version_unique_views": 39.0,
+                    "version_views": 44.0,
+                    "version_volume": 31267810.0,
+                    "views": 44.0,
+                    "volume": 31267810.0
+                },
+                "updated": "2020-01-20T14:34:21.854934+00:00"
+            },
+            {
+                "conceptrecid": "629188",
+                "created": "2016-01-11T11:49:25+00:00",
+                "doi": "10.5281/zenodo.44526",
+                "files": [
+                    {
+                        "bucket": "233f6072-5772-4150-b5ff-249786ade883",
+                        "checksum": "md5:851b5f8f629962d195688a0ecabe7c75",
+                        "key": "iptools-0.3.0.tar.gz",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/233f6072-5772-4150-b5ff-249786ade883/iptools-0.3.0.tar.gz"
+                        },
+                        "size": 422622,
+                        "type": "gz"
+                    }
+                ],
+                "id": 44526,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.44526.svg",
+                    "bucket": "https://zenodo.org/api/files/233f6072-5772-4150-b5ff-249786ade883",
+                    "doi": "https://doi.org/10.5281/zenodo.44526",
+                    "html": "https://zenodo.org/record/44526",
+                    "latest": "https://zenodo.org/api/records/44526",
+                    "latest_html": "https://zenodo.org/record/44526",
+                    "self": "https://zenodo.org/api/records/44526"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Rapid7",
+                            "name": "Rudis, Bob"
+                        },
+                        {
+                            "affiliation": "Wikimedia Foundation",
+                            "name": "Keyes, Oliver"
+                        }
+                    ],
+                    "description": "<p>The package primarily supports IPv4 addresses due to deficiencies in R&#39;s support for large numbers, but there is IPv6 support for some functionality, and we plan to build more in as R improves and as we do. Functionality includes:</p>\n\n<ul>\n\t<li>Converting IP addresses to their numeric form, and then back to strings, with&nbsp;ip_to_numeric&nbsp;and&nbsp;numeric_to_ip;</li>\n\t<li>Validating and classifying IP addresses with&nbsp;ip_classify and other logical function tests;</li>\n\t<li>Range generation and checking with&nbsp;range_boundaries,&nbsp;range_generate&nbsp;and&nbsp;validate_range, and;</li>\n\t<li>Several inbuilt IP-related datasets.</li>\n</ul>",
+                    "doi": "10.5281/zenodo.44526",
+                    "keywords": [
+                        "cyber",
+                        "cybersecurity",
+                        "r",
+                        "weblog",
+                        "IP address",
+                        "IPv4",
+                        "IPv6"
+                    ],
+                    "license": {
+                        "id": "MIT"
+                    },
+                    "publication_date": "2016-01-08",
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "44526"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "629188"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "title": "Software",
+                        "type": "software"
+                    },
+                    "title": "iptools : A toolkit for manipulating, validating and testing IP addresses and ranges, along with datasets relating to IP addresses."
+                },
+                "owners": [
+                    5630
+                ],
+                "revision": 9,
+                "stats": {
+                    "downloads": 16.0,
+                    "unique_downloads": 16.0,
+                    "unique_views": 44.0,
+                    "version_downloads": 16.0,
+                    "version_unique_downloads": 16.0,
+                    "version_unique_views": 44.0,
+                    "version_views": 44.0,
+                    "version_volume": 6761952.0,
+                    "views": 44.0,
+                    "volume": 6761952.0
+                },
+                "updated": "2020-01-25T19:22:42.532907+00:00"
+            },
+            {
+                "conceptrecid": "3384607",
+                "created": "2019-09-03T08:44:08.393070+00:00",
+                "doi": "10.15587/1729-4061.2019.164730",
+                "files": [
+                    {
+                        "bucket": "95506093-1188-426d-bd13-b406d5ee844c",
+                        "checksum": "md5:884464d6c8784ace89a941ddaad3b585",
+                        "key": "Development of methodology for modeling the interaction of antagonistic agents in cybersecurity systems.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/95506093-1188-426d-bd13-b406d5ee844c/Development%20of%20methodology%20for%20modeling%20the%20interaction%20of%20antagonistic%20agents%20in%20cybersecurity%20systems.pdf"
+                        },
+                        "size": 607104,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3384608,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.15587/1729-4061.2019.164730.svg",
+                    "bucket": "https://zenodo.org/api/files/95506093-1188-426d-bd13-b406d5ee844c",
+                    "doi": "https://doi.org/10.15587/1729-4061.2019.164730",
+                    "html": "https://zenodo.org/record/3384608",
+                    "latest": "https://zenodo.org/api/records/3384608",
+                    "latest_html": "https://zenodo.org/record/3384608",
+                    "self": "https://zenodo.org/api/records/3384608"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Simon Kuznets Kharkiv National University of Economics",
+                            "name": "Oleksandr Milov",
+                            "orcid": "0000-0001-6135-2120"
+                        },
+                        {
+                            "affiliation": "Institute of Information Technologies National University of Defense of Ukraine named after Ivan Chernyakhovsky",
+                            "name": "Alexander Voitko",
+                            "orcid": "0000-0002-4610-4476"
+                        },
+                        {
+                            "affiliation": "Kharkiv National University of Radio Electronics",
+                            "name": "Iryna Husarova",
+                            "orcid": "0000-0002-1421-0864"
+                        },
+                        {
+                            "affiliation": "Odessa National Economic University",
+                            "name": "Oleg Domaskin",
+                            "orcid": "0000-0001-7756-9631"
+                        },
+                        {
+                            "affiliation": "National Aviation University Kosmonavta",
+                            "name": "Yevheniia Ivanchenko",
+                            "orcid": "0000-0003-3017-5752"
+                        },
+                        {
+                            "affiliation": "National Aviation University Kosmonavta",
+                            "name": "Ihor Ivanchenko",
+                            "orcid": "0000-0003-3415-9039"
+                        },
+                        {
+                            "affiliation": "Simon Kuznets Kharkiv National University of Economics",
+                            "name": "Olha Korol",
+                            "orcid": "0000-0002-8733-9984"
+                        },
+                        {
+                            "affiliation": "Simon Kuznets Kharkiv National University of Economics",
+                            "name": "Hryhorii Kots",
+                            "orcid": "0000-0003-4588-8739"
+                        },
+                        {
+                            "affiliation": "Lviv Polytechnic National University",
+                            "name": "Ivan Opirskyy",
+                            "orcid": "0000-0002-8461-8996"
+                        },
+                        {
+                            "affiliation": "Odessa State Academy of Technical Regulation and Quality",
+                            "name": "Oleksii Fraze-Frazenko",
+                            "orcid": "0000-0002-2288-8253"
+                        }
+                    ],
+                    "description": "<p>The basic concepts that form the basis of integrated modeling of the behavior of antagonistic agents in cybersecurity systems are identified. It is shown that the emphasis is largely on modeling the behavior of one of the cyber conflict parties only. In the case when the interaction of all parties to the conflict is considered, the approaches used are focused on solving particular problems, or they model a simplified situation.</p>\n\n<p>A methodology for modeling the interaction of antagonistic agents in cybersecurity systems, focused on the use of a multi-model complex with elements of cognitive modeling, is proposed. For this objective, the main components of cyber conflict are highlighted, the models of which must be developed. Modeling the interaction of antagonistic agents is proposed to be implemented as a simulation of situations. The concept of a situation is formulated and its components are presented.</p>\n\n<p>In the proposed methodology, traditional methods and modeling tools are not opposed, but are considered together, thus forming a unified methodological basis for modeling the antagonistic agents&rsquo; behavior.</p>\n\n<p>In the proposed multi-model complexes, the individual elements and functions of the entities under study are described using various classes of models at a certain level of detail. Coordinated use of various models allows improving the quality of modeling by compensating for the shortcomings of some models by the advantages of others, in particular, reflecting the dynamics of interaction in system-dynamic and agent-based models, which is difficult in classical models of game theory.</p>\n\n<p>Multi-model complexes allow stating the concept of &laquo;virtual modeling&raquo;. This concept allows simulation using models of various classes. The choice of a class of models should correspond to the goals and objectives of modeling, the nature and structure of the source data.</p>\n\n<p>As a result of research, a methodology is proposed for modeling the interaction of antagonistic agents in cybersecurity systems using methods based on the proposed models of the reflective behavior of antagonistic agents under modern hybrid threats conditions</p>",
+                    "doi": "10.15587/1729-4061.2019.164730",
+                    "journal": {
+                        "issue": "9 (98)",
+                        "pages": "56-66",
+                        "title": "Eastern-European Journal of Enterprise Technologies",
+                        "volume": "2"
+                    },
+                    "keywords": [
+                        "cybersecurity",
+                        "antagonistic agents",
+                        "modeling methodology",
+                        "system dynamics",
+                        "reflective agent",
+                        "multi-agent systems",
+                        "cognitive modeling"
+                    ],
+                    "language": "eng",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2019-04-30",
+                    "references": [
+                        "Evseev, S. P., Koc, G. P., Korol', O. G. (2015). Analysis of the legal framework for the information security management system of the NS\u041cEP. Eastern-European Journal of Enterprise Technologies, 5 (3 (77)), 48\u201359. doi: https://doi.org/10.15587/1729-4061.2015.51468",
+                        "Evseev, S. P., Abdullaev, V. G. (2015). Monitoring algorithm of two-factor authentication method based on \u0440asswindow system. Eastern-European Journal of Enterprise Technologies, 2 (2 (74)), 9\u201316. doi: https://doi.org/10.15587/1729-4061.2015.38779",
+                        "Veksler, V. D., Buchler, N., Hoffman, B. E., Cassenti, D. N., Sample, C., Sugrim, S. (2018). Simulations in Cyber-Security: A Review of Cognitive Modeling of Network Attackers, Defenders, and Users. Frontiers in Psychology, 9. doi: https://doi.org/10.3389/fpsyg.2018.00691",
+                        "Gorodeckiy, V. I., Kotenko, I. V., Karsaev, O. V. (2000). Mnogoagentnaya sistema zashchity informacii v komp'yuternyh setyah: mekhanizmy obucheniya i formirovaniya resheniy dlya obnaruzheniya vtorzheniy. Problemy informatizacii, 2, 67\u201373.",
+                        "Yevseiev, S., Korol, O., Kots, H. (2017). Construction of hybrid security systems based on the crypto-code structures and flawed codes. Eastern-European Journal of Enterprise Technologies, 4 (9), 4\u201321. doi: https://doi.org/10.15587/1729-4061.2017.108461",
+                        "Kotenko, I. V., Korsaev, O. I. (2001). Ispol'zovanie mnogoagentnyh tekhnologiy dlya kompleksnoy zashchity informacionnyh resursov v komp'yuternyh setyah. Izvestiya Yuzhnogo federal'nogo universiteta. Tekhnicheskie nauki, 4, 38\u201350.",
+                        "Veksler, V. D., Buchler, N. Know your enemy: applying cognitive modeling in security domain. Available at: https://pdfs.semanticscholar.org/7da6/5e3f224d4830bf0e7fdeae310fa4f52597ed.pdf",
+                        "Cassenti, D. N., Veksler, V. D. (2018). Using Cognitive Modeling for Adaptive Automation Triggering. Advances in Intelligent Systems and Computing, 378\u2013390. doi: https://doi.org/10.1007/978-3-319-60591-3_34",
+                        "Kelley, T., Amon, M. J., Bertenthal, B. I. (2018). Statistical Models for Predicting Threat Detection From Human Behavior. Frontiers in Psychology, 9. doi: https://doi.org/10.3389/fpsyg.2018.00466",
+                        "Zakaria, C., Cur\u00e9, O., Salzano, G., Sma\u00efli, K. (2009). Formalized Conflicts Detection Based on the Analysis of Multiple Emails: An Approach Combining Statistics and Ontologies. On the Move to Meaningful Internet Systems: OTM 2009, 94\u2013111. doi: https://doi.org/10.1007/978-3-642-05148-7_9",
+                        "Mitnick, K. D., Simon, W. L. (2002). The Art of Deception: Controlling the Human Element of Security. John Wiley & Sons, 368.",
+                        "Whitman, M. E., Mattord, H. J. (2007). Principles of Information Security. Boston, MA: Course Technology.",
+                        "Von Solms, R., van Niekerk, J. (2013). From information security to cyber security. Computers & Security, 38, 97\u2013102. doi: https://doi.org/10.1016/j.cose.2013.04.004",
+                        "Jones, A., Colwill, C. (2008). Dealing with the malicious insider. Australian Information Security Management Conference.",
+                        "Colwill, C. (2009). Human factors in information security: The insider threat \u2013 Who can you trust these days? Information Security Technical Report, 14 (4), 186\u2013196. doi: https://doi.org/10.1016/j.istr.2010.04.004",
+                        "Kraemer, S., Carayon, P., Clem, J. (2009). Human and organizational factors in computer and information security: Pathways to vulnerabilities. Computers & Security, 28 (7), 509\u2013520. doi: https://doi.org/10.1016/j.cose.2009.04.006",
+                        "Bowen, B. M., Devarajan, R., Stolfo, S. (2011). Measuring the human factor of cyber security. 2011 IEEE International Conference on Technologies for Homeland Security (HST). doi: https://doi.org/10.1109/ths.2011.6107876",
+                        "Alpcan, T., Bazar, T. (2010). Network Security: A Decision and Game-Theoretic Approach. Cambridge University Press. doi: https://doi.org/10.1017/cbo9780511760778",
+                        "Roy, S., Ellis, C., Shiva, S., Dasgupta, D., Shandilya, V., Wu, Q. (2010). A Survey of Game Theory as Applied to Network Security. 2010 43rd Hawaii International Conference on System Sciences. doi: https://doi.org/10.1109/hicss.2010.35",
+                        "Kelley, C. M., Hong, K. W., Mayhorn, C. B., Murphy-Hill, E. (2012). Something Smells Phishy: Exploring Definitions, Consequences, and Reactions to Phishing. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 56 (1), 2108\u20132112. doi: https://doi.org/10.1177/1071181312561447",
+                        "Hong, K. W., Kelley, C. M., Tembe, R., Murphy-Hill, E., Mayhorn, C. B. (2013). Keeping Up With The Joneses. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 57 (1), 1012\u20131016. doi: https://doi.org/10.1177/1541931213571226",
+                        "Aggarwal, P., Gonzalez, C., Dutt, V. (2016). Cyber-Security: Role of Deception in Cyber-Attack Detection. Advances in Intelligent Systems and Computing, 85\u201396. doi: https://doi.org/10.1007/978-3-319-41932-9_8",
+                        "Jajodia, S., Liu, P., Swarup, V., Wang, C. (Eds.) (2010). Cyber Situational Awareness. Springer. doi: https://doi.org/10.1007/978-1-4419-0140-8",
+                        "Dutt, V., Ahn, Y.-S., Gonzalez, C. (2013). Cyber Situation Awareness. Human Factors: The Journal of the Human Factors and Ergonomics Society, 55 (3), 605\u2013618. doi: https://doi.org/10.1177/0018720812464045",
+                        "Finomore, V., Sitz, A., Blair, E., Rahill, K., Champion, M., Funke, G. et. al. (2013). Effects of Cyber Disruption in a Distributed Team Decision Making Task. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 57 (1), 394\u2013398. doi: https://doi.org/10.1177/1541931213571085",
+                        "D'Amico, A., Whitley, K., Tesone, D., O'Brien, B., Roth, E. (2005). Achieving Cyber Defense Situational Awareness: A Cognitive Task Analysis of Information Assurance Analysts. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 49 (3), 229\u2013233. doi: https://doi.org/10.1177/154193120504900304",
+                        "Knott, B. A., Mancuso, V. F., Bennett, K., Finomore, V., McNeese, M., McKneely, J. A., Beecher, M. (2013). Human Factors in Cyber Warfare. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 57 (1), 399\u2013403. doi: https://doi.org/10.1177/1541931213571086",
+                        "Mancuso, V. F., Greenlee, E. T., Funke, G., Dukes, A., Menke, L., Brown, R., Miller, B. (2015). Augmenting Cyber Defender Performance and Workload through Sonified Displays. Procedia Manufacturing, 3, 5214\u20135221. doi: https://doi.org/10.1016/j.promfg.2015.07.589",
+                        "Rassel, S. J., Norvig, P. (2003). Artificial Intelligence. A Modern Approach. Pearson Education Inc., 1408.",
+                        "Druzhinin, V. V., Kontorov, D. S., Kontorov, M. D. (1989). Vvedenie v teoriyu konflikta. Moscow, 288.",
+                        "Homer, J., Oliva, R. (2001). Maps and models in system dynamics: a response to Coyle. System Dynamics Review, 17 (4), 347\u2013355. doi: https://doi.org/10.1002/sdr.224",
+                        "Sterman, J. (2000). Business Dynamics. Systems Thinking and Modeling for a Complex World. Boston: McGraw Hill Higher Education.",
+                        "Barlas, Y. (1996). Formal aspects of model validity and validation in system dynamics. System Dynamics Review, 12 (3), 183\u2013210. doi: https://doi.org/10.1002/(sici)1099-1727(199623)12:3<183::aid-sdr103>3.3.co;2-w",
+                        "Luna-Reyes, L. F., Andersen, D. L. (2003). Collecting and analyzing qualitative data for system dynamics: methods and models. System Dynamics Review, 19 (4), 271\u2013296. doi: https://doi.org/10.1002/sdr.280",
+                        "De Gooyert, V. (2016). Nothing so practical as a good theory; Five ways to use system dynamics for theoretical contributions. 34th International Conference of the System Dynamics Society. Delft. Available at: https://www.systemdynamics.org/assets/conferences/2016/proceed/papers/P1209.pdf",
+                        "Repenning, N. P. (2002). A Simulation-Based Approach to Understanding the Dynamics of Innovation Implementation. Organization Science, 13 (2), 109\u2013127. doi: https://doi.org/10.1287/orsc.13.2.109.535",
+                        "Gubko, M. V. (2004). Upravlenie organizacionnymi sistemami s setevym vzaimodeystviem agentov. Chast' 1. Obzor teorii setevyh igr. Avtomatika i telemekhanika, 8, 115\u2013132.",
+                        "Jackson, M. O. (2003). The Stability and Efficiency of Economic and Social Networks. Advances in Economic Design, 319\u2013361. doi: https://doi.org/10.1007/978-3-662-05611-0_19",
+                        "Novikov, D. A. (2008). Cognitive games: a linear step-function model. Problemy upravleniya, 3, 14\u201322.",
+                        "Wooldridge, M. (2002). An Introduction to Multiagent Systems. John Wiley & Sons, 368.",
+                        "Wooldridge, M., Jennings, N. R., Kinny, D. (2000). The Gaia Methodology for Agent-Oriented Analysis and Design. Journal of Autonomous Agents and Multi-Agent Systems, 3 (3), 285\u2013312.",
+                        "Wooldridge, M., Jennings, N. R. (1995). Intelligent agents: theory and practice. The Knowledge Engineering Review, 10 (02), 115. doi: https://doi.org/10.1017/s0269888900008122"
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3384608"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3384607"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "DEVELOPMENT OF METHODOLOGY FOR MODELING THE INTERACTION OF ANTAGONISTIC AGENTS IN CYBERSECURITY SYSTEMS"
+                },
+                "owners": [
+                    73680
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 15.0,
+                    "unique_downloads": 14.0,
+                    "unique_views": 8.0,
+                    "version_downloads": 15.0,
+                    "version_unique_downloads": 14.0,
+                    "version_unique_views": 8.0,
+                    "version_views": 8.0,
+                    "version_volume": 9106560.0,
+                    "views": 8.0,
+                    "volume": 9106560.0
+                },
+                "updated": "2020-01-20T16:43:26.658304+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.2657415",
+                "conceptrecid": "2657415",
+                "created": "2019-05-02T11:59:16.663113+00:00",
+                "doi": "10.5281/zenodo.2657416",
+                "files": [
+                    {
+                        "bucket": "8739b6b3-6dc3-40dc-b7b0-aacd9750060d",
+                        "checksum": "md5:275be4e10680be058cfbd35e49b2a7b0",
+                        "key": "NicolasTsapatsoulis.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/8739b6b3-6dc3-40dc-b7b0-aacd9750060d/NicolasTsapatsoulis.pdf"
+                        },
+                        "size": 180213,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 2657416,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.2657416.svg",
+                    "bucket": "https://zenodo.org/api/files/8739b6b3-6dc3-40dc-b7b0-aacd9750060d",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.2657415.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.2657415",
+                    "doi": "https://doi.org/10.5281/zenodo.2657416",
+                    "html": "https://zenodo.org/record/2657416",
+                    "latest": "https://zenodo.org/api/records/2657416",
+                    "latest_html": "https://zenodo.org/record/2657416",
+                    "self": "https://zenodo.org/api/records/2657416"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Cyprus University of Technology",
+                            "name": "Nicolas Tsapatsoulis"
+                        },
+                        {
+                            "affiliation": "National and Kapodistrian University of Athens",
+                            "name": "Vasiliki Anastasopoulou"
+                        }
+                    ],
+                    "description": "<p>This literature review focuses on recent techniques&nbsp;and studies regarding cyberbullying on Twitter. The purpose of&nbsp;these studies is to find smart and sophisticated ways and methods&nbsp;to detect these cyberbullying incidents and in case that it is&nbsp;not possible to fully eliminate them to provide the means to&nbsp;vastly reduce them. We present the theoretical roots of the term&nbsp;cyberbullying and we discuss thoroughly some influential studies&nbsp;to motivate new researchers that work in the general area of&nbsp;cybersecurity and privacy.</p>",
+                    "doi": "10.5281/zenodo.2657416",
+                    "grants": [
+                        {
+                            "acronym": "ENCASE",
+                            "code": "691025",
+                            "funder": {
+                                "acronyms": [],
+                                "doi": "10.13039/501100000780",
+                                "links": {
+                                    "self": "https://zenodo.org/api/funders/10.13039/501100000780"
+                                },
+                                "name": "European Commission"
+                            },
+                            "links": {
+                                "self": "https://zenodo.org/api/grants/10.13039/501100000780::691025"
+                            },
+                            "program": "H2020",
+                            "title": "EnhaNcing seCurity And privacy in the Social wEb: a user centered approach for the protection of minors"
+                        }
+                    ],
+                    "keywords": [
+                        "cyberbullying",
+                        "Twitter",
+                        "online media",
+                        "hashtags",
+                        "cybersecurity",
+                        "privacy"
+                    ],
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "meeting": {
+                        "acronym": "SMAP 2019",
+                        "dates": "9-10 JUNE 2019",
+                        "place": "LARNAKA, CYPRUS",
+                        "session": "14",
+                        "title": "14th International Workshop On Semantic And  Social Media Adaptation And Personalization",
+                        "url": "http://cyprusconferences.org/smap2019/"
+                    },
+                    "publication_date": "2019-05-02",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.2657415",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "2657416"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "2657415"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "conferencepaper",
+                        "title": "Conference paper",
+                        "type": "publication"
+                    },
+                    "title": "Cyberbullies in Twitter: A focused review"
+                },
+                "owners": [
+                    34839
+                ],
+                "revision": 4,
+                "stats": {
+                    "downloads": 15.0,
+                    "unique_downloads": 15.0,
+                    "unique_views": 15.0,
+                    "version_downloads": 15.0,
+                    "version_unique_downloads": 15.0,
+                    "version_unique_views": 15.0,
+                    "version_views": 15.0,
+                    "version_volume": 2703195.0,
+                    "views": 15.0,
+                    "volume": 2703195.0
+                },
+                "updated": "2020-01-20T14:39:26.460925+00:00"
+            },
+            {
+                "conceptdoi": "10.5281/zenodo.3275500",
+                "conceptrecid": "3275500",
+                "created": "2019-07-09T13:47:40.946727+00:00",
+                "doi": "10.5281/zenodo.3275501",
+                "files": [
+                    {
+                        "bucket": "344460cd-7981-42b5-9987-964e0f9be7cf",
+                        "checksum": "md5:973a80b7ca04973fe46432bc253ea49c",
+                        "key": "Fedulov_EPO_2019_2.pdf",
+                        "links": {
+                            "self": "https://zenodo.org/api/files/344460cd-7981-42b5-9987-964e0f9be7cf/Fedulov_EPO_2019_2.pdf"
+                        },
+                        "size": 23301,
+                        "type": "pdf"
+                    }
+                ],
+                "id": 3275501,
+                "links": {
+                    "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3275501.svg",
+                    "bucket": "https://zenodo.org/api/files/344460cd-7981-42b5-9987-964e0f9be7cf",
+                    "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3275500.svg",
+                    "conceptdoi": "https://doi.org/10.5281/zenodo.3275500",
+                    "doi": "https://doi.org/10.5281/zenodo.3275501",
+                    "html": "https://zenodo.org/record/3275501",
+                    "latest": "https://zenodo.org/api/records/3275501",
+                    "latest_html": "https://zenodo.org/record/3275501",
+                    "self": "https://zenodo.org/api/records/3275501"
+                },
+                "metadata": {
+                    "access_right": "open",
+                    "access_right_category": "success",
+                    "creators": [
+                        {
+                            "affiliation": "Plekhanov Russian University of Economics",
+                            "name": "Fedulov Georgy Vladimirovich",
+                            "orcid": "0000-0003-1527-1930"
+                        }
+                    ],
+                    "description": "<p>\u0412 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0439 \u043f\u0435\u0440\u0438\u043e\u0434 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f \u043f\u0440\u043e\u0446\u0435\u0441\u0441\u043e\u0432 \u0433\u043b\u043e\u0431\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u0438 \u0446\u0438\u0444\u0440\u043e\u0432\u0438\u0437\u0430\u0446\u0438\u0438 \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0438 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0435 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0438, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u044e\u0449\u0438\u0435 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c, \u043d\u0435\u0441\u043c\u043e\u0442\u0440\u044f \u043d\u0430 \u0442\u043e, \u0447\u0442\u043e \u043d\u0435\u043c\u0430\u043b\u0430\u044f \u0447\u0430\u0441\u0442\u044c \u0442\u0430\u043a\u0438\u0445 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0439 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u0435\u0442 \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u043d\u0430\u0443\u0447\u043d\u0443\u044e \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c, \u043f\u0440\u044f\u043c\u043e \u043d\u0435 \u043e\u0442\u043d\u0435\u0441\u0435\u043d\u044b \u043a \u0441\u0443\u0431\u044a\u0435\u043a\u0442\u0430\u043c \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b (\u041a\u0418\u0418), \u0447\u0442\u043e \u0432 \u0441\u0432\u043e\u044e \u043e\u0447\u0435\u0440\u0435\u0434\u044c \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u043e\u0433\u043e \u0440\u043e\u0434\u0430 \u043d\u0435\u0434\u043e\u0441\u0442\u0430\u0442\u043a\u043e\u043c \u0424\u0435\u0434\u0435\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0437\u0430\u043a\u043e\u043d\u0430 \u043e\u0442 26.07.2017 \u2116 187-\u0424\u0417 &laquo;\u041e \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043a\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439 \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b \u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u043e\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438&raquo;; \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e \u0432\u0430\u0436\u043d\u044b\u043c \u044d\u0442\u043e \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0432 \u0441\u0432\u044f\u0437\u0438 \u0441\u043e \u0432\u0441\u0435 \u0431\u043e\u043b\u044c\u0448\u0438\u043c \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0430\u043d\u0438\u0435\u043c \u0447\u0438\u0441\u043b\u0430 \u043a\u0438\u0431\u0435\u0440\u0443\u0433\u0440\u043e\u0437, \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435 \u0432 \u043e\u0442\u043d\u043e\u0448\u0435\u043d\u0438\u0438 \u0441\u0443\u0431\u044a\u0435\u043a\u0442\u043e\u0432 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0439 \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438. \u041f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u043c \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044b \u043a \u0433\u0440\u0430\u0436\u0434\u0430\u043d\u0441\u043a\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u043c\u0443 \u0440\u0435\u0433\u0443\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044e \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0439, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u044e\u0449\u0438\u0445 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c, \u0438 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u0447\u0430\u044e\u0449\u0438\u0445 \u0441 \u043d\u0438\u043c\u0438 \u043b\u0438\u0446 \u043f\u0440\u0435\u0436\u0434\u0435 \u0432\u0441\u0435\u0433\u043e \u0432 \u0446\u0435\u043b\u044f\u0445 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0433\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0443\u0441\u043b\u0443\u0433. \u041c\u0435\u0442\u043e\u0434\u0438\u043a\u0430 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0430 \u043d\u0430 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u0438 \u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0438 \u043e\u0441\u043d\u043e\u0432\u043d\u044b\u0445 \u043f\u0440\u0430\u0432\u0438\u043b \u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432 \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0432 \u0446\u0435\u043b\u043e\u043c \u0438 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0439 \u0441\u0440\u0435\u0434\u0435 \u0432 \u0442\u043e\u043c \u0447\u0438\u0441\u043b\u0435. \u041d\u0430\u0443\u0447\u043d\u0443\u044e \u043d\u043e\u0432\u0438\u0437\u043d\u0443 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u044f\u044e\u0442 \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0435 \u0430\u0432\u0442\u043e\u0440\u043e\u043c \u0433\u0440\u0430\u0436\u0434\u0430\u043d\u0441\u043a\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u044b\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u044b \u043a \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u043e\u043c\u0443 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044e \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0441\u0443\u0431\u044a\u0435\u043a\u0442\u043e\u0432 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0439 \u0434\u0435\u044f\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438. \u0412 \u0440\u0430\u0431\u043e\u0442\u0435 \u0442\u0430\u043a\u0436\u0435 \u043f\u0440\u043e\u0432\u043e\u0434\u0438\u0442\u0441\u044f \u0441\u0440\u0430\u0432\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u043e\u0441\u043d\u043e\u0432\u043e\u043f\u043e\u043b\u0430\u0433\u0430\u044e\u0449\u0438\u0445 \u043d\u043e\u0440\u043c\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u043f\u0440\u0430\u0432\u043e\u0432\u044b\u0445 \u0430\u043a\u0442\u043e\u0432 \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u0440\u044f\u0434\u0430 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0430\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u0432\u0438\u0442\u044b\u0445 \u0441\u0442\u0440\u0430\u043d \u043c\u0438\u0440\u0430.&nbsp;In the modern period of development of globalization and digitalization of the economy, Russian organizations engaged in educational activities, despite the fact that a large part of such organizations, including scientific activities, are not directly attributed to the subjects of critical information infrastructure, which in turn is a certain kind of drawback of the Federal law of 26.07.2017 \u2116 187-FZ &quot;On the security of critical information infrastructure of the Russian Federation&raquo;; this is especially important in connection with the increasing number of cyber threats, including against the subjects of educational activities. The subject of the study is the main approaches to civil law regulation of cybersecurity of organizations engaged in educational activities and persons cooperating with them primarily for the safe use of the results of educational services. The research methodology is based on the definition and disclosure of the basic rules of legal support of cybersecurity issues in General and the educational environment in particular. The scientific novelty of the research is determined by the civil-law approaches proposed by the author to the local normative provision of cybersecurity of subjects of educational activity. The work also carries out a comparative legal study of the fundamental normative legal acts in the field of security of a number of industrialized countries.</p>",
+                    "doi": "10.5281/zenodo.3275501",
+                    "journal": {
+                        "issue": "2",
+                        "pages": "22 \u2013 28",
+                        "title": "\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430. \u041f\u0440\u0430\u0432\u043e. \u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e"
+                    },
+                    "keywords": [
+                        "law",
+                        "jurisprudence",
+                        "civil law",
+                        "cybersecurity",
+                        "education",
+                        "protection",
+                        "services",
+                        "finance",
+                        "digital economy",
+                        "critical",
+                        "electronic",
+                        "information",
+                        "infrastructure",
+                        "computer incidents"
+                    ],
+                    "language": "rus",
+                    "license": {
+                        "id": "CC-BY-4.0"
+                    },
+                    "publication_date": "2019-07-09",
+                    "related_identifiers": [
+                        {
+                            "identifier": "10.5281/zenodo.3275500",
+                            "relation": "isVersionOf",
+                            "scheme": "doi"
+                        }
+                    ],
+                    "relations": {
+                        "version": [
+                            {
+                                "count": 1,
+                                "index": 0,
+                                "is_last": true,
+                                "last_child": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3275501"
+                                },
+                                "parent": {
+                                    "pid_type": "recid",
+                                    "pid_value": "3275500"
+                                }
+                            }
+                        ]
+                    },
+                    "resource_type": {
+                        "subtype": "article",
+                        "title": "Journal article",
+                        "type": "publication"
+                    },
+                    "title": "\u041e\u0441\u043e\u0431\u0435\u043d\u043d\u043e\u0441\u0442\u0438 \u0433\u0440\u0430\u0436\u0434\u0430\u043d\u0441\u043a\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0433\u043e \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u043a\u0438\u0431\u0435\u0440\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u0439 // \u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430. \u041f\u0440\u0430\u0432\u043e. \u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e. \u2013 2019. \u2013 \u2116 2. \u2013 \u0421. 22 \u2013 28."
+                },
+                "owners": [
+                    64878
+                ],
+                "revision": 5,
+                "stats": {
+                    "downloads": 12.0,
+                    "unique_downloads": 11.0,
+                    "unique_views": 27.0,
+                    "version_downloads": 12.0,
+                    "version_unique_downloads": 11.0,
+                    "version_unique_views": 27.0,
+                    "version_views": 37.0,
+                    "version_volume": 279612.0,
+                    "views": 37.0,
+                    "volume": 279612.0
+                },
+                "updated": "2020-01-20T15:32:20.546104+00:00"
+            }
+        ],
+        "total": 150
+    },
+    "links": {
+        "next": "https://zenodo.org/api/records/?sort=bestmatch&q=cybersecurity&page=2&size=20",
+        "self": "https://zenodo.org/api/records/?sort=bestmatch&q=cybersecurity&page=1&size=20"
+    }
+}
