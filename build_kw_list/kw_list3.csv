@@ -1,0 +1,72 @@
+,
+Word/Term,Definition
+Access control,Controlling who has access to a computer or online service and the information it stores.
+Asset,"Something of value to a person, business or organization."
+Authentication,The process to verify that someone is who they claim to be when they try to access a computer or online service.
+Backing up,To make a copy of data stored on a computer or server to lessen the potential impact of failure or loss.
+Bring your own device (BYOD),The authorised use of personally owned mobile devices such as smartphones or tablets in the workplace.
+Broadband,High-speed data transmission system where the communications circuit is shared between multiple users.
+Business continuity management,Preparing for and maintaining continued business operations following disruption or crisis.
+Certification,Declaration that specified requirements have been met.
+Certification body,An independent organization that provides certification services.
+Chargeback,A payment card transaction where the supplier initially receives payment but the transaction is later rejected by the cardholder or the card issuing company. The supplier’s account is then debited with the disputed amount.
+Cloud computing,Delivery of storage or computing services from remote servers online (ie via the internet).
+Common text,"A structure and series of requirements defined by the International Organization for Standardization, that are being incorporated in all management system International Standards as they are revised."
+Data server,A computer or program that provides other computers with access to shared files over a network.
+Declaration of conformity,Confirmation issued by the supplier of a product that specified requirements have been met.
+DMZ,Segment of a network where servers accessed by less trusted users are isolated. The name is derived from the term “demilitarised zone”.
+Encryption,The transformation of data to hide its information content.
+Ethernet,Communications architecture for wired local area networks based uponIEEE 802.3 standards.
+Firewall,Hardware or software designed to prevent unauthorised access to a computer or network from another computer or network.
+Gap analysis,The comparison of actual performance against expected or required performance.
+Hacker,"Someone who violates computer security for malicious reasons, kudos or personal gain."
+Hard disk,The permanent storage medium within a computer used to store programs and data.
+Identification,The process of recognising a particular user of a computer or online service.
+Infrastructure-as-a-service (IaaS),Provision of computing infrastructure (such as server or storage capacity) as a remotely provided service accessed online (ie via the internet).
+Inspection certificate,A declaration issued by an interested party that specified requirements have been met.
+Instant messaging,Chat conversations between two or more people via typing on computers or portable devices.
+Internet service provider (ISP),Company that provides access to the internet and related services.
+Intrusion detection system (IDS),Program or device used to detect that an attacker is or has attempted unauthorised access to computer resources.
+Intrusion prevention system (IPS),Intrusion detection system that also blocks unauthorised access when detected.
+Just in time’ manufacturing,"Manufacturing to meet an immediate requirement, not in surplus or in advance of need."
+Keyboard logger,A virus or physical device that logs keystrokes to secretly capture private information such as passwords or credit card details.
+Leased circuit,"Communications link between two locations used exclusively by one organization. In modern communications, dedicated bandwidth on a shared link reserved for that user."
+Local area network (LAN),Communications network linking multiple computers within a defined location such as an office building.
+Macro virus,Malware (ie malicious software) that uses the macro capabilities of common applications such as spreadsheets and word processors to infect data.
+Malware,Software intended to infiltrate and damage or disable computers. Shortened form of malicious software.
+Management system,A set of processes used by an organisation to meet policies and objectives for that organisation.
+Network firewall,Device that controls traffic to and from a network.
+Outsourcing,Obtaining services by using someone else’s resources.
+Passing off,Making false representation that goods or services are those of another business.
+Password,A secret series of characters used to authenticate a person’s identity.
+Personal firewall,Software running on a PC that controls network traffic to and from that computer.
+Personal information,Personal data relating to an identifiable living individual.
+Phishing,"Method used by criminals to try to obtain financial or other confidential information (including user names and passwords) from internet users, usually by sending an email that looks as though it has been sent by a legitimate organization (often a bank). The email usually contains a link to a fake website that looks authentic."
+Platform-as-a-service (PaaS),The provision of remote infrastructure allowing the development and deployment of new software applications over the internet.
+Portable device,"A small, easily transportable computing device such as a smartphone, laptop or tablet computer."
+Proxy server,"Server that acts as an intermediary between users and others servers, validating user requests."
+Restore,The recovery of data following computer failure or loss.
+Risk,Something that could cause an organization not to meet one of its objectives.
+Risk assessment,"The process of identifying, analysing and evaluating risk."
+Router,Device that directs messages within or between networks.
+Screen scraper,A virus or physical device that logs information sent to a visual display to capture private or personal information.
+Security control,Something that modifies or reduces one or more security risks.
+Security information and event management (SIEM),"Process in which network information is aggregated, sorted and correlated to detect suspicious activities."
+Security perimeter,A well-defined boundary within which security controls are enforced.
+Server,Computer that provides data or services to other computers over a network.
+Smartphone,A mobile phone built on a mobile computing platform that offers more advanced computing ability and connectivity than a standard mobile phone.
+Software-as-a-service (SaaS),The delivery of software applications remotely by a provider over the internet; perhaps through a web interface.
+Spyware,Malware that passes information about a computer user’s activities to an external party.
+Supply chain,A set of organisations with linked resources and processes involved in the production of a product.
+Tablet,"An ultra-portable, touch screen computer that shares much of the functionality and operating system of smartphones, but generally has greater computing power."
+Threat,Something that could cause harm to a system or organization.
+Threat actor,A person who performs a cyber attack or causes an accident.
+Two-factor authentication,"Obtaining evidence of identity by two independent means, such as knowing a password and successfully completing a smartcard transaction."
+Username,"The short name, usually meaningful in some way, associated with a particular computer user."
+User account,The record of a user kept by a computer to control their access to files and programs.
+Virtual private network (VPN),Link(s) between computers or local area networks across different locations using a wide area network that cannot access or be accessed by other users of the wide area network.
+Virus,Malware that is loaded onto a computer and then run without the user’s knowledge or knowledge of its full effects.
+Vulnerability,A flaw or weakness that can be used to attack a system or organization.
+Wide area network (WAN),Communications network linking computers or local area networks across different locations.
+Wi-Fi,Wireless local area network based uponIEEE 802.11standards.
+Worm,Malware that replicates itself so it can spread to infiltrate other computers.

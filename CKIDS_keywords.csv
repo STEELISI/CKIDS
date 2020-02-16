@@ -1,0 +1,1655 @@
+,0
+0,attack
+1,traffic
+2,DeDOS
+3,DDoS
+4,Docker
+5,hashing
+6,binary
+7,script
+8,Docker
+9,protection
+10,Osiris
+11,Docker
+12,python
+13,ethereum
+14,Tor
+15,csv
+16,bitcoin
+17,wi-fi
+18,ipsec
+19,timing attack
+20,packets
+21,traffic
+22,IP address
+23,software-defined networking
+24,bitcoin
+25,address
+26,transaction
+27,blockchain db
+28,clustering
+29,trade-bitcoin
+30,data accountability
+31,blockchain
+32,smart contracts
+33,privacy
+34,security
+35,blockchain
+36,IoT
+37,blockchain
+38,bitcoin
+39,ELASTICO
+40,cryptocurrency
+41,secure sharding protocol
+42,bitcoin
+43,bitcoin
+44,bitcoin
+45,ethereum
+46,smart contract
+47,blockchain
+48,mining
+49,decentralized
+50,bitcoin
+51,ethereum
+52,scalability
+53,state
+54,transition
+55,state transition function
+56,bitcoin
+57,scalability
+58,block size
+59,countermeasures
+60,security
+61,bitcoin
+62,website fingerprinting
+63,attacks
+64,defenses
+65,Tor
+66,walkie-talkie
+67,website fingerprinting
+68,attacks
+69,defense
+70,privacy
+71,eavesdropping
+72,Loopix
+73,Loopix
+74,traffic analysis
+75,sender
+76,receiver
+77,anonymity
+78,Poisson mixing
+79,latency
+80,obfuscation
+81,Docker
+82,tigress
+83,tigress
+84,challenge
+85,program
+86,obfuscate
+87,reverse engineer
+88,code
+89,attack
+90,software obfuscation
+91,deobfuscation
+92,symbolic execution attack
+93,reverse engineering
+94,C programs
+95,privacy-sensitive
+96,sensors
+97,AWare
+98,malicious
+99,android application
+100,operations
+101,users
+102,Bind
+103,databinding
+104,loophole
+105,package
+106,tuning
+107,cross-validation
+108,timeseries
+109,timing
+110,data
+111,rawtraces
+112,.tar.xz files
+113,event loops
+114,shared
+115,timing attacks
+116,Chrome
+117,event-driven programming
+118,bootstomp
+119,bootloader
+120,Docker
+121,bootloader
+122,vulnerabilities
+123,integrity
+124,security
+125,mobile devices
+126,bootstomp
+127,SSL
+128,TLS
+129,heartbleed
+130,PKI
+131,private key sharing
+132,DNSSEC
+133,SSL certificates
+134,reissues
+135,revocations
+136,PKI
+137,analysis
+138,vulnerablility
+139,heartbleed
+140,extended validation
+141,security
+142,malicious
+143,third parties
+144,Rapid7
+145,Censys
+146,certificates
+147,X.509
+148,Alexa
+149,top 1 million websites
+150,SSL
+151,TSL
+152,HTTP
+153,UDP
+154,TCP
+155,scans
+156,SYN
+157,DNS
+158,heartbleed
+159,certificates
+160,SQLite
+161,database
+162,Alexa
+163,domain-advertising
+164,certificate revocation
+165,X.509
+166,extended validation
+167,web browsers
+168,CRLset
+169,CAs
+170,heartbleed
+171,PKI
+172,end-to-end measurement
+173,SSL
+174,IPv4
+175,HTTP
+176,scans
+177,crlset
+178,tool
+179,utility program
+180,dumping
+181,fetching
+182,Chrome
+183,CRL set
+184,crlsets
+185,domains
+186,certs
+187,oids
+188,ocsps
+189,certdomains
+190,SQLite database
+191,private key sharing
+192,SSL
+193,TLS
+194,HTTP
+195,measurement
+196,analysis
+197,end-to-end
+198,PKI
+199,certificate
+200,X.509
+201,CAs
+202,private key sharing
+203,SSL
+204,TLS handshake
+205,pki
+206,communication
+207,third party
+208,hosting providers
+209,cloud
+210,domain
+211,data
+212,dataset
+213,whois
+214,SSL
+215,certificates
+216,scans
+217,domains
+218,DNS
+219,reverse
+220,IPv4
+221,scans
+222,IP address
+223,certificate
+224,bulk WHOIS data
+225,API
+226,parser system
+227,IP
+228,domain to organization mapping
+229,ssv
+230,.com
+231,.nz
+232,.net
+233,third party services
+234,hosting
+235,certificate
+236,ssv
+237,management policy
+238,third party
+239,hosting services
+240,tsv
+241,private key sharing
+242,HTTPS
+243,ecosystem
+244,measurement
+245,analysis
+246,SSL
+247,TLS
+248,valid
+249,invalid
+250,certificates
+251,PKI
+252,HTTPS
+253,CAs
+254,IP addresses
+255,SSL
+256,X.509
+257,certificates
+258,HTTPS
+259,opendata
+260,SSL
+261,invalid
+262,certificates
+263,tsv
+264,SSL
+265,valid
+266,certificates
+267,tsv
+268,certificate
+269,field information
+270,comparison
+271,invalid
+272,valid
+273,certificates
+274,perl
+275,linking multiple certificates
+276,common field value
+277,non-overlapping lifetime
+278,cascade linking certificates
+279,iterative
+280,all possible field values
+281,OCSP Must-Staple
+282,TLS handshake
+283,valid
+284,certificates
+285,web
+286,OCSP measurement
+287,vantage point
+288,Oregon
+289,json
+290,.taz.xz
+291,OCSP measurement
+292,vantage point
+293,Virginia
+294,json
+295,.taz.xz
+296,OCSP measurement
+297,vantage point
+298,Sao-Paulo
+299,json
+300,.taz.xz
+301,OCSP measurement
+302,vantage point
+303,Paris
+304,json
+305,.taz.xz
+306,OCSP measurement
+307,vantage point
+308,Sydney
+309,json
+310,.taz.xz
+311,OCSP measurement
+312,vantage point
+313,Seoul
+314,json
+315,.taz.xz
+316,DNSSEC
+317,PKI
+318,integrity
+319,resolver
+320,clients
+321,longitudinal
+322,ecosystem
+323,TLD zone files
+324,verisign
+325,com
+326,net
+327,TLD zone files
+328,public internet registry
+329,org
+330,zone scans
+331,openintel
+332,resolver scans
+333,resolver measurement
+334,json
+335,json
+336,.txt file
+337,dataset description
+338,DNS
+339,DNSSEC
+340,DNS Security Extension
+341,PKI
+342,Registrar
+343,DNS Operator
+344,TLD zone files
+345,verisign
+346,com
+347,net
+348,TLD zone files
+349,public internet registry
+350,org
+351,TLD zone files
+352,SIDN
+353,zone scans
+354,openintel
+355,SHA-1
+356,cryptographic
+357,hash function
+358,integrity
+359,verification
+360,TLS
+361,SSL
+362,SHA-1
+363,near-collision
+364,attacks
+365,SHA-1
+366,NIST
+367,cryptographic
+368,hash function
+369,TLS
+370,certificate
+371,secret-key cryptography
+372,SHA-1
+373,hash function
+374,cryptanalysis
+375,free-start collision
+376,GPU implementation
+377,symmetric-key cryptography
+378,SHA-1
+379,hash function
+380,cryptanalysis
+381,freestart collision
+382,GPU implementation
+383,public-key cryptography
+384,hash function
+385,cryptanalysis
+386,collision attack
+387,SHA-1
+388,collision example
+389,differential path
+390,SHA-1
+391,freestart
+392,collisions
+393,IV
+394,message pairs
+395,hashclash
+396,SHA-1
+397,MD5
+398,cryptanalysis
+399,attack
+400,authentication
+401,ciphertext
+402,data
+403,integrity
+404,security
+405,updatable encryption
+406,cloud storage
+407,key rotation
+408,key-homomorphic PRF
+409,recrypt
+410,key rotation
+411,authenticated encryption
+412,prototype code
+413,confidentiality
+414,integrity
+415,security
+416,CSIRT
+417,data protection
+418,digital forensics
+419,IoT
+420,cybersecurity threats
+421,enablers
+422,adopters
+423,SAFE
+424,security analyses
+425,malicious
+426,system availability
+427,SAFE
+428,security
+429,unsafe
+430,ticket duration
+431,deobfuscation tool
+432,virtualization-packed binaries
+433,automatic static and dynamic analysis
+434,disassembly
+435,VMAttack
+436,VMAttack
+437,reverse engineer
+438,virtual machine
+439,IDA PRO
+440,redundant capacity
+441,filesystem timestamps
+442,information hiding
+443,data leakage
+444,steganographic
+445,digital forensics
+446,python
+447,powershell
+448,file creation
+449,code download
+450,sequential pattern and rule mining
+451,subset of data mining methods
+452,cybersecurity alerts
+453,alert correlation
+454,attack prediction
+455,sequential rule and pattern mining
+456,cybersecurity alerts
+457,sequential databases
+458,SPMF library
+459,partitioning
+460,load balancing
+461,adaptive mesh-refinement
+462,algorithms
+463,balancing
+464,partitioning
+465,space-filling curves
+466,optimized code generation
+467,TLS 1.3 record layer
+468,handshake
+469,authentication. AED
+470,MAC
+471,PRF
+472,cryptographic protocols
+473,implementation
+474,provable security
+475,transport layer security
+476,TLS 1.3 record layer
+477,project everest
+478,source code
+479,project everest
+480,HTTPS ecosystem
+481,Docker
+482,F*
+483,open SSL engine
+484,project everest
+485,HTTPS ecosystem
+486,X.509 public key infrastructure
+487,TLS
+488,handshake
+489,record layer
+490,C
+491,assembly code
+492,work in progress
+493,F*
+494,Docker
+495,project everest
+496,TLS implementation
+497,C
+498,cygwin
+499,F*
+500,TLS 1.2
+501,1.3
+502,HTTPS stack replacement
+503,project everest
+504,functional programming language
+505,TLS 1.3 record layer
+506,kreMLin
+507,F*
+508,extracts
+509,readable
+510,C code
+511,project everest
+512,"
+subset of F*"
+513,kreMLin
+514,user manual
+515,documentation
+516,low level code
+517,Low*
+518,kreMLin
+519,cryptographic libraries
+520,HACL*
+521,F*
+522,cryptographic library
+523,project everest
+524,kreMLin
+525,openssl
+526,libsodium
+527,HACL*
+528,C
+529,cryptographic library
+530,F*
+531,implementation
+532,formal verification
+533,openssl
+534,libsodium
+535,research team
+536,security research
+537,cryptographic protocols
+538,software security
+539,web security
+540,hardware protection mechanisms
+541,formal verification tools
+542,TLS
+543,verified reference implementation
+544,F*
+545,Docker
+546,miTLS
+547,TLS protocol
+548,verified reference implementation
+549,code
+550,F#
+551,transcript collisions
+552,miTLS
+553,TLS
+554,1.3
+555,MD5
+556,SHA-1
+557,X.509 certificates
+558,cryptographic protocols
+559,TLS
+560,IKE
+561,SSH
+562,authentication
+563,integrity
+564,MAC
+565,diffie-hellman key exchange
+566,TLS
+567,less secure
+568,Internet protocols
+569,Logjam
+570,Alexa Top Million HTTPS
+571,SSH
+572,IPSec
+573,TLS
+574,1.2
+575,F# implementation
+576,F7 typechecker
+577,HTTPS
+578,VPN
+579,web traffic
+580,attacks
+581,logic
+582,cryptography
+583,adaptive plaintext
+584,TLS
+585,verified reference implementation
+586,Internet standard
+587,software security
+588,protocol security
+589,cryptographic security
+590,FLEXTLS
+591,tool
+592,TLS implementation testing
+593,miTLS
+594,transport layer security
+595,cryptographic protocols
+596,attacks
+597,protocol testing
+598,composite TLS state machine
+599,transport layer security
+600,cryptographic protocols
+601,man-in-the-middle attacks
+602,software verification
+603,formal methods
+604,java
+605,runtime
+606,attack vector
+607,access control
+608,shortcuts
+609,JVM
+610,security
+611,research analysis
+612,transformation
+613,instrumentation
+614,java
+615,access control
+616,shortcuts
+617,elevate
+618,implicit
+619,privilege
+620,attack vector
+621,attacks
+622,vulnerabilities
+623,confused deputy
+624,cryptography
+625,APIs
+626,cryptographic libraries
+627,errors
+628,symmetric
+629,asymmetric
+630,secure development
+631,bcrypt
+632,library
+633,python
+634,password hashing
+635,software
+636,servers
+637,scrypt
+638,security
+639,cryptography
+640,cryptographic implementations
+641,pure-Rust
+642,python-gnupg
+643,security patches
+644,documentation
+645,signing
+646,verification
+647,Rust
+648,Tor
+649,routing traffic
+650,simple-crypt
+651,python
+652,secure encryption
+653,decryption
+654,julia
+655,parser
+656,combinator
+657,library
+658,wrapper
+659,libsodium
+660,high level crypto primitives
+661,pyaes
+662,pure python implementation
+663,AES
+664,block cipher algorithm
+665,common modes of operation
+666,CBC
+667,OFB
+668,ECB
+669,CFB
+670,CTR
+671,pyDES
+672,pure python implementation
+673,DES
+674,triple-DES
+675,encryption algorithm
+676,SQL
+677,verifying
+678,queries
+679,cloud
+680,dynamic
+681,databases
+682,outsourcing
+683,vSQL
+684,cryptographic protocols
+685,optimal ate pairing
+686,Barreto-Naehrig (BN) curves
+687,library
+688,software implementation
+689,integriDB
+690,verifiable SQL
+691,outsourced databases
+692,mysql
+693,ate-pairing
+694,openssl
+695,jsnark
+696,java library
+697,zkSNARK
+698,circuits
+699,libsnark
+700,c++ library
+701,zkSNARK
+702,proofs
+703,schemes
+704,cryptographic methods
+705,zero knowledge
+706,integrity
+707,verifying
+708,cryptographic function detection
+709,cryptohunt
+710,obfuscated binaries
+711,malware
+712,network-based firewalls
+713,crypto-ransomware
+714,binary code
+715,symbolic execution
+716,TEA
+717,RC4
+718,AES
+719,MD5
+720,RSA
+721,cryptohunt
+722,binary analysis tool
+723,binary trace
+724,cryptographic functions
+725,border gateway protocol
+726,BGP
+727,routing
+728,loops
+729,autonomous systems
+730,AS
+731,"propagation
+"
+732,bgp-simulator
+733,java
+734,multipath TCP
+735,MPTCP
+736,mobile ad hoc networks
+737,MANETs
+738,multipath TCP
+739,MANETs
+740,mobile ad hoc networks
+741,routing
+742,algorithm
+743,MiM
+744,tcpdump
+745,multipath TCP
+746,MPTCP
+747,mobile smart device
+748,virtualbox
+749,MANET
+750,NS-3
+751,android
+752,wifi
+753,wireless
+754,fidelity
+755,network
+756,instabilities
+757,cellular data
+758,mobile apps
+759,communication
+760,switches
+761,smart phones
+762,android
+763,JANUS
+764,bandwidth
+765,latency
+766,JANUS
+767,java
+768,pinballclient
+769,pinballframework
+770,buffering
+771,management
+772,architecture
+773,openqueue
+774,admission control
+775,process control
+776,optimized production technology
+777,ports
+778,boundary conditions
+779,data structures
+780,differentiated distributed stream processing system
+781,shuffle grouping
+782,key grouping
+783,skewed distribution
+784,partitioning
+785,parallel processing
+786,real-time
+787,databases
+788,probabilistic logic
+789,DStream
+790,schemes
+791,DStream
+792,storm
+793,differentiated distributed stream processing system
+794,parallelism
+795,throughput
+796,key space
+797,key grouping scheme
+798,online social networks (OSNs)
+799,social network services
+800,servers
+801,time measurement
+802,cryptography
+803,logic gates
+804,mirrors
+805,memory
+806,socialgate
+807,data privacy
+808,ubiquitous computing
+809,socialroute
+810,UDP
+811,FTP
+812,routerclient
+813,zigbee
+814,IoT
+815,Mrs. Z
+816,cyclic redundancy check
+817,CRC
+818,media access control layer
+819,MAC
+820,multi-rate transmission
+821,throughput
+822,physical layer
+823,dynamic
+824,bit errors
+825,transceivers
+826,receivers
+827,spread spectrum communication
+828,blocks
+829,branches
+830,transceiver
+831,GNU radio
+832,rime communication stack
+833,wireshark
+834,dependencies
+835,GNU radio
+836,wireshark connector
+837,packet pad
+838,burst tagger
+839,blocks
+840,zigbee
+841,radiotap
+842,tshark
+843,tcpdump
+844,wime project
+845,wireless communication
+846,ad hoc networks
+847,dynamic network structures
+848,open source tools
+849,wireless networks
+850,software defined radio
+851,SDR
+852,GNU radio
+853,interactive VDN
+854,SDN-centric TCP
+855,latency
+856,throughput
+857,adaptive video streaming
+858,software defined networks
+859,SDN
+860,TCP
+861,routers
+862,NC-TCP
+863,linux kernel
+864,network controller
+865,congestion control
+866,mininet
+867,network-centric TCP
+868,video delivery networks
+869,VDN
+870,linux
+871,network-centric TCP
+872,video delivery networks
+873,VDN
+874,mininet
+875,router
+876,NC-TCP
+877,network-centric TCP
+878,video delivery networks
+879,VDN
+880,gst-streamer
+881,peering
+882,transit
+883,interconnections
+884,ISPs
+885,servers
+886,internet
+887,propagation delay
+888,IP networks
+889,peer-to-peer computing
+890,LTE
+891,IP-based
+892,broadband standard
+893,data rates
+894,higher
+895,evolved multimedia broadcast multicast services
+896,eMBMS
+897,ternary bit strings
+898,commodity
+899,longest-prefix-match
+900,LPM
+901,infrastructure
+902,packet classifiers
+903,ternary content-addressable memory
+904,TCAM
+905,ICNP
+906,python
+907,algorithm
+908,optimization engine
+909,dynamic cuckoo filter
+910,DCF
+911,set representation
+912,data structure
+913,monopolistic fingerprint
+914,data deduplication
+915,dynamic cuckoo filter
+916,DCF
+917,classic bloom filter
+918,openssl
+919,data structure
+920,fingerprint size
+921,false positive
+922,linux
+923,kernel
+924,wireless fidelity
+925,bandwidth
+926,IP networks
+927,load management
+928,servers
+929,smart phones
+930,multipath TCP
+931,friendlier
+932,linux kernel
+933,compiling
+934,configuring
+935,software packages
+936,unix
+937,patching
+938,P4
+939,P4DB
+940,network
+941,bugs
+942,debugging platform
+943,runtime
+944,tools
+945,switches
+946,protocols
+947,p4db
+948,p4
+949,on-the-fly debugging
+950,programmable
+951,data plane
+952,P4DB
+953,project
+954,architecture
+955,design
+956,evaluation
+957,debugging tools
+958,interactive
+959,precise security implementation
+960,PSI
+961,enterprise security
+962,isolation
+963,shortcomings
+964,operational network security
+965,abysmal
+966,precise security
+967,PSI
+968,controller
+969,code
+970,ramblr
+971,reassembly
+972,binary
+973,rewriting
+974,reverse engineering
+975,patching
+976,code reuse
+977,instrumentation
+978,reassemblr
+979,binary
+980,ssh
+981,robust
+982,covert channels
+983,isolation
+984,cloud
+985,high
+986,throughput
+987,error-correcting
+988,error-handling
+989,CJAG
+990,cache-based jamming agreement
+991,open-source implementation
+992,binary
+993,CJAG
+994,cache-based jamming agreement
+995,binary
+996,communication
+997,channels
+998,covert
+999,HTTPS
+1000,deployment
+1001,interception
+1002,TLS
+1003,heuristics
+1004,"security community
+"
+1005,TLS
+1006,fingerprints
+1007,network isolation
+1008,cloud
+1009,multi-tenancy
+1010,network verification
+1011,benchmarks
+1012,code
+1013,cloud
+1014,runtimes
+1015,topology
+1016,data
+1017,detailed
+1018,cloud
+1019,results
+1020,nodes
+1021,configs
+1022,network optimized datalog
+1023,NoD
+1024,beliefs
+1025,checking
+1026,network reachability policies
+1027,verification
+1028,tools
+1029,Hassel
+1030,library
+1031,code
+1032,public
+1033,stable
+1034,"header space
+"
+1035,file backup
+1036,synchronization
+1037,oblivious
+1038,oblivisync
+1039,RAM
+1040,ORAM
+1041,oblivious storage 
+1042,oblivisync
+1043,fuse
+1044,Docker
+1045,pattern lock
+1046,android
+1047,authentication
+1048,authorization
+1049,computer vision
+1050,algorithm
+1051,fingertip movements
+1052,pattern lock
+1053,dataset
+1054,old version
+1055,pattern lock
+1056,dataset
+1057,version 2
+1058,updated
+1059,user
+1060,survey forms
+1061,attacks on users
+1062,reconstruction
+1063,efficient browsing snapshots
+1064,ChromePic
+1065,web browser
+1066,forensic engine
+1067,screenshot
+1068,clickjacking
+1069,phishing
+1070,clickjacking
+1071,simulated
+1072,attacks
+1073,destabilizing pointer perception
+1074,peripheral vision
+1075,demo
+1076,UI
+1077,attacks
+1078,perceptual
+1079,interactive point
+1080,click
+1081,games
+1082,address space layout randomization
+1083,ASLR
+1084,software guard extension
+1085,SGX
+1086,memory corruption attacks
+1087,execution environment
+1088,secure
+1089,bootstrap
+1090,randomness
+1091,address space layout randomization
+1092,ASLR
+1093,software guard extension
+1094,SGX
+1095,memory corruption attacks
+1096,execution environment
+1097,secure
+1098,bootstrap
+1099,randomness
+1100,malware
+1101,signature
+1102,android
+1103,automatic
+1104,learning
+1105,ASTROID
+1106,synthesize
+1107,semantic
+1108,ASTROID
+1109,malware
+1110,signature
+1111,tool
+1112,semantic
+1113,android
+1114,maximum satisfiability
+1115,tor
+1116,privacy
+1117,privacy-preserving
+1118,security
+1119,HisTor
+1120,data
+1121,statistics
+1122,privacy
+1123,integrity
+1124,libnum
+1125,number functions
+1126,python library
+1127,python2.7
+1128,modular arithmetic
+1129,functions
+1130,primes
+1131,strings
+1132,binary
+1133,virtual
+1134,firewall
+1135,elasticity
+1136,network function virtualization
+1137,NFV
+1138,software-defined networking
+1139,SDN
+1140,VFW controller
+1141,obfuscation
+1142,privacy
+1143,leak
+1144,detection
+1145,mobile apps
+1146,data flow tracking
+1147,network traffic
+1148,differential analysis
+1149,agrigento
+1150,black-box
+1151,differential analysis
+1152,password
+1153,mnemonic
+1154,advice
+1155,effectiveness
+1156,character probabilities
+1157,privacy
+1158,password generation rules
+1159,mnemonic
+1160,simple english sentences
+1161,web crawl
+1162,test set
+1163,training set
+1164,corpus
+1165,security
+1166,privacy
+1167,reliability
+1168,prepose
+1169,gesture checking
+1170,programming
+1171,skeleton
+1172,sensors
+1173,safety
+1174,runtime
+1175,sensor
+1176,prepose
+1177,gesture
+1178,privacy
+1179,security
+1180,static analysis
+1181,password
+1182,typos
+1183,secure
+1184,authentication
+1185,usability
+1186,login attempts
+1187,malware
+1188,security
+1189,binaries
+1190,obfuscated
+1191,deobfuscated
+1192,executable code
+1193,reverse engineering
+1194,optimization
+1195,acceleration
+1196,decompiled code
+1197,DREAM++
+1198,DREAM
+1199,Hex-Rays
+1200,decompiler
+1201,C code
+1202,android
+1203,ios
+1204,potentially harmful libraries
+1205,phalib
+1206,analysis
+1207,repackaged
+1208,propagating malware
+1209,cross-platform
+1210,clutch
+1211,iOS
+1212,supports ipod
+1213,ipad
+1214,iOS archtiectures
+1215,jailbroken iOS device
+1216,version 8.0
+1217,android
+1218,java
+1219,dex
+1220,tools
+1221,decentralized
+1222,witness cosigning
+1223,digital signatures
+1224,multisignatures
+1225,privacy protection
+1226,distributed protocols
+1227,cryptographic protocols
+1228,secret key
+1229,data protection
+1230,collective authority
+1231,cothority
+1232,decentralized
+1233,distributed
+1234,cryptopgraphic
+1235,protocols
+1236,conode
+1237,dedis
+1238,hardware flaws
+1239,transistors
+1240,invasive
+1241,software
+1242,analog
+1243,attack
+1244,malicious
+1245,Trojan horse
+1246,chip fabrication
+1247,flip-flops
+1248,microprocessor chips
+1249,A2
+1250,asic
+1251,hardware
+1252,simulation
+1253,victime wire toggle rates
+1254,fpga
+1255,mobile
+1256,sensors
+1257,user routes
+1258,zero-permission
+1259,communication
+1260,smartphones
+1261,vehicle routing
+1262,wireless sensor networks
+1263,telecommunication security
+1264,dynamic dalvik instrumentation toolkit
+1265,ddi
+1266,library injection
+1267,hooking methods
+1268,in-line hooking
+1269,JNI interface
+1270,android framework
+1271,information sources
+1272,code security
+1273,android code vulnerability
+1274,TLS
+1275,data privacy
+1276,mobile computing
+1277,source code
+1278,privacy leak
+1279,whitelist manager
+1280,safe websites
+1281,block
+1282,other websites
+1283,not in list
+1284,offensive techniques
+1285,binary analysis
+1286,attacks and defenses
+1287,system security
+1288,security architectures
+1289,binary vulnerability
+1290,binary codes
+1291,operating systems
+1292,angr
+1293,platform-agnostic
+1294,binary analysis framework
+1295,symbolic execution
+1296,program instrumentation
+1297,control-flow analysis
+1298,data-dependency analysis
+1299,value-set analysis
+1300,decompilation
+1301,disassembly and intermediate-representation lifting
+1302,cyber grand challenge
+1303,DARPA
+1304,framework
+1305,sample
+1306,shellphish
+1307,rex
+1308,crash exploration
+1309,exploitation
+1310,binaries
+1311,large-scale automated vulnerability addition
+1312,LAVA
+1313,computer bugs
+1314,security
+1315,privacy
+1316,program debugging
+1317,source code
+1318,false alarm rates
+1319,LAVA-injected bugs
+1320,ground-truth corpora
+1321,LAVA synthetic bug corpora
+1322,injected
+1323,validated
+1324,LAVA-1
+1325,LAVA-M
+1326,corpus
+1327,distillation
+1328,defense distillation mechnanism
+1329,adversarial perturbations
+1330,machine learning
+1331,security
+1332,computational modeling
+1333,neural networks
+1334,lasagne
+1335,library to train neural networks
+1336,lightweight
+1337,theano
+1338,supports CNNs
+1339,convolutional neural networks
+1340,feed-forward networks
+1341,recurrent neural networks
+1342,long short-term memory
+1343,LSTM
+1344,code-reuse attack mitigation
+1345,binary-level
+1346,control-flow integrity
+1347,object-oriented programming
+1348,security of data
+1349,optimization
+1350,semantics
+1351,typearmor
+1352,software implementation
+1353,open-source
+1354,advanced code-reuse attacks
+1355,C/C++ applications 
+1356,HDFI
+1357,hardware-assisted data-flow isolation
+1358,RISC-V architecture
+1359,data flow analysis
+1360,security model
+1361,Biba integrity model
+1362,Bell --LaPadula model
+1363,"memory corruption vulnerability
+"
+1364,"RISC-V linux port
+"
+1365,RISC-V instantiator
+1366,rocket chip generator
+1367,simulator
+1368,repository
+1369,talos
+1370,security workarounds for rapid response
+1371,software vulnerabilities
+1372,patch delay vulnerabilities
+1373,computer bugs
+1374,error-handling code
+1375,talos
+1376,security workarounds for rapid response
+1377,SWRR
+1378,generated rapidly with minimal information about vulnerabilities
+1379,in-place mode
+1380,patch-based mode
+1381,TLS 1.3
+1382,Tamarin prover
+1383,verification
+1384,specification
+1385,authentication
+1386,cryptography
+1387,0-RTT mechanism
+1388,automated analysis
+1389,handshake modes
+1390,authenticated key exchange
+1391,"digital signatures
+"
+1392,TLS 1.3
+1393,automated analysis
+1394,symbolic analysis
+1395,Tamarin prover
+1396,access control
+1397,cloud
+1398,cryptography
+1399,dynamic access control policy
+1400,cloud-hosted data
+1401,data confidentiality
+1402,data privacy
+1403,RELIC
+1404,cryptographic meta-toolkit
+1405,efficiency
+1406,flexibility
+1407,"cryptographic protocols
+"
+1408,Air-Gapped
+1409,Network
+1410,Antivirus
+1411,Best
+1412,Practices
+1413,Black
+1414,Hat
+1415,Blacklist
+1416,Botnet
+1417,Casus
+1418,Belli
+1419,Civilian
+1420,Participation
+1421,Combatant
+1422,Status
+1423,Communications
+1424,Privacy
+1425,Law
+1426,Computer
+1427,Emergency
+1428,Response
+1429,Team
+1430,Computer
+1431,Network
+1432,Attack
+1433,COTS
+1434,Software
+1435,Credit
+1436,Card
+1437,Fraud
+1438,Crimeware
+1439,Cyber
+1440,Crime
+1441,Cyber
+1442,Security
+1443,as
+1444,Externality
+1445,Cyber
+1446,Security
+1447,as
+1448,Public
+1449,Good
+1450,Cyber
+1451,Terrorism
+1452,Cyber
+1453,Warfare
+1454,Data
+1455,Mining
+1456,Department
+1457,Homeland
+1458,Security
+1459,DDoS
+1460,Attack
+1461,Digital
+1462,Pearl
+1463,Harbor
+1464,Disclosure
+1465,Policy
+1466,Distributed
+1467,Denial
+1468,of
+1469,Service
+1470,(DDoS)
+1471,Dumpster
+1472,Diving
+1473,Einstein
+1474,E.U.
+1475,Cybersecurity
+1476,Generativity
+1477,Geneva
+1478,Conventions
+1479,Hacker
+1480,Hacktivism
+1481,Hacktivist
+1482,Honeypot
+1483,Identity
+1484,Fraud/Theft
+1485,Information
+1486,Asymmetries
+1487,Intelligence
+1488,Infrastructure/Information
+1489,Infrastructure
+1490,Information
+1491,Operations
+1492,Interdependencies
+1493,International
+1494,Humanitarian
+1495,Law
+1496,Internet
+1497,Relay
+1498,Chat
+1499,(IRC)
+1500,Internet
+1501,Service
+1502,Providers
+1503,Keylogger
+1504,Kinetic
+1505,Attack
+1506,Lawfare
+1507,Laws
+1508,of
+1509,War
+1510,Malware
+1511,National
+1512,Cybersecurity
+1513,Strategy
+1514,(U.S.)
+1515,National
+1516,Security
+1517,New
+1518,Normalcy
+1519,Notice
+1520,and
+1521,Take-down
+1522,Organized
+1523,Crime
+1524,Outreach
+1525,and
+1526,Collaboration
+1527,Password
+1528,Weakness
+1529,Patching
+1530,Phishing
+1531,Privacy
+1532,Law
+1533,Red
+1534,Team
+1535,Research
+1536,Development
+1537,Risk
+1538,Modeling
+1539,SCADA
+1540,Systems
+1541,Scareware
+1542,Script
+1543,Kiddie
+1544,Security
+1545,Trade-Offs
+1546,Shoulder
+1547,Surfing
+1548,Sneakernet
+1549,Social
+1550,Engineering
+1551,Social
+1552,Network
+1553,Software
+1554,Vulnerability
+1555,SPAM
+1556,Sponsored
+1557,Attacks
+1558,State
+1559,Affiliation
+1560,Tragedy
+1561,of
+1562,Commons
+1563,Transparency
+1564,Trojan
+1565,Virtual
+1566,Military
+1567,Technologies
+1568,Virtual
+1569,Warfare
+1570,White
+1571,Hat
+1572,Whitelist
+1573,Worm
+1574,Zero-Day
+1575,Exploit
+1576,Access control
+1577,Asset
+1578,Authentication
+1579,Backing up
+1580,Bring your own device (BYOD)
+1581,Broadband
+1582,Business continuity management
+1583,Certification
+1584,Certification body
+1585,Chargeback
+1586,Cloud computing
+1587,Common text
+1588,Data server
+1589,Declaration of conformity
+1590,DMZ
+1591,Encryption
+1592,Ethernet
+1593,Firewall
+1594,Gap analysis
+1595,Hacker
+1596,Hard disk
+1597,Identification
+1598,Infrastructure-as-a-service (IaaS)
+1599,Inspection certificate
+1600,Instant messaging
+1601,Internet service provider (ISP)
+1602,Intrusion detection system (IDS)
+1603,Intrusion prevention system (IPS)
+1604,Just in time’ manufacturing
+1605,Keyboard logger
+1606,Leased circuit
+1607,Local area network (LAN)
+1608,Macro virus
+1609,Malware
+1610,Management system
+1611,Network firewall
+1612,Outsourcing
+1613,Passing off
+1614,Password
+1615,Personal firewall
+1616,Personal information
+1617,Phishing
+1618,Platform-as-a-service (PaaS)
+1619,Portable device
+1620,Proxy server
+1621,Restore
+1622,Risk
+1623,Risk assessment
+1624,Router
+1625,Screen scraper
+1626,Security control
+1627,Security information and event management (SIEM)
+1628,Security perimeter
+1629,Server
+1630,Smartphone
+1631,Software-as-a-service (SaaS)
+1632,Spyware
+1633,Supply chain
+1634,Tablet
+1635,Threat
+1636,Threat actor
+1637,Two-factor authentication
+1638,Username
+1639,User account
+1640,Virtual private network (VPN)
+1641,Virus
+1642,Vulnerability
+1643,Wide area network (WAN)
+1644,Wi-Fi
+1645,Worm
