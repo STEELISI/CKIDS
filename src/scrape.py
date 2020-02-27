@@ -2,6 +2,7 @@ import argparse
 from configparser import ConfigParser
 import json
 import os
+import pymongo
 import requests
 
 config = ConfigParser()
@@ -20,7 +21,6 @@ def get_artifacts_zenodo(keyword, size):
     :return: dict
         a JSON document with the response data or None
     """
-    print(config.sections())
     API_ROOT = config['ZENODO_API']['API_ROOT']
     ACCESS_KEY = config['ZENODO_API']['ACCESS_TOKEN']
 
@@ -43,6 +43,27 @@ def get_artifacts_zenodo(keyword, size):
     return res.json()
 
 
+def insert_into_db(data):
+    """
+    inserts JSON documents into MongoDB
+
+    :param data: list
+        a collection of JSON documents (as a dict) for each artifact
+    :return: success status of insertion(s)
+    """
+    DB_USER = config['MONGODB']['CKIDS_USER']
+    DB_PASS = config['MONGODB']['CKIDS_PASS']
+    DB_NAME = config['MONGODB']['CKIDS_DB_NAME']
+    HOST = config['AWS']['HOST_IP']
+    PORT = config['AWS']['HOST_PORT']
+
+    client = pymongo.MongoClient("mongodb://{DB_USER}:{DB_PASS}@{HOST}:{PORT}/{DB_NAME}".format(
+        DB_USER=DB_USER, DB_PASS=DB_PASS, HOST=HOST, PORT=PORT, DB_NAME=DB_NAME))
+    db = client[DB_NAME]
+    print('connection established')
+    print(help(db))
+
+
 def main():
     # read command line arguments
     parser = argparse.ArgumentParser()
@@ -63,7 +84,7 @@ def main():
 
     # write results into a database
     if args.db:
-        pass
+        insert_into_db(data['hits']['hits'])
     # write results into a JSON file
     else:
         with open(os.path.join(pardir, 'results/zenodo_artifacts_dump.json'), 'w') as f_ptr:

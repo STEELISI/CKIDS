@@ -1,0 +1,2 @@
+mongo --port 27017 -u "admin" -p 'Ck!ds#Admin' --authenticationDatabase "admin"
+mongo --port 27017 -u "ckids_user" -p 'Ck!ds#User123' --authenticationDatabase "zenodo_artifacts"

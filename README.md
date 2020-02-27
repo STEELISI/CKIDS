@@ -51,3 +51,9 @@ When mining artifacts, the following information is saved:
 * relatedTo: This will not be used for now, will be used to relate an artifact to a topic.
 
 This is the schema which will be used to represent the data. Once we scrape some artifacts, then we can run topic modeling/clustering analysis to relate them by keyword.
+
+## Resources
+Connect to the AWS EC2 Instance: ```ssh -i <PATH_TO_PEM_FILE> ubuntu@54.67.82.172```
+
+## Links
+* To install and secure MongoDB in EC2: [Medium](https://hackernoon.com/how-to-install-and-secure-mongodb-in-amazon-ec2-in-minutes-90184283b0a1)
