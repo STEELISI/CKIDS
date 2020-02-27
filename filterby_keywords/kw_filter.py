@@ -7,8 +7,7 @@ import pandas as pd
 
 # Read old kw list
 kw = pd.read_csv('v2_CKIDS_keywords.csv', header=None)
-# Create the result kw list object
-kw2 = pd.DataFrame()
+
 
 config = ConfigParser()
 config.read('secrets.ini')
@@ -36,5 +35,5 @@ for word in kw[0]:
 
 # Sort and put lines into a csv folder
 lines.sort(reverse=True)
-kw2[0] = lines
+kw2 = pd.DataFrame(lines,columns=['Frequency', 'Word'])
 kw2.to_csv('v3_CKIDS_keywords_with_frequency.csv')
