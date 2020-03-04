@@ -1,2 +1,27 @@
+Start Mongo Daemon:
+mongod --auth --port 27017 --dbpath /data/db --bind_ip_all
+
+View Mongod logs:
+sudo cat /var/log/mongodb/mongod.log
+
+Command to create users:
+db.createUser({
+  user: "admin",
+  pwd: "Ck!ds#Admin",
+  roles: [
+    { role: "userAdminAnyDatabase", db: "admin" }
+  ]
+})
+
+
+db.createUser({
+  user: "ckids_user",
+  pwd: "Ck!ds#User123",
+  roles: [
+    { role: "dbOwner", db: "zenodo_artifacts" }
+  ]
+})
+
+Connect to the database using different users:
 mongo --port 27017 -u "admin" -p 'Ck!ds#Admin' --authenticationDatabase "admin"
 mongo --port 27017 -u "ckids_user" -p 'Ck!ds#User123' --authenticationDatabase "zenodo_artifacts"
