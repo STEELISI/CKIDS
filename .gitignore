@@ -5,4 +5,8 @@ __pycache__/
 .DS_Store
 
 *.json
+*.bson
 *.txt
+*.pdf
+*.csv
+*.out

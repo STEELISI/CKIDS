@@ -107,16 +107,22 @@ def main():
     db = client[DB_NAME]
     
     for keyword in keywords:
-        size = get_artifacts_zenodo(keyword, '1')['hits']['total']
+        size = get_artifacts_zenodo(keyword, '1')
+        if "hits" not in size:
+            continue
+        size = size['hits']['total']
         num_pages = max(round(size/1000), 1)
         print("Total hits on {} = {}".format(keyword, size))
         for i in range(1, num_pages+1):
             data = get_artifacts_zenodo(keyword, str(i))
             print('\tStoring page {} in db'.format(i))
-
+            if "hits" not in data:
+                break
+            if "hits" not in data["hits"]:
+                break
             # write results into a database
-            if args.db:
-                insert_into_db(db, data['hits']['hits'])
+            if args.db and len(data["hits"]["hits"]) > 0:
+                insert_into_db(db, data["hits"]["hits"])
             # write results into a JSON file
             else:
                 with open(os.path.join(pardir, 'results/zenodo_artifacts_dump.json'), 'a') as f_ptr:
@@ -129,3 +135,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
