@@ -78,5 +78,6 @@ def idf(TF):
     return np.log(N/1+np.count_nonzero(TF, axis=0))
 
 TF = tf(term_list, description_data)
+IDF = idf(TF)
 TFIDF = TF*IDF
 pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF.csv')
