@@ -34,8 +34,26 @@ for d in description_data:
     if d == '':
         description_data.remove(d)
 # brush keywords list
-term_list = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)['Word'].unique()  # 194 - 4 = 190 unique words
-
+keyword_data = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)
+def process_term_list(term_list):
+    term_list2 = []
+    for t in term_list:
+        # remove hyphens
+        if '-' in t:
+            term_list2 += [t.replace('-', ' ')]
+        # separate terms with brackets
+        elif "(" and ")" in t:
+            tt = t.split("(")
+            if tt[0] == '':
+                term_list2 += [tt[1].replace(")","")]
+            term_list2 += [tt[0].rstrip(" "), tt[1].replace(")","")]
+        else:
+            term_list2 += [t]
+    return term_list2
+term_list = process_term_list(keyword_data['Word'].unique())
+term_list = set(term_list)
+term_list.discard('')
+term_list = sorted(list(term_list))
 # TF-IDF - sklearn
 #vectorizer = TfidfVectorizer(vocabulary=set(term_list))
 #X = vectorizer.fit_transform(description_data)
