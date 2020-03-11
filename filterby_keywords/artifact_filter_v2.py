@@ -12,12 +12,24 @@ import requests
 import collections
 
 # count how many kws in one description, use brute force at the first
-def count_kw(des):
+def count_kw_description(des):
     count = 0
-    for kw in term_list:
-        if kw in des:
+    for term in term_list:
+        if term in des:
             count += 1
     return count
+
+# count how many kws in one keywords field, use brute force at the first
+def count_kw_kwfield(kwfield):
+    count = 0
+    if kwfield:
+        kwfield = [x.lower() for x in kwfield]
+        for kw in kwfield:
+            for term in term_list:
+                if kw == term:
+                    count += 1
+    return count
+    
 # Setup DB connection
 config = ConfigParser()
 config.read('secrets.ini')
@@ -41,7 +53,8 @@ frequency_list = []
 # def the result dict
 artifact_count = dict()
 # brush keywords list
-term_list = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)['Word'].unique()  
+term_list = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)['Word'].unique()
+term_list = [x.lower() for x in term_list]
 
 
 # store the results by DOI 
@@ -49,12 +62,19 @@ for obj in result:
 
     if obj.get("doi") and obj.get("doi") not in used:
         used.add(obj.get("doi"))
-        temp_count = count_kw(obj['description'])
-        if temp_count:
+        temp_count_describ = 0
+        temp_count_describ = count_kw_description(obj['description'].lower())
+        
+        if obj.get("keywords"):
+            temp_count_kwfield = count_kw_kwfield(obj["keywords"])
+        else:
+            temp_count_kwfield = 0
+        if temp_count_describ or temp_count_kwfield:
             artifact_count[obj.get("doi")]  = {}
-            artifact_count[obj.get("doi")]["count"] = temp_count
+            artifact_count[obj.get("doi")]["count"] = temp_count_describ
             artifact_count[obj.get("doi")]['description'] = obj['description']
-            frequency_list.append(temp_count)
+            frequency_list.append(temp_count_describ + temp_count_kwfield)
+
     else:
         continue
 
