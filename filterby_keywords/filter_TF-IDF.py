@@ -2,13 +2,10 @@
 Calculate Term Frequency and TF-IDF score for each unqiue keyword in 'v3_CKIDS_keywords_with_frequency.csv'
 """
 import pandas as pd
-from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 import pymongo
 from configparser import ConfigParser
-import json
-import os
-import requests
 
 
 # mongodb configuration
@@ -24,36 +21,43 @@ client = pymongo.MongoClient("mongodb://{DB_USER}:{DB_PASS}@{HOST}:{PORT}/{DB_NA
     DB_USER=DB_USER, DB_PASS=DB_PASS, HOST=HOST, PORT=PORT, DB_NAME=DB_NAME))
 db = client[DB_NAME]
 collection = db["raw_artifacts"]
+print("Connected to MongoDB.")
 # retreive description data
 result = collection.find()
 description_data = []
 for obj in result:
     description_data += [obj['description']]
+print("Finished getting all descriptions")
 # remove empty description -- 834199 - 149 = 834050 descriptions
 for d in description_data:
     if d == '':
         description_data.remove(d)
-# brush keywords list
-keyword_data = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)
-def process_term_list(term_list):
-    term_list2 = []
-    for t in term_list:
-        # remove hyphens
-        if '-' in t:
-            term_list2 += [t.replace('-', ' ')]
-        # separate terms with brackets
-        elif "(" and ")" in t:
-            tt = t.split("(")
-            if tt[0] == '':
-                term_list2 += [tt[1].replace(")","")]
-            term_list2 += [tt[0].rstrip(" "), tt[1].replace(")","")]
-        else:
-            term_list2 += [t]
-    return term_list2
-term_list = process_term_list(keyword_data['Word'].unique())
-term_list = set(term_list)
-term_list.discard('')
-term_list = sorted(list(term_list))
+
+# old--brush keywords list
+# keyword_data = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)
+# def process_term_list(term_list):
+#     term_list2 = []
+#     for t in term_list:
+#         # remove hyphens
+#         if '-' in t:
+#             term_list2 += [t.replace('-', ' ')]
+#         # separate terms with brackets
+#         elif "(" and ")" in t:
+#             tt = t.split("(")
+#             if tt[0] == '':
+#                 term_list2 += [tt[1].replace(")","")]
+#             term_list2 += [tt[0].rstrip(" "), tt[1].replace(")","")]
+#         else:
+#             term_list2 += [t]
+#     return term_list2
+# term_list = process_term_list(keyword_data['Word'].unique())
+# term_list = set(term_list)
+# term_list.discard('')
+# term_list = sorted(list(term_list))
+
+# updated--read in keywords directly
+term_list = pd.read_csv('keywords_for_TFIDF.csv', index_col=0)['Keywords'].to_numpy()
+
 # TF-IDF - sklearn
 #vectorizer = TfidfVectorizer(vocabulary=set(term_list))
 #X = vectorizer.fit_transform(description_data)
@@ -77,7 +81,13 @@ def tf(term_list, documents):
     TF = np.zeros((N, T))
     for i in range(T):
         for j in range(N):
-            TF[j, i] = documents[j].count(term_list[i])
+            # match both 'ab-cd' and 'ab cd'
+            if '-' in term_list[i]:
+                word = term_list[i].replace('-', ' ')
+                TF[j, i] = documents[j].lower().count(word.lower()) \
+                            + documents[j].lower().count(term_list[i].lower())
+            else:
+                TF[j, i] = documents[j].lower().count(term_list[i].lower())
     return TF
 
 def idf(TF):
@@ -99,3 +109,4 @@ TF = tf(term_list, description_data)
 IDF = idf(TF)
 TFIDF = TF*IDF
 pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF.csv')
+print("Finshed.")
