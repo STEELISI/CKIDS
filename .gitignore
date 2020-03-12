@@ -8,5 +8,4 @@ __pycache__/
 *.bson
 *.txt
 *.pdf
-*.csv
 *.out
