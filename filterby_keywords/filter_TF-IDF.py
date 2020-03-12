@@ -25,13 +25,22 @@ print("Connected to MongoDB.")
 # retreive description data
 result = collection.find()
 description_data = []
+keywords_data = []
+title_data = []
 for obj in result:
-    description_data += [obj['description']]
-print("Finished getting all descriptions")
-# remove empty description -- 834199 - 149 = 834050 descriptions
-for d in description_data:
-    if d == '':
-        description_data.remove(d)
+    if obj['description'] != '':
+        description_data += [obj['description']]
+    try:
+        keywords_data += [' '.join(obj['keywords'])]
+    except KeyError:
+        None
+    if obj['title'] != '':
+        title_data += [obj['title']]
+data = description_data + keywords_data + title_data
+print("Finished getting all descriptions:", len(data),  # 2280318
+    "\n", "#description:", len(description_data),  # 834050
+    "\n", "#keywords:", len(keywords_data)),  # 612069
+    "\n", "#title:", len(title_data))  # 834199
 
 # old--brush keywords list
 # keyword_data = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)
@@ -105,8 +114,12 @@ def idf(TF):
     N = TF.shape[0]
     return np.log(N/1+np.count_nonzero(TF, axis=0))
 
-TF = tf(term_list, description_data)
+des_TF = tf(term_list, description_data)
+des_IDF = idf(des_TF)
+des_TFIDF = des_TF*des_IDF
+pd.DataFrame({'Keyword':term_list, 'Term_frequency':des_TF.sum(axis=0), 'TFIDF_score':des_TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_description.csv')
+TF = tf(term_list, data)
 IDF = idf(TF)
 TFIDF = TF*IDF
-pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF.csv')
+pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_des_kw_ttl.csv')
 print("Finshed.")
