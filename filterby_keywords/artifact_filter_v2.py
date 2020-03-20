@@ -56,7 +56,6 @@ artifact_count = dict()
 term_list = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)['Word'].unique()
 term_list = [x.lower() for x in term_list]
 
-
 # store the results by DOI 
 for obj in result:
 
@@ -71,18 +70,21 @@ for obj in result:
             temp_count_kwfield = 0
         if temp_count_describ or temp_count_kwfield:
             artifact_count[obj.get("doi")]  = {}
-            artifact_count[obj.get("doi")]["count"] = temp_count_describ
             artifact_count[obj.get("doi")]['description'] = obj['description']
             frequency_list.append(temp_count_describ + temp_count_kwfield)
+            artifact_count[obj.get("doi")]["count"] = temp_count_describ + temp_count_kwfield
 
     else:
         continue
 
+
 # store CDF and artifact keywords count with description and doi
 # For CDF: key is the frequency and value is count. For example: 
 # [1, 18877] which means there are 18877 artifacts that have exactly one word in the their descriptions
-with open("CDF.json", "w") as fp:
-    json.dump(sorted(collections.Counter(frequency_list).items(), key = lambda x: x[0]), fp)
+with open("CDF.txt", "w") as fp:
+    for ind, count in sorted(collections.Counter(frequency_list).items(), key = lambda x: x[0]):
+        temp = "Items that have {0} keyword(s) match to Keywords List: {1} \n".format(ind, count)
+        fp.write(temp)
 with open("artifact_count.json", "w") as fp:
     json.dump(sorted(artifact_count.items(), key=lambda x: x[1]["count"]), fp)
 
