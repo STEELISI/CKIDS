@@ -7,6 +7,8 @@ import numpy as np
 import pymongo
 from configparser import ConfigParser
 import sys
+import matplotlib.pyplot as plt
+
 
 use = argv[1]
 if use == 'filter':
@@ -161,6 +163,16 @@ elif use == 'filter':
     for objid, content in objID_data.items():
         document = ' '.join(content)
         filtered_obj[str(objid)] = calculate_doc_score(document, kw_weights)
+    d = np.array(list(filtered_obj.values()))
+    num_bins = 20
+    counts, bin_edges = np.histogram(d, bins=num_bins)
+    cdf = np.cumsum(counts)
+    plt.plot(bin_edges[1:], cdf)
+    plt.xlabel('Relevance Score')
+    plt.ylabel('cdf')
+    plt.title("CDF of Relevance Score with {0} bins".format(num_bins))
+    plt.savefig('rlv_score_cdf.png')
+    plt.show()
     with open(wt_json, 'w') as f:
         json.dump(filtered_obj, f)
     
