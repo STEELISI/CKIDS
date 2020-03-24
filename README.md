@@ -52,6 +52,21 @@ When mining artifacts, the following information is saved:
 
 This is the schema which will be used to represent the data. Once we scrape some artifacts, then we can run topic modeling/clustering analysis to relate them by keyword.
 
+## Artifacts Filtering
+In `filterby_keywords/filter_TF-IDF.py`, each artifact is given a score.
+For artifact A, the score is sum of (frequency of k in text of A)*(the TFIDF score of k in all data) over all k in keywords.
+
+The realisation is in `filter_TF-IDF.py` and the execution format is:
+
+* for getting TF-IDF score for keywords:
+`python filter_TF-IDF.py TFIDF`
+
+* for getting the relevance score for each artifact:
+ `python filter_TF-IDF.py filter <output_json_filename>`
+ 
+ The object and relevance scores will be in file `filterby_keywords/filter_TFIDF_result.json`, in the form of `{'objectID':'relevance_score'}`.
+ 
+
 ## Resources
 Connect to the AWS EC2 Instance: ```ssh -i <PATH_TO_PEM_FILE> ubuntu@54.67.82.172```
 
