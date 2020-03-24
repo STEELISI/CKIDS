@@ -6,7 +6,11 @@ import pandas as pd
 import numpy as np
 import pymongo
 from configparser import ConfigParser
+import sys
 
+use = argv[1]
+if use == 'filter':
+    wt_json = argv[2]
 
 # mongodb configuration
 config = ConfigParser()
@@ -27,15 +31,25 @@ result = collection.find()
 description_data = []
 keywords_data = []
 title_data = []
+objID_data = {}
 for obj in result:
-    if obj['description'] != '':
-        description_data += [obj['description']]
+    description = obj['description']
+    if description != '':
+        description_data += [description]
+        
     try:
-        keywords_data += [' '.join(obj['keywords'])]
+        keywords = ' '.join(obj['keywords'])
     except KeyError:
+        keywords = ''
         None
-    if obj['title'] != '':
-        title_data += [obj['title']]
+    keywords_data += [keywords]
+    
+    title = obj['title']
+    if title != '':
+        title_data += [title]
+        
+    objID_data[obj['_id']] = [title, description, keywords]
+
 data = description_data + keywords_data + title_data
 print("Finished getting all descriptions:", len(data),  # 2280318
     "\n", "#description:", len(description_data),  # 834050
@@ -114,12 +128,39 @@ def idf(TF):
     N = TF.shape[0]
     return np.log(N/1+np.count_nonzero(TF, axis=0))
 
-des_TF = tf(term_list, description_data)
-des_IDF = idf(des_TF)
-des_TFIDF = des_TF*des_IDF
-pd.DataFrame({'Keyword':term_list, 'Term_frequency':des_TF.sum(axis=0), 'TFIDF_score':des_TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_description.csv')
-TF = tf(term_list, data)
-IDF = idf(TF)
-TFIDF = TF*IDF
-pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_des_kw_ttl.csv')
-print("Finshed.")
+def calculate_doc_score(document, kw_weights):
+    """
+    document: str
+    kw_weights: dict
+    """
+    relev_freq = []
+    for kw in kw_weights.keys():
+        if '-' in kw:
+            kw2 = kw.replace('-', ' ')
+            relev_freq += [document.lower().count(kw.lower()) \
+                        + document.lower().count(kw2.lower())]
+        else:
+            relev_freq += [document.lower().count(kw.lower())]
+    relev_score = np.dot(list(kw_weights.values()),relev_freq)
+    return relev_score
+
+if use == 'TFIDF':
+    des_TF = tf(term_list, description_data)
+    des_IDF = idf(des_TF)
+    des_TFIDF = des_TF*des_IDF
+    pd.DataFrame({'Keyword':term_list, 'Term_frequency':des_TF.sum(axis=0), 'TFIDF_score':des_TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_description.csv')
+    TF = tf(term_list, data)
+    IDF = idf(TF)
+    TFIDF = TF*IDF
+    pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_des_kw_ttl.csv')
+    print("Finshed.")
+elif use == 'filter':
+    weight = pd.read_csv('kw_score_TF_TFIDF_des_kw_ttl.csv', index_col=0)
+    kw_weights = dict(weight[['Keyword','TFIDF_score']].to_numpy())
+    filtered_obj = {}
+    for objid, content in objID_data.items():
+        document = ' '.join(content)
+        filtered_obj[str(objid)] = calculate_doc_score(document, kw_weights)
+    with open(wt_json, 'w') as f:
+        json.dump(filtered_obj, f)
+    
