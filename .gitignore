@@ -1,11 +1,14 @@
 .idea/
 __pycache__/
+resources/
+results/
 
 # macOS Files
 .DS_Store
-
 
 *.bson
 *.txt
 *.pdf
 *.out
+
+zenodo.ttl
