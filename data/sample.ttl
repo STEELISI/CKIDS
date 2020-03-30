@@ -1,25 +1,38 @@
-@prefix artifact: <https://w3id.org/cs/i/> .
-@prefix person: <https://w3id.org/cs/p/> .
-@prefix org: <https://w3id.org/cs/o> .
+@prefix cs: <https://w3id.org/cs/i/> .
 @prefix schema: <https://schema.org/> .
 
-artifact:a_5e6001fa6e9d3cc9bb496ef6
+cs:a_5e6001fa6e9d3cc9bb496ef6
     schema:identifier "10.5281/zenodo.3663325" ;
     schema:datePublished "2020-02-12T08:27:27.398005+00:00" ;
     schema:downloadUrl "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip" ;
     schema:fileFormat "zip" ;
-    schema:author person:FangYong, person:ZengYuetian, person:LiBeibei, person:LiuLiang, person:LiuLiang ;
+    schema:author cs:p_2773111740584316139, cs:p_8466385966688046973, cs:p_6362787789640028620, cs:p_8890465210678195559 ;
     schema:name "Source code for article DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model" ;
     schema:description "This repository contains all code for article 'DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model'" ;
     schema:keywords "Code" ;
     schema:learningResourceType "software" .
 
-person:FangYong
+cs:p_2773111740584316139
     a schema:Person ;
     schema:name "Fang Yong" ;
-    schema:affiliatedTo org:SichuanUniversity.
+    schema:affiliatedTo cs:o_1225445654859312824 .
 
-org:SichuanUniversity
+cs:p_8466385966688046973
+    a schema:Person ;
+    schema:name "Zeng Yuetian" ;
+    schema:affiliatedTo cs:o_1225445654859312824 .
+
+cs:p_6362787789640028620
+    a schema:Person ;
+    schema:name "Li Beibei" ;
+    schema:affiliatedTo cs:o_1225445654859312824 .
+
+cs:p_8890465210678195559
+    a schema:Person ;
+    schema:name "Liu Liang" ;
+    schema:affiliatedTo cs:o_1225445654859312824 .
+
+cs:o_1225445654859312824
     a schema:Organization ;
     schema:name "College of Cybersecurity, Sichuan University" ;
     schema:address "College of Cybersecurity, Sichuan University, Chengdu 610065, China" .
