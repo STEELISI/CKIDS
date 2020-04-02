@@ -1,5 +1,5 @@
 """
-Calculate Term Frequency and TF-IDF score for each unqiue keyword in 'v3_CKIDS_keywords_with_frequency.csv'
+Calculate Term Frequency and TF-IDF score for each unqiue keyword in 'keywords_for_TFIDF.csv'
 """
 import pandas as pd
 # from sklearn.feature_extraction.text import TfidfVectorizer
@@ -55,7 +55,7 @@ for obj in result:
 data = description_data + keywords_data + title_data
 print("Finished getting all descriptions:", len(data),  # 2280318
     "\n", "#description:", len(description_data),  # 834050
-    "\n", "#keywords:", len(keywords_data)),  # 612069
+    "\n", "#keywords:", len(keywords_data),  # 612069
     "\n", "#title:", len(title_data))  # 834199
 
 # old--brush keywords list
