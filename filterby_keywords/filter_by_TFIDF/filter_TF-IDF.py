@@ -8,11 +8,11 @@ import pymongo
 from configparser import ConfigParser
 import sys
 import matplotlib.pyplot as plt
+import json
 
-
-use = argv[1]
+use = sys.argv[1]
 if use == 'filter':
-    wt_json = argv[2]
+    wt_json = sys.argv[2]
 
 # mongodb configuration
 config = ConfigParser()
@@ -58,30 +58,9 @@ print("Finished getting all descriptions:", len(data),  # 2280318
     "\n", "#keywords:", len(keywords_data),  # 612069
     "\n", "#title:", len(title_data))  # 834199
 
-# old--brush keywords list
-# keyword_data = pd.read_csv('v3_CKIDS_keywords_with_frequency.csv', index_col=0)
-# def process_term_list(term_list):
-#     term_list2 = []
-#     for t in term_list:
-#         # remove hyphens
-#         if '-' in t:
-#             term_list2 += [t.replace('-', ' ')]
-#         # separate terms with brackets
-#         elif "(" and ")" in t:
-#             tt = t.split("(")
-#             if tt[0] == '':
-#                 term_list2 += [tt[1].replace(")","")]
-#             term_list2 += [tt[0].rstrip(" "), tt[1].replace(")","")]
-#         else:
-#             term_list2 += [t]
-#     return term_list2
-# term_list = process_term_list(keyword_data['Word'].unique())
-# term_list = set(term_list)
-# term_list.discard('')
-# term_list = sorted(list(term_list))
-
-# updated--read in keywords directly
+# Read in keywords directly
 term_list = pd.read_csv('keywords_for_TFIDF.csv', index_col=0)['Keywords'].to_numpy()
+print("Term list read.")
 
 # TF-IDF - sklearn
 #vectorizer = TfidfVectorizer(vocabulary=set(term_list))
@@ -104,15 +83,16 @@ def tf(term_list, documents):
     """
     N, T = len(documents), len(term_list)
     TF = np.zeros((N, T))
-    for i in range(T):
-        for j in range(N):
+    for j in range(N):
+        d = documents[j].lower().split()
+        for i in range(T):
             # match both 'ab-cd' and 'ab cd'
             if '-' in term_list[i]:
                 word = term_list[i].replace('-', ' ')
-                TF[j, i] = documents[j].lower().count(word.lower()) \
-                            + documents[j].lower().count(term_list[i].lower())
+                TF[j, i] = d.count(word.lower()) \
+                            + d.count(term_list[i].lower())
             else:
-                TF[j, i] = documents[j].lower().count(term_list[i].lower())
+                TF[j, i] = d.count(term_list[i].lower())
     return TF
 
 def idf(TF):
@@ -136,26 +116,31 @@ def calculate_doc_score(document, kw_weights):
     kw_weights: dict
     """
     relev_freq = []
+    d = document.lower().split()
     for kw in kw_weights.keys():
         if '-' in kw:
             kw2 = kw.replace('-', ' ')
-            relev_freq += [document.lower().count(kw.lower()) \
-                        + document.lower().count(kw2.lower())]
+            relev_freq += [d.count(kw.lower()) \
+                        + d.count(kw2.lower())]
         else:
-            relev_freq += [document.lower().count(kw.lower())]
+            relev_freq += [d.count(kw.lower())]
     relev_score = np.dot(list(kw_weights.values()),relev_freq)
     return relev_score
 
 if use == 'TFIDF':
-    des_TF = tf(term_list, description_data)
-    des_IDF = idf(des_TF)
-    des_TFIDF = des_TF*des_IDF
-    pd.DataFrame({'Keyword':term_list, 'Term_frequency':des_TF.sum(axis=0), 'TFIDF_score':des_TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_description.csv')
+    # des_TF = tf(term_list, description_data)
+    # des_IDF = idf(des_TF)
+    # des_TFIDF = des_TF*des_IDF
+    # pd.DataFrame({'Keyword':term_list, 'Term_frequency':des_TF.sum(axis=0), 'TFIDF_score':des_TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_description.csv')
+    print("Calculating TF...")
     TF = tf(term_list, data)
+    print("Calculating IDF...")
     IDF = idf(TF)
+    print("Calculating TFIDF...")
     TFIDF = TF*IDF
     pd.DataFrame({'Keyword':term_list, 'Term_frequency':TF.sum(axis=0), 'TFIDF_score':TFIDF.sum(axis=0)}).to_csv('kw_score_TF_TFIDF_des_kw_ttl.csv')
     print("Finshed.")
+
 elif use == 'filter':
     weight = pd.read_csv('kw_score_TF_TFIDF_des_kw_ttl.csv', index_col=0)
     kw_weights = dict(weight[['Keyword','TFIDF_score']].to_numpy())
