@@ -1,38 +1,53 @@
 @prefix cs: <https://w3id.org/cs/i/> .
+@prefix ontology: <https://w3id.org/cs/o/> .
 @prefix schema: <https://schema.org/> .
 
-cs:a_5e6001fa6e9d3cc9bb496ef6
-    schema:identifier "10.5281/zenodo.3663325" ;
-    schema:datePublished "2020-02-12T08:27:27.398005+00:00" ;
-    schema:downloadUrl "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip" ;
-    schema:fileFormat "zip" ;
+
+# Software Template - hash starts with 'a_' -> Artifact
+cs:a_5e6001fa6e9d3cc9bb496ef6   # hash - generated from title and description
+    a schema:SoftwareApplication ;  # resource_type.type = software
+    schema:identifier "10.5281/zenodo.3663325" ;    # doi
+    schema:datePublished "2020-02-12T08:27:27.398005+00:00" ;  # created
+    schema:downloadUrl "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip" ;  # files.links.self
     schema:author cs:p_2773111740584316139, cs:p_8466385966688046973, cs:p_6362787789640028620, cs:p_8890465210678195559 ;
-    schema:name "Source code for article DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model" ;
-    schema:description "This repository contains all code for article 'DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model'" ;
-    schema:keywords "Code" ;
-    schema:learningResourceType "software" .
+    schema:name "Source code for article DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model" ;  # title
+    schema:description "This repository contains all code for article 'DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model'" ;  # description
+    schema:keywords "Code" ;  # keywords
+    # schema:encodingFormat "zip" ;   # files.type
 
-cs:p_2773111740584316139
+# Dataset Template - hash starts with 'a_' -> Artifact
+cs:a_5e6001fa6e9d3cc9bb496ef6   # hash - generated from title and description
+    a schema:Dataset ;  # resource_type.type = dataset
+    schema:identifier "10.5281/zenodo.3663325" ;    # doi
+    schema:datePublished "2020-02-12T08:27:27.398005+00:00" ;  # created
+    schema:distribution "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip" ;  # files.links.self
+    schema:author cs:p_2773111740584316139, cs:p_8466385966688046973, cs:p_6362787789640028620, cs:p_8890465210678195559 ;
+    schema:name "Source code for article DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model" ;  # title
+    schema:description "This repository contains all code for article 'DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model'" ;  # description
+    schema:keywords "Code" ;  # keywords
+    # schema:encodingFormat "zip" ;   # files.type
+
+# Publication/Article Template - hash starts with 'a_' -> Artifact
+cs:a_5e6001fa6e9d3cc9bb496ef6   # hash - generated from title and description
+    a schema:ScholarlyArticle ;  # resource_type.type = publication
+    schema:identifier "10.5281/zenodo.3663325" ;    # doi
+    schema:datePublished "2020-02-12T08:27:27.398005+00:00" ;  # created
+    schema:distribution "https://zenodo.org/api/files/9ff2816e-c0e3-4203-9c66-742418f4d335/DeepDetectNetvsRLAttackNet.zip" ;  # files.links.self
+    schema:author cs:p_2773111740584316139, cs:p_8466385966688046973, cs:p_6362787789640028620, cs:p_8890465210678195559 ;
+    schema:headline "Source code for article DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model" ;  # title
+    schema:description "This repository contains all code for article 'DeepDetectNet vs RLAttackNet: An Adversarial Method to Improve Deep Learning-based Static Malware Detection Model'" ;  # description
+    schema:keywords "Code" ;  # keywords
+    # schema:encodingFormat "zip" ;   # files.type
+
+# Author Template - hash starts with 'p_' -> Person
+cs:p_2773111740584316139    # hash - generated from name
     a schema:Person ;
-    schema:name "Fang Yong" ;
-    schema:affiliatedTo cs:o_1225445654859312824 .
+    schema:givenName "Fang Yong" ;  # creators.name
+    # schema:familyName "Yong" ; # creators.name
+    schema:identifier "0000-0003-1648-8074"  # creators.orcid
+    schema:affiliatedTo cs:o_1225445654859312824 .  
 
-cs:p_8466385966688046973
-    a schema:Person ;
-    schema:name "Zeng Yuetian" ;
-    schema:affiliatedTo cs:o_1225445654859312824 .
-
-cs:p_6362787789640028620
-    a schema:Person ;
-    schema:name "Li Beibei" ;
-    schema:affiliatedTo cs:o_1225445654859312824 .
-
-cs:p_8890465210678195559
-    a schema:Person ;
-    schema:name "Liu Liang" ;
-    schema:affiliatedTo cs:o_1225445654859312824 .
-
-cs:o_1225445654859312824
+# Affiliated Organization Template - hash starts with 'o_' -> Organization
+cs:o_1225445654859312824    # hash - generated from name
     a schema:Organization ;
-    schema:name "College of Cybersecurity, Sichuan University" ;
-    schema:address "College of Cybersecurity, Sichuan University, Chengdu 610065, China" .
+    schema:legalName "College of Cybersecurity, Sichuan University, Chengdu 610065, China" .    # creators.affiliation
