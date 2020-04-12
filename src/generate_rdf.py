@@ -41,114 +41,125 @@ import pymongo
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
 from rdflib.namespace import RDF
 
-config = ConfigParser()
-pardir = os.path.abspath(os.path.join(os.getcwd(), '..'))
-config.read(os.path.join(pardir, 'resources/secrets.ini'))
-
-DB_USER = config['MONGODB']['CKIDS_USER']
-DB_PASS = config['MONGODB']['CKIDS_PASS']
-DB_NAME = config['MONGODB']['CKIDS_DB_NAME']
-HOST = config['AWS']['HOST_IP']
-PORT = config['AWS']['HOST_PORT']
-
-# establish connection
-client = pymongo.MongoClient("mongodb://{DB_USER}:{DB_PASS}@{HOST}:{PORT}/{DB_NAME}".format(
-    DB_USER=DB_USER, DB_PASS=DB_PASS, HOST=HOST, PORT=PORT, DB_NAME=DB_NAME))
-db = client[DB_NAME]
-
 
 cs = Namespace("https://w3id.org/cs/i/")
 schema = Namespace("https://schema.org/")
 g = Graph()
 
+def connect_to_db():
+    config = ConfigParser()
+    pardir = os.path.abspath(os.path.join(os.getcwd(), '..'))
+    config.read(os.path.join(pardir, 'resources/secrets.ini'))
 
-docs = db["raw_artifacts"].find().limit(5)
+    DB_USER = config['MONGODB']['CKIDS_USER']
+    DB_PASS = config['MONGODB']['CKIDS_PASS']
+    DB_NAME = config['MONGODB']['CKIDS_DB_NAME']
+    HOST = config['AWS']['HOST_IP']
+    PORT = config['AWS']['HOST_PORT']
 
-for doc in docs:
-    pprint(doc)
+    # establish connection
+    client = pymongo.MongoClient("mongodb://{DB_USER}:{DB_PASS}@{HOST}:{PORT}/{DB_NAME}".format(
+        DB_USER=DB_USER, DB_PASS=DB_PASS, HOST=HOST, PORT=PORT, DB_NAME=DB_NAME))
+    return client[DB_NAME]
 
-    # Artifact Type: Software
-    if doc["resource_type"]["type"] == "software":
-        artifact_name_hash = "a_" + str(int(hashlib.md5(doc["title"].encode('utf-8')).hexdigest(), 16))
-        g.add((cs[artifact_name_hash], RDF.type, schema.SoftwareSourceCode))
-        g.add((cs[artifact_name_hash], schema.identifier, Literal(doc["doi"])))
-        g.add((cs[artifact_name_hash], schema.datePublished, Literal(doc["created"])))
-        g.add((cs[artifact_name_hash], schema.name, Literal(doc["title"])))
-        g.add((cs[artifact_name_hash], schema.description, Literal(doc["description"])))
 
-        if "files" in doc.keys():
-            for f in doc["files"]:
-                g.add((cs[artifact_name_hash], schema.contentUrl, Literal(f["links"]["self"])))
+def add_content_links(an_hash, files):
+    for f in files:
+        g.add((cs[an_hash], schema.contentUrl, Literal(f["links"]["self"])))
+
+def add_keywords(an_hash, keywords):
+    kwrds = [j.strip() for i in keywords for j in i.split(",")]
+    for kw in kwrds:
+        g.add((cs[an_hash], schema.keywords, Literal(kw)))
+
+def add_organization(org_name):
+    org_hash = "o_" + str(int(hashlib.md5(org_name.encode('utf-8')).hexdigest(), 16))
+    g.add((cs[org_hash], RDF.type, schema.Organization))
+    g.add((cs[org_hash], schema.legalName, Literal(org_name)))
+    return org_hash
+
+def add_authors(an_hash, authors):
+    for author in authors:
+        name_hash = "p_" + str(int(hashlib.md5(author["name"].encode('utf-8')).hexdigest(), 16))
+        g.add((cs[name_hash], RDF.type, schema.Person))
+        g.add((cs[name_hash], schema.givenName, Literal(author["name"])))
+
+        if "orcid" in author.keys():
+            g.add((cs[name_hash], schema.identifier, Literal(author["orcid"])))
+
+        if "affiliation" in author.keys():
+            org_hash = add_organization(author["affiliation"])
+            g.add((cs[name_hash], schema.affiliation, cs[org_hash]))
         
-        if "keywords" in doc.keys():
-            keywords = [j.strip() for i in doc["keywords"] for j in i.split(",")]
-            for keyword in keywords:
-                g.add((cs[artifact_name_hash], schema.keywords, Literal(keyword)))
+        g.add((cs[an_hash], schema.author, cs[name_hash]))
 
-        if "creators" in doc.keys():
-            # create author and org triples
-            for creator in doc["creators"]:
-                name_hash = "p_" + str(int(hashlib.md5(creator["name"].encode('utf-8')).hexdigest(), 16))
-                g.add((cs[name_hash], RDF.type, schema.Person))
-                g.add((cs[name_hash], schema.givenName, Literal(creator["name"])))
+def add_software_triples(doc):
+    artifact_name_hash = "a_" + str(int(hashlib.md5(doc["title"].encode('utf-8')).hexdigest(), 16))
+    g.add((cs[artifact_name_hash], RDF.type, schema.SoftwareSourceCode))
+    g.add((cs[artifact_name_hash], schema.name, Literal(doc["title"])))
+    
+    if "doi" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.identifier, Literal(doc["doi"])))
+    if "created" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.datePublished, Literal(doc["created"])))
+    if "description" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.description, Literal(doc["description"])))
+    if "files" in doc.keys():
+        add_content_links(artifact_name_hash, doc["files"])
+    if "creators" in doc.keys():
+        add_authors(artifact_name_hash, doc["creators"])
+    if "keywords" in doc.keys():
+        add_keywords(artifact_name_hash, doc["keywords"])
 
-                if "orcid" in creator.keys():
-                    g.add((cs[name_hash], schema.identifier, Literal(creator["orcid"])))
+def add_dataset_triples(doc):
+    artifact_name_hash = "a_" + str(int(hashlib.md5(doc["title"].encode('utf-8')).hexdigest(), 16))
+    g.add((cs[artifact_name_hash], RDF.type, schema.Dataset))
+    g.add((cs[artifact_name_hash], schema.name, Literal(doc["title"])))
 
-                if "affiliation" in creator.keys():
-                    org_hash = "o_" + str(int(hashlib.md5(creator["affiliation"].encode('utf-8')).hexdigest(), 16))
-                    g.add((cs[org_hash], RDF.type, schema.Organization))
-                    g.add((cs[org_hash], schema.legalName, Literal(creator["affiliation"])))
-                    g.add((cs[name_hash], schema.affiliation, cs[org_hash]))
-                
-                g.add((cs[artifact_name_hash], schema.author, cs[name_hash]))
+    if "doi" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.identifier, Literal(doc["doi"])))
+    if "created" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.datePublished, Literal(doc["created"])))
+    if "description" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.description, Literal(doc["description"])))
+    if "files" in doc.keys():
+        add_content_links(artifact_name_hash, doc["files"])
+    if "creators" in doc.keys():
+        add_authors(artifact_name_hash, doc["creators"])
+    if "keywords" in doc.keys():
+        add_keywords(artifact_name_hash, doc["keywords"])
 
-with open("../data/generated_rdf.ttl", "w") as f:
-    f.write(g.serialize(format='turtle').decode("utf-8"))
+def add_publication_triples(doc):
+    artifact_name_hash = "a_" + str(int(hashlib.md5(doc["title"].encode('utf-8')).hexdigest(), 16))
+    g.add((cs[artifact_name_hash], RDF.type, schema.ScholarlyArticle))
+    g.add((cs[artifact_name_hash], schema.headline, Literal(doc["title"])))
 
+    if "doi" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.identifier, Literal(doc["doi"])))
+    if "created" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.datePublished, Literal(doc["created"])))
+    if "description" in doc.keys():
+        g.add((cs[artifact_name_hash], schema.description, Literal(doc["description"])))
+    if "files" in doc.keys():
+        add_content_links(artifact_name_hash, doc["files"])
+    if "creators" in doc.keys():
+        add_authors(artifact_name_hash, doc["creators"])
+    if "keywords" in doc.keys():
+        add_keywords(artifact_name_hash, doc["keywords"])
 
+def store_triples_to_file(graph):
+    with open("../data/generated_rdf.ttl", "w") as f:
+        f.write(g.serialize(format='turtle').decode("utf-8"))
 
+if __name__ == "__main__":
+    db = connect_to_db()
+    docs = db["raw_artifacts"].find().limit(5)
+    for doc in docs:
+        if doc["resource_type"]["type"] == "software":
+            add_software_triples(doc)
+        elif doc["resource_type"]["type"] == "dataset":
+            add_dataset_triples(doc)
+        elif doc["resource_type"]["type"] == "publication":
+            add_publication_triples(doc)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    store_triples_to_file(g)
