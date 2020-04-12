@@ -1,0 +1,61 @@
+@prefix ns1: <https://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/cs/i/a_111596961495356772163945596974637792438> a ns1:SoftwareSourceCode ;
+    ns1:author <https://w3id.org/cs/i/p_116871633942549055176702266006188211087>,
+        <https://w3id.org/cs/i/p_129734745785542229923950452386003556643>,
+        <https://w3id.org/cs/i/p_14470346380330382668421713555108017802>,
+        <https://w3id.org/cs/i/p_157332804285129645591385261616079897413>,
+        <https://w3id.org/cs/i/p_211016748959494818434048507453763389158>,
+        <https://w3id.org/cs/i/p_248358759302674023535086431528748262509>,
+        <https://w3id.org/cs/i/p_338583484209070457382594531041561455636>,
+        <https://w3id.org/cs/i/p_98774323985552385007900727973119830602> ;
+    ns1:contentUrl "https://zenodo.org/api/files/09ea5f0b-2c34-4ff6-bdb9-6f90fc526470/IRC-SPHERE/HyperStream-v0.3.8.zip" ;
+    ns1:datePublished "2018-01-08T18:17:31.109539+00:00" ;
+    ns1:description """<p>Since 0.3.7:</p>
+<ul>
+<li>bug fixes and improvments</li>
+</ul>""" ;
+    ns1:identifier "10.5281/zenodo.1137803" ;
+    ns1:name "IRC-SPHERE/HyperStream: 0.3.8 Release" .
+
+<https://w3id.org/cs/i/o_158590550039294500862783615177849644226> a ns1:Organization ;
+    ns1:legalName "Gitter" .
+
+<https://w3id.org/cs/i/o_238327013977214572926202901990923683234> a ns1:Organization ;
+    ns1:legalName "@amzn @IRC-SPHERE @IntelligentSystemsLaboratory" .
+
+<https://w3id.org/cs/i/p_116871633942549055176702266006188211087> a ns1:Person ;
+    ns1:givenName "Kacper Sokol" .
+
+<https://w3id.org/cs/i/p_129734745785542229923950452386003556643> a ns1:Person ;
+    ns1:affiliation <https://w3id.org/cs/i/o_224177716300402177695548417477806394305> ;
+    ns1:givenName "Niall Twomey" .
+
+<https://w3id.org/cs/i/p_14470346380330382668421713555108017802> a ns1:Person ;
+    ns1:affiliation <https://w3id.org/cs/i/o_238327013977214572926202901990923683234> ;
+    ns1:givenName "Tom Diethe" .
+
+<https://w3id.org/cs/i/p_157332804285129645591385261616079897413> a ns1:Person ;
+    ns1:givenName "meeliskull" .
+
+<https://w3id.org/cs/i/p_211016748959494818434048507453763389158> a ns1:Person ;
+    ns1:affiliation <https://w3id.org/cs/i/o_224177716300402177695548417477806394305> ;
+    ns1:givenName "Hao Song" .
+
+<https://w3id.org/cs/i/p_248358759302674023535086431528748262509> a ns1:Person ;
+    ns1:givenName "Mike Holmes" .
+
+<https://w3id.org/cs/i/p_338583484209070457382594531041561455636> a ns1:Person ;
+    ns1:givenName "Miquel Perelló Nieto" .
+
+<https://w3id.org/cs/i/p_98774323985552385007900727973119830602> a ns1:Person ;
+    ns1:affiliation <https://w3id.org/cs/i/o_158590550039294500862783615177849644226> ;
+    ns1:givenName "The Gitter Badger" .
+
+<https://w3id.org/cs/i/o_224177716300402177695548417477806394305> a ns1:Organization ;
+    ns1:legalName "University of Bristol" .
+

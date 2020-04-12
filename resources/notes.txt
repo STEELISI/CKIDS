@@ -57,3 +57,8 @@ Get #documents of different resource types:
 db.raw_artifacts.aggregate([{$group: {
     _id: "$resource_type.type", "count": {$sum: 1}
 }}])
+
+-------------------------------------------------------------------------------------------------------
+
+Take db dump:
+mongodump --db=zenodo_artifacts --collection=raw_artifacts -u "ckids_user" -p 'Ck!ds#User123' --authenticationDatabase zenodo_artifacts
