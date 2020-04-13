@@ -153,8 +153,10 @@ def store_triples_to_file(graph):
 
 if __name__ == "__main__":
     db = connect_to_db()
-    docs = db["raw_artifacts"].find().limit(5)
+    docs = db["raw_artifacts"].find({"tfidf_score": {"$gt": 13}})
+    count = 0
     for doc in docs:
+        count += 1
         if doc["resource_type"]["type"] == "software":
             add_software_triples(doc)
         elif doc["resource_type"]["type"] == "dataset":
@@ -163,3 +165,4 @@ if __name__ == "__main__":
             add_publication_triples(doc)
 
     store_triples_to_file(g)
+    print("Triples generated for {} artifacts.".format(count))
