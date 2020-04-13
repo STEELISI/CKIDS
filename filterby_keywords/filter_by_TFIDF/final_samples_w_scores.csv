@@ -9,33 +9,33 @@
 7,https://doi.org/10.5281/zenodo.177215,{},0.0,zero
 8,https://doi.org/10.5281/zenodo.1099416,{},0.0,zero
 9,https://doi.org/10.5281/zenodo.16414,{},0.0,zero
-10,https://doi.org/10.5281/zenodo.1075741,{' TCAM ': 1},4.61786582258328,low
-11,https://doi.org/10.5281/zenodo.3490553,{' TCAM ': 1},4.61786582258328,low
-12,https://doi.org/10.5281/zenodo.569945,{'hash collision': 2},5.1732412689517915,low
-13,https://doi.org/10.3846/1648-0627.2008.9.33-44,{' ECB ': 1},5.241857181109106,low
-14,https://doi.org/10.5281/zenodo.2562967,{' ECB ': 1},5.241857181109106,low
-15,https://doi.org/10.5281/zenodo.1322154,{' SHA-1 ': 1},5.241858609302486,low
-16,https://doi.org/10.5281/zenodo.1322799,{' SHA-1 ': 1},5.241858609302486,low
-17,https://doi.org/10.5281/zenodo.322534,{' TCAM ': 2},5.306063853214727,low
-18,https://doi.org/10.5281/zenodo.1194057,{'control-flow': 1},5.306065567636965,low
-19,https://doi.org/10.5281/zenodo.20030,{'control-flow': 1},5.306065567636965,low
-20,https://doi.org/10.5281/zenodo.810911,"{'challenge': 1, 'website': 3}",13.000213267421731,middle
-21,https://doi.org/10.5281/zenodo.58096,"{'challenge': 1, 'website': 3}",13.000213267421731,middle
-22,https://doi.org/10.5281/zenodo.1083177,"{'Security': 1, 'information hiding': 4, 'security': 1}",13.00048837155837,middle
-23,https://doi.org/10.5281/zenodo.12861,{'flood': 10},13.000780056108477,middle
-24,https://doi.org/10.5755/j01.eis.0.9.12804,"{'Threat': 1, 'perception': 4}",13.00093734419238,middle
-25,https://doi.org/10.5281/zenodo.47585,"{'Security': 1, 'malware': 1, 'security': 1}",13.001224857050719,middle
-26,https://doi.org/10.5281/zenodo.3521280,"{'Security': 1, 'malware': 1, 'security': 1}",13.001224857050719,middle
-27,https://doi.org/10.5281/zenodo.3461588,"{'Security': 1, 'malware': 1, 'security': 1}",13.001224857050719,middle
-28,https://doi.org/10.5281/zenodo.3532890,"{'Security': 1, 'confidentiality': 1, 'security': 1}",13.001310517367932,middle
-29,https://doi.org/10.5281/zenodo.1477099,"{'Security': 1, 'confidentiality': 1, 'security': 1}",13.001310517367932,middle
-30,https://doi.org/10.31142/ijtsrd14458,"{'Network': 32, 'Security': 2, 'challenge': 2, 'data-flow': 1, 'key': 1, 'network': 32, 'security': 2}",17.614354209767924,high
-31,https://doi.org/10.5281/zenodo.3359666,"{'Network': 1, 'Risk': 140, 'challenge': 1, 'network': 1, 'safe': 1, 'website': 2}",17.74274843749326,high
-32,https://doi.org/10.5281/zenodo.3554580,"{'bug': 1, 'error-handling': 2, 'key': 85, 'patch': 2, 'safe': 4, 'website': 10}",17.864531109765906,high
-33,https://doi.org/10.5281/zenodo.3489804,"{'Risk': 163, 'Security': 2, 'Threat': 6, 'challenge': 3, 'flood': 1, 'key': 10, 'mitigation': 1, 'perception': 4, 'safe': 12, 'security': 2}",18.03431552933753,high
-34,https://doi.org/10.5281/zenodo.35611,"{'Network': 51, 'key': 3, 'network': 51}",18.065350934268356,high
-35,https://doi.org/10.5121/ijbb.2013.3203,"{'Network': 60, 'challenge': 1, 'key': 4, 'network': 60, 'perturbation': 1, 'reverse': 1}",18.23432216843301,high
-36,https://doi.org/10.5281/zenodo.13881,"{' IDS ': 2, 'Network': 88, 'Risk': 2, 'cipher': 1, 'network': 88, 'perturbation': 1, 'website': 1}",18.58949611604907,high
-37,https://doi.org/10.5121/ijbb.2013.3202,"{'Network': 96, 'defense': 1, 'key': 1, 'false negative': 2, 'network': 96, 'false positive': 2, 'vector': 7}",18.680204707608496,high
-38,https://doi.org/10.5121/ijbb.2013.3302,"{'Network': 96, 'challenge': 8, 'key': 2, 'network': 96, 'false positive': 4, 'reverse': 4, 'robust': 6, 'exploit': 2, 'vector': 3}",18.69913752133449,high
-39,https://doi.org/10.5281/zenodo.1162853,"{'key': 264, 'verification': 20}",18.969312713013142,high
+10,https://doi.org/10.5281/zenodo.1075741,{' TCAM ': 1},4.481893724602177,low
+11,https://doi.org/10.5281/zenodo.3490553,{' TCAM ': 1},4.481893724602177,low
+12,https://doi.org/10.5281/zenodo.1322154,{' SHA-1 ': 1},5.006853677504906,low
+13,https://doi.org/10.5281/zenodo.1322799,{' SHA-1 ': 1},5.006853677504906,low
+14,https://doi.org/10.5281/zenodo.569945,{'hash collision': 2},5.019930713106584,low
+15,https://doi.org/10.3846/1648-0627.2008.9.33-44,{' ECB ': 1},5.050250736836539,low
+16,https://doi.org/10.5281/zenodo.2562967,{' ECB ': 1},5.050250736836539,low
+17,https://doi.org/10.5281/zenodo.1194057,{'control-flow': 1},5.094904031722526,low
+18,https://doi.org/10.5281/zenodo.20030,{'control-flow': 1},5.094904031722526,low
+19,https://doi.org/10.5281/zenodo.322534,{' TCAM ': 2},5.169368863956644,low
+20,https://doi.org/10.1080/17439884.2019.1573833,"{'access control': 1, 'privacy': 1}",10.001952406173292,middle
+21,https://doi.org/10.3897/JHR.46.6585.figure2,{'defense': 3},10.00412406147307,middle
+22,https://doi.org/10.5281/zenodo.1251917,{'defense': 3},10.00412406147307,middle
+23,https://doi.org/10.5281/zenodo.1251913,{'defense': 3},10.00412406147307,middle
+24,https://doi.org/10.5281/zenodo.1251908,{'defense': 3},10.00412406147307,middle
+25,https://doi.org/10.5281/zenodo.1251915,{'defense': 3},10.00412406147307,middle
+26,https://doi.org/10.5281/zenodo.1251899,{'defense': 3},10.00412406147307,middle
+27,https://doi.org/10.5281/zenodo.1251906,{'defense': 3},10.00412406147307,middle
+28,https://doi.org/10.5281/zenodo.1251901,{'defense': 3},10.00412406147307,middle
+29,https://doi.org/10.5281/zenodo.1251911,{'defense': 3},10.00412406147307,middle
+30,https://doi.org/10.5281/zenodo.3554580,"{'bug': 1, 'error-handling': 2, 'key': 85, 'patch': 2, 'safe': 4, 'website': 10}",16.051324885902854,high
+31,https://doi.org/10.5121/ijbb.2013.3104,"{'Intrusion': 1, 'Network': 9, 'Risk': 2, 'Security': 46, 'Threat': 11, 'attack': 21, 'authentication': 34, 'authenticity': 1, 'challenge': 5, 'confidentiality': 3, 'cryptography': 1, 'defense': 1, 'denial of service': 1, 'integrity': 2, 'key': 6, 'leakage': 1, 'malware': 3, 'network': 9, 'password': 10, 'protection': 2, 'safe': 1, 'security': 46, 'exploit': 5, 'verification': 5, 'virus': 2, 'worm': 1}",16.222024492805147,high
+32,https://doi.org/10.5281/zenodo.3359666,"{'Network': 1, 'Risk': 140, 'challenge': 1, 'network': 1, 'safe': 1, 'website': 2}",16.35265157696275,high
+33,https://doi.org/10.5281/zenodo.35611,"{'Network': 51, 'key': 3, 'network': 51}",16.45981028468587,high
+34,https://doi.org/10.5281/zenodo.3489804,"{'Risk': 163, 'Security': 2, 'Threat': 6, 'challenge': 3, 'flood': 1, 'key': 10, 'mitigation': 1, 'perception': 4, 'safe': 12, 'security': 2}",16.62328652444442,high
+35,https://doi.org/10.5121/ijbb.2013.3203,"{'Network': 60, 'challenge': 1, 'key': 4, 'network': 60, 'perturbation': 1, 'reverse': 1}",16.629209251121274,high
+36,https://doi.org/10.5281/zenodo.13881,"{' IDS ': 2, 'Network': 88, 'Risk': 2, 'cipher': 1, 'network': 88, 'perturbation': 1, 'website': 1}",16.992329441020956,high
+37,https://doi.org/10.5121/ijbb.2013.3202,"{'Network': 96, 'defense': 1, 'key': 1, 'false negative': 2, 'network': 96, 'false positive': 2, 'vector': 7}",17.083444002931415,high
+38,https://doi.org/10.5121/ijbb.2013.3302,"{'Network': 96, 'challenge': 8, 'key': 2, 'network': 96, 'false positive': 4, 'reverse': 4, 'robust': 6, 'exploit': 2, 'vector': 3}",17.10616475207647,high
+39,https://doi.org/10.5281/zenodo.1162853,"{'key': 264, 'verification': 20}",17.13299310831989,high
