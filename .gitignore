@@ -11,5 +11,6 @@ downloads/
 *.txt
 *.pdf
 *.out
+*.ipynb_checkpoints
 
 zenodo.ttl
