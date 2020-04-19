@@ -7,10 +7,10 @@ downloads/
 # macOS Files
 .DS_Store
 
-*.bson
-*.txt
 *.pdf
 *.out
 *.ipynb_checkpoints
-
-zenodo.ttl
+*.bson
+*.json
+*.txt
+*.ttl
