@@ -33,7 +33,7 @@ def create_dataset(title, description):
     payload = {
         "name": title,
         "description": description,
-        "access": "PUBLIC"
+        "access": "DEFAULT" # PUBLIC, PRIVATE, DEFAULT, TRIAL
     }
 
     res = requests.post(url=API_ROOT + '/datasets/createempty', headers=headers, json=payload)
@@ -111,10 +111,10 @@ def update_license_info(d_id):
     """    
     payload = {
         "licenseType": "string",
-        "rightsHolder": "string",
-        "licenseUrl": "string",
-        "licenseText": "by-nc-nd",
-        "allowDownload": "string"
+        # "rightsHolder": "string",
+        # "licenseUrl": "string",
+        "licenseText": "by-nc-nd", # by-nc-nd, by-nd, by-nc, by-nc-sa, by-sa, by
+        # "allowDownload": "string"
     }
 
     res = requests.post(url=API_ROOT + '/datasets/{d_id}/license'.format(d_id=d_id), headers=headers, json=payload)

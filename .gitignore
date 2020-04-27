@@ -3,6 +3,7 @@ __pycache__/
 resources/
 results/
 downloads/
+data/
 
 # macOS Files
 .DS_Store
