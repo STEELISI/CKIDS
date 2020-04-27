@@ -4,6 +4,7 @@ resources/
 results/
 downloads/
 data/
+.ipynb_checkpoints/
 
 # macOS Files
 .DS_Store
