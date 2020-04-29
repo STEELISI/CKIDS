@@ -110,15 +110,14 @@ def update_license_info(d_id):
         ID of the dataset
     """    
     payload = {
-        "licenseType": "string",
-        # "rightsHolder": "string",
-        # "licenseUrl": "string",
-        "licenseText": "by-nc-nd", # by-nc-nd, by-nd, by-nc, by-nc-sa, by-sa, by
-        # "allowDownload": "string"
+        "licenseType": "Unknown",
+        # "rightsHolder": "Unknown",
+        # "licenseUrl": "",
+        # "licenseText": "", # by-nc-nd, by-nd, by-nc, by-nc-sa, by-sa, by
+        # "allowDownload": True
     }
 
     res = requests.post(url=API_ROOT + '/datasets/{d_id}/license'.format(d_id=d_id), headers=headers, json=payload)
-    # print(res.text)
 
 if __name__ == "__main__":
     # read the database credentials

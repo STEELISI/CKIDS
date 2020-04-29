@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cat": "https://clowder.ncsa.illinois.edu/#",
+    "extractor_id": {
+      "@id": "cat:extractor/id",
+      "@type": "@id"
+    },
+    "user_id": {
+      "@id": "cat:user/id",
+      "@type": "@id"
+    },
+    "created_at": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "agent": {
+      "@id": "http://www.w3.org/ns/prov#Agent"
+    },
+    "user": "cat:user",
+    "extractor": "cat:extractor",
+    "content": {
+      "@id": "https://clowder.ncsa.illinois.edu/metadata#content"
+    }
+  }
+}
+
+
